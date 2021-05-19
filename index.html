@@ -22,6 +22,14 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css" rel="stylesheet">
     <!-- WEB STYLE -->
     <link rel="stylesheet" href="css/style.css"> 
+    <!-- LOAD -->
+    <script>
+        const terminationEvent = 'onpagehide' in self ? 'pagehide' : 'unload';
+        addEventListener(terminationEvent, (event) => {
+        // Note: if the browser is able to cache the page, `event.persisted`
+        // is `true`, and the state is frozen rather than terminated.
+        }, {capture: true});
+    </script>
 </head>
 <body>
     <!-- HERO hero de la página, a modo de slider-->
@@ -224,7 +232,7 @@
     <!-- FOOTER -->
     <footer class="footer">
             
-        <span class="footer__copyright">Precious is powered by <a class="transition" href="https://www.coderhouse.com" target="_blank">coderhouse </a>© 2021</span>  
+        <span class="footer__copyright">Precious is powered by <a class="transition" href="https://www.coderhouse.com" target="_blank" rel="noreferrer">coderhouse </a>© 2021</span>  
         <div class="footer__social">
             <a class="social transition" href="" aria-label="Linkedin"><i class="social__icon fas fa-linkedin-in transition"></i></a> <!-- flecha -->
             <a class="social transition" href="" aria-label="Facebook"><i class="social__icon fas fa-facebook transition"></i></a> <!-- flecha -->
