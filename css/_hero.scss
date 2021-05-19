@@ -1,0 +1,187 @@
+/*---HERO---*/
+.section__hero{
+	@include flex(center, center, center); //(justify-content, align-content, align-items)
+	// @include flexCenterAll;
+    position: relative;
+	min-height: 100vh;
+	&::before{
+		content: '';
+		background-image: url(../img/13.jpg);
+		position: absolute;
+		height: 100%;
+		width: 80%;
+		left: 20%;
+		top: 0;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		box-shadow: -10px 0px 40px 0px $black025;
+		transition: all 0.4s ease-out;
+		filter: grayscale(100%);
+		z-index: 1;
+	}
+	&::after{
+		content: '';
+		position: absolute;
+		height: 100%;
+		width: 80%;
+		left: 20%;
+		top: 0;
+		transition: all 0.4s ease-out;
+		background-color: $black010;
+		z-index: 1;
+	}
+	&:hover::before{
+		transition: all 0.4s ease-out;
+		filter: grayscale(0%);
+	}
+	.hero__slide{
+		@include flexJustify(center); //(justify-content)
+		// @include flexCenterX;
+		height: auto;
+		width: 100%;
+		.slide__text--vertical{
+			writing-mode: vertical-lr;
+			margin: 40% 1.5% 0 0;
+			color: white;
+			text-transform: uppercase;
+			font-size: calc(#{$XSfontSize3} / 1.5);
+			letter-spacing: 0.8rem;
+			font-weight: 400;
+			position: absolute;
+			transform: translate(-50%, -50%) rotate( -180deg);
+			left: 10%;
+			z-index: 50;
+		}
+		.number{
+			left: 90%;
+		}
+		.slide__info{
+			@include flexJustify(center); //(justify-content)
+			// @include flexCenterX;
+			align-content: space-between;
+			flex-wrap: wrap;
+			position: relative;
+			z-index: 20;
+			min-height: 100vh;
+			.info__header{
+				@include flexJustify(center); //(justify-content)
+				// @include flexCenterX;
+				flex-wrap: wrap;
+				.header__title{
+					@include flex(center, center, center); //(justify-content, align-content, align-items)
+					// @include flexCenterAll;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 100%;
+					.title__text{
+						@include flexJustify(center); //(justify-content)
+						// @include flexCenterX;
+						position: absolute;
+						width: 100%;
+						font-size: calc(#{$XSfontSize1} * 0.65);
+						transform: translateY(1.2vw);
+						letter-spacing: 0.3rem;
+						text-transform: uppercase;
+						font-weight: 900;
+						color: white;
+					}
+					.title__text--shadow{
+						@include flexJustify(center); //(justify-content)
+						// @include flexCenterX;
+						font-size: calc(#{$XSfontSize1} * 1.4);
+						text-transform: uppercase;
+						font-weight: 900;
+						letter-spacing: 0.3rem;
+						color: rgba(255, 255, 255, 0.25);
+					}
+				}
+				.header__subtitle {
+					@include flexJustify(center); //(justify-content)
+					// @include flexCenterX;
+					justify-content: center;
+					width: 100%;
+					letter-spacing: 0.3rem;
+					font-size: calc(#{$XSfontSize2} * 0.65);
+					text-transform: uppercase;
+					font-weight: 900;
+					color: white;
+					
+				}
+			}
+			.info__content{
+				@include flexJustify(center); //(justify-content)
+				// @include flexCenterX;
+				flex-wrap: wrap;
+				.content__tags{
+					display: flex;
+					flex-wrap: nowrap;
+					justify-content: center;
+					width: 80%;
+					.tag{
+						padding: 0 1.5rem;
+						word-spacing: 6vw;
+						letter-spacing: 0.5vw;
+						text-transform: uppercase;
+						font-weight: 400;
+						color: white;
+						display: flex;
+						font-size: calc(#{$XSfontSize3} * 0.7);
+						// width: 100%;
+						margin-bottom: 2%;
+						// justify-content: center;
+					}
+				}
+				.content__text{
+					@include flex(center, center, center); //(justify-content, align-content, align-items)
+					// @include flexCenterAll;
+					flex-wrap: nowrap;
+					width: 100%;
+					.text{
+						padding: 2rem 3rem;
+						width: 100%;
+						font-size: $XSfontSize3;
+						// font-size: 1.6rem;
+						line-height: 1.5em;
+						font-weight: 400;
+						text-align: right;
+						color: rgb(0, 0, 0);
+					}
+					.arrow{
+						transform: translate(-50%, 0);
+					}
+				}
+			}
+			.content__nav {
+				@include flexJustify(center); //(justify-content)
+				// @include flexCenterX;
+				width: 90%;
+				margin-left: 10%;
+				padding: 3% 0 0;
+				.nav__slash {
+					width: 1.5em;
+					height: 0.3em;
+					background-color: rgba(255,255,255,0.4);
+					cursor: pointer;
+					margin: 0 0.3rem;
+				}
+				.current{
+					background-color: $color2;
+				}
+			}
+			.button{
+				margin: 3rem 0;
+				background-color: $color2;
+				padding: 0;
+				height: 5rem;
+				width: 15rem;
+				transform: translateX(10%);
+			}
+		}
+	}
+	.text-bg{
+		display: none;
+	}
+}
+/*---END HERO---*/

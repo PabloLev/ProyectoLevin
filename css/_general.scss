@@ -1,0 +1,177 @@
+/*---normalize---*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*------------------------------------------------------------------*/
+html{
+	width: 100%;
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	background-color: #ffffff;
+	width: 100%;
+	
+}
+/*---GENERAL---*/
+p{
+	font-size: 1.6rem;
+}
+h1{
+	margin: 0;
+}
+h4{
+	font-size: 2rem;
+	margin: 0;
+}
+a:hover {
+    text-decoration: none;
+}
+.arrow{
+	@include flex(center, center, center); //(justify-content, align-content, align-items)
+	// @include flexCenterAll;
+	width: 4rem;
+	min-width: 4rem;
+	height: 4rem;
+	text-decoration: none;
+	font-size: 2rem;
+	color: black;
+	background-color: $color2;
+	&:hover{
+		color: white;
+		background-color: black;
+	}
+}
+button{
+	border: none;
+    cursor: pointer;
+	&:hover{
+		border: none;
+		outline: none;
+	}
+	&:active{
+		border: none;
+		outline: none;
+	}
+	&:focus{
+		border: none;
+		outline: none;
+	}
+	&:focus-visible{
+		border: none;
+		outline: none;
+	}
+	&:active{
+		border: none;
+		outline: none;
+	}
+	&:visited{
+		border: none;
+		outline: none;
+	}
+}
+.button{
+	@include flex(center, center, center); //(justify-content, align-content, align-items)
+	// @include flexCenterAll;
+	text-decoration: none;
+	font-size: $XSfontSize3;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: black;
+	padding: 1rem 3rem;
+	border: 0.3rem solid $color2;
+	&:hover{
+		background-color: $color2;
+		color: white;
+	}
+}
+.plus-icon{
+	@include flex(center, center, center); //(justify-content, align-content, align-items)
+	// @include flexCenterAll;
+	width: 4rem;
+	height: 4rem;
+	text-decoration: none;
+	font-size: 3rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: black;
+	background-color: $color2;
+}
+// .byw{
+// 	filter: grayscale(100%);
+// 	&:hover{
+// 		filter: grayscale(0%);
+// 	}
+// }
+// .border{
+// 	border: 0rem solid $color2;
+// 	&:hover{
+// 		border: 0.6rem solid $color2;
+// 	}
+// }
+.container__title{
+	@include flex(center, center, center); //(justify-content, align-content, align-items)
+	// @include flexCenterAll;
+	position: relative;
+	width: 100%;
+	height: auto;
+	left: 0;
+	z-index: 20;
+    .title__text{
+		position: absolute;
+		font-size: 9.5vw;
+		transform: translateY(0.5rem);
+		letter-spacing: 0.3rem;
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 900;
+		color: rgb(0, 0, 0);
+	}
+	.title__text--shadow{
+		text-transform: uppercase;
+		font-weight: 900;
+		letter-spacing: 0.3rem;
+		font-size: 15vw;
+		color:$black010;
+    }
+} 
+
+
+
+/*---Colour---*/
+.bg-color{
+	background-color: $color1;
+}
+// .bg-secondary{
+// 	background-color: $color2;
+// }
+.background-color-left, .background-color-right{
+	position: relative;
+}
+.background-color-left::before, .background-color-right::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background-color: $color1;
+	z-index: -1;
+}
+
+.background-color-right::before{
+	left: 50%;
+}
+/*---Transitions---*/
+.transition{
+	// transition: all 0.25s ease-out;
+	transition: all 0.25s linear;
+	&:hover{
+		// transition: all 0.25s ease-in;
+		transition: all 0.25s linear;
+	}
+}
+/*---END GENERAL---*/

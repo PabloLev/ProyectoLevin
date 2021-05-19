@@ -1,0 +1,40 @@
+/* NAVBAR sticky*/
+header{
+	position: sticky;
+	top: 0;
+	z-index: 9999;
+}
+
+/* BOOTSTRAP STYLING */
+/* NAVBAR */
+.navbar{
+	padding: 1rem 5%;
+	.navbar-brand{
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		span{
+			font-size: 2rem;
+		}
+	}
+	.navbar-toggler{
+		border-color: transparent;
+		&:focus {
+			/* outline: 1px dotted; */
+			outline: transparent;
+			background-color: $color2;
+		}
+	}
+	.navbar-collapse{
+		justify-content: flex-end;
+		.navbar-nav {
+			padding-top: 1rem;
+			.nav-item{
+				font-size: 1.5rem;
+				text-transform: uppercase;
+				&:hover {
+					color: $color2;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,168 @@
+/*---ABOUT---*/
+.section__about{
+    position: relative;
+    // background-color: $color1;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #5ec8cc;
+        z-index: -1;
+    }
+    .container__title{
+        background-color: $color1;
+    }
+    .content{
+        @include flex(center, center, center); //(justify-content, align-content, align-items)
+        width: 100%;
+        margin: 0 auto;
+        .about{
+            display: grid;
+            width: 100%;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr;
+            margin: 0 0 2rem;
+            .about__intro{
+                @include flex(center, center, center); //(justify-content, align-content, align-items)
+                flex-wrap: wrap;
+                width: 100%;
+                margin-bottom: 6rem;
+                padding: 0; //Está en el media querie se deja acá, es buena practica no ponerla por más que no haga nada
+                .intro__text{
+                    font-family: 'Playfair Display', sans-serif;
+                    // font-size: 4.5rem;
+                    font-size: $XSfontSize1;
+                    text-align: center;
+                    line-height: 6rem;
+                    color: white;
+                    margin-bottom: 0;
+                    padding: 5% 5% 20% 5%;
+                    background-color: $color1;
+                }
+                .button{
+                    padding: 1.5rem 4rem;
+                    background-color: $color2;
+                    transform: translateY(-50%)
+                }
+            }
+            .about__to-works{
+                @include flex(flex-end, center, center); //(justify-content, align-content, align-items)
+                // @include flexRightCenter;
+                position: absolute;
+                writing-mode: vertical-lr;
+                color: black;
+                text-transform: uppercase;
+                font-size: calc(#{$XSfontSize3} / 1.5);
+                line-height: 2rem;
+                letter-spacing: 0.8rem;
+                font-weight: 900;
+                transform: rotate( -180deg);
+                right: 0;
+                z-index: 20;
+            }
+            .about__team{
+                .team__member{
+                    @include flex(center, center, center); //(justify-content, align-content, align-items)
+                    // @include flexCenterAll;
+                    flex-direction: column;
+                    position: relative;
+                    margin-bottom: 0;//idem está al pedo?---*/
+                    &:hover .member_info .info__social{
+                        transform: translateX(0);
+                        opacity: 1;
+                    }
+                    .member__img{
+                        @include flex(center, center, center); //(justify-content, align-content, align-items)
+                        // @include flexCenterAll;
+                        background-size: cover;
+                        min-width: 80vw;
+                        min-height: 60vw;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        box-shadow: -10px 0px 10px 0px $black010;
+                        filter: grayscale(100%);
+                        border: 0 solid $color2;
+                        z-index: 20;
+                        &:hover{
+                            filter: grayscale(0);
+                            border: 1rem solid $color2;
+                        }
+                        
+                        .plus-icon{
+                            font-size: 1rem;
+                            color: black;
+                            margin: 1rem;
+                            opacity: 0;
+                            border-radius: 0%;
+                            overflow: hidden;
+                            &:hover{
+                                color: white;
+                                transform: scale(1.25) rotateZ(180deg);
+                                border-radius: 50%;
+                            }
+                        }
+                        &:hover .plus-icon{
+                            opacity: 1;
+                        }
+                    }
+                    .member1{
+                        background-image: url(../img/17.jpg);
+                    }
+                    .member2{
+                        background-image: url(../img/2.jpg);
+                    }
+                    .member_info{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 100%; //no se porque no me agarra el 100%*/
+                        width: 80%;
+                        margin-left: 0;//idem que el otro padding está al pedo?
+                        // text-align: left;
+                        margin-top: 1.5rem;
+
+                        .info__name{
+                            text-transform: uppercase;
+                            font-weight: 900;
+                            text-align: right;
+                            margin-bottom: 1.0rem;
+                            font-size: $XSfontSize2;
+                        }
+                        .info__resume{
+                            color: #969696;
+                            padding: 1rem 0;
+                            text-align: right;
+                            font-size: $XSfontSize3;
+                        }
+                        .info__social{
+                            @include flexJustify(flex-end); //(justify-content)
+                            // @include flexRightCenter;
+                            transform: translateX(0);
+                            opacity: 1;
+                            margin-bottom: 5rem;
+                            .social__icon{
+                                @include flex(center, center, center); //(justify-content, align-content, align-items)
+                                // @include flexCenterAll;
+                                background-color: $color2;
+                                min-width: 3rem;
+                                min-height: 3rem;
+                                margin: 0 0 0 1.5rem;
+                                i{
+                                    font-family: "Font Awesome 5 Brands";
+                                    font-size: 1.6rem;
+                                    color: black;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+/*---END ABOUT---*/

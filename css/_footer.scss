@@ -1,0 +1,42 @@
+.footer{
+    @include flex(space-between, flex-end, center);
+    padding:5rem 2rem;
+    background-color: black;
+	width: 100%;
+	height: auto;
+    .footer__copyright{
+        font-size: calc(0.9rem + 0.5vw);
+        font-weight: 300;
+        width: 50%;
+        text-align: left;
+        text-transform: uppercase;
+        letter-spacing: 0.0rem;
+        color: white;
+        a{
+            color: $color2;
+            font-weight: 700;
+            &:hover{
+                color: $color1;
+            }
+        }
+    }
+    .footer__social{
+        @include flex(flex-end, center, center);
+        flex-wrap: nowrap;
+        width: 50%;
+        .social{
+            
+            .social__icon{
+                font-family: "Font Awesome 5 Brands";
+                font-size: 1.8rem;
+    			text-align: right;
+                color: rgb(255, 255, 255);
+                margin: 0 0 0 2rem;
+                &:hover{
+                    color: $color2;
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+}
