@@ -396,7 +396,7 @@ header {
     float: left;
   }
   .header li a {
-    padding: 2rem 2rem;
+    padding: 0 2rem;
   }
   .header .menu {
     clear: none;
