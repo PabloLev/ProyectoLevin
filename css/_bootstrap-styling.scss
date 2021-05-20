@@ -11,8 +11,14 @@ header{
 	// height: 60px;
 }
 .header{
-	@include flex(space-between, center, center);
-	width: 70%;
+	// @include flex(space-between, center, center);
+	// flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 6rem;
 }
 .header ul {
 margin: 0;
@@ -55,6 +61,10 @@ color: rgb(119, 119, 119);
 clear: both;
 max-height: 0;
 transition: max-height .2s ease-out;
+padding: 0 0 0 10px;
+position: absolute;
+width: 100%;
+margin-top: 6rem;
 }
 
 /* menu icon */
@@ -62,7 +72,7 @@ transition: max-height .2s ease-out;
 .header .menu-icon {
 cursor: pointer;
 display: inline-block;
-float: right;
+// float: right;
 padding: 28px 20px;
 position: relative;
 user-select: none;
@@ -104,6 +114,7 @@ display: none;
 
 .header .menu-btn:checked ~ .menu {
 max-height: 240px;
+
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -126,18 +137,24 @@ top: 0;
 /* 48em = 768px */
 
 @media (min-width: 48em) {
-.header li {
-	float: left;
-}
-.header li a {
-	padding: 2rem 2rem
-}
-.header .menu {
-	clear: none;
-	float: right;
-	max-height: none;
-}
-.header .menu-icon {
-	display: none;
-}
+	.header{
+		
+		width: 70%;
+	}
+	.header li {
+		float: left;
+	}
+	.header li a {
+		padding: 2rem 2rem
+	}
+	.header .menu {
+		clear: none;
+		float: right;
+		max-height: none;
+		position: relative;
+		margin-top: 0;
+	}
+	.header .menu-icon {
+		display: none;
+	}
 }
