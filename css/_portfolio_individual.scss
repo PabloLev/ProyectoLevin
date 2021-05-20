@@ -24,7 +24,7 @@
             grid-row-gap: 4rem;
             margin-top: 2rem;
             .article__img1a{
-                background-image: url(../img/portfolio1.jpg);
+                background-image: url(../img/portfolio1.webp);
                 grid-column: span 1;
                 grid-row: span 1;  
                 width: 100%;
@@ -38,23 +38,23 @@
             }
             .article__img2a{
                 @extend .article__img1a;
-                background-image: url(../img/portfolio2.jpg);
+                background-image: url(../img/portfolio2.webp);
             }
             .article__img3a{
                 @extend .article__img1a;
-                background-image: url(../img/portfolio3.jpg);
+                background-image: url(../img/portfolio3.webp);
             }
             .article__img4a{
                 @extend .article__img1a;
-                background-image: url(../img/portfolio4.jpg);
+                background-image: url(../img/portfolio4.webp);
             }
             .article__img5a{
                 @extend .article__img1a;
-                background-image: url(../img/portfolio5.jpg);
+                background-image: url(../img/portfolio5.webp);
             }
             .article__img6a{
                 @extend .article__img1a;
-                background-image: url(../img/portfolio6.jpg);
+                background-image: url(../img/portfolio6.webp);
             }
             .article__content1{
                 grid-column: span 1;
@@ -74,7 +74,7 @@
             .article__img1b{
                 grid-column: span 1;
                 grid-row: span 1;   
-                background-image: url(../img/17.jpg);
+                background-image: url(../img/17.webp);
                 width: 100%;
                 padding-bottom: 70%;
                 background-size: cover;
@@ -86,7 +86,7 @@
             }
             .article__img3b{
                 @extend .article__img1b;
-                background-image: url(../img/portfolio6.jpg);
+                background-image: url(../img/portfolio6.webp);
             }
             .article__content2{
                 grid-column: span 1;

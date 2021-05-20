@@ -450,7 +450,7 @@ header {
 }
 
 .section__blogin .blogin_article .article__info .article__img1a, .section__blogin .blogin_article .article__info .article__img2a, .section__blogin .blogin_article .article__info .article__img3a {
-  background-image: url(../img/blog1.jpg);
+  background-image: url(../img/blog1.webp);
   grid-column: span 1;
   grid-row: span 1;
   width: 100%;
@@ -465,11 +465,11 @@ header {
 }
 
 .section__blogin .blogin_article .article__info .article__img2a {
-  background-image: url(../img/blog2.jpg);
+  background-image: url(../img/blog2.webp);
 }
 
 .section__blogin .blogin_article .article__info .article__img3a {
-  background-image: url(../img/blog3.jpg);
+  background-image: url(../img/blog3.webp);
 }
 
 .section__blogin .blogin_article .article__info .article__content1 {
@@ -492,7 +492,7 @@ header {
 .section__blogin .blogin_article .article__info .article__img1b, .section__blogin .blogin_article .article__info .article__img3b {
   grid-column: span 1;
   grid-row: span 1;
-  background-image: url(../img/17.jpg);
+  background-image: url(../img/17.webp);
   width: 100%;
   padding-bottom: 70%;
   background-size: cover;
@@ -505,7 +505,7 @@ header {
 }
 
 .section__blogin .blogin_article .article__info .article__img3b {
-  background-image: url(../img/portfolio6.jpg);
+  background-image: url(../img/portfolio6.webp);
 }
 
 .section__blogin .blogin_article .article__info .article__content2 {

@@ -450,7 +450,7 @@ header {
 }
 
 .section__portfolioin .portfolio_article .article__info .article__img1a, .section__portfolioin .portfolio_article .article__info .article__img2a, .section__portfolioin .portfolio_article .article__info .article__img3a, .section__portfolioin .portfolio_article .article__info .article__img4a, .section__portfolioin .portfolio_article .article__info .article__img5a, .section__portfolioin .portfolio_article .article__info .article__img6a {
-  background-image: url(../img/portfolio1.jpg);
+  background-image: url(../img/portfolio1.webp);
   grid-column: span 1;
   grid-row: span 1;
   width: 100%;
@@ -465,23 +465,23 @@ header {
 }
 
 .section__portfolioin .portfolio_article .article__info .article__img2a {
-  background-image: url(../img/portfolio2.jpg);
+  background-image: url(../img/portfolio2.webp);
 }
 
 .section__portfolioin .portfolio_article .article__info .article__img3a {
-  background-image: url(../img/portfolio3.jpg);
+  background-image: url(../img/portfolio3.webp);
 }
 
 .section__portfolioin .portfolio_article .article__info .article__img4a {
-  background-image: url(../img/portfolio4.jpg);
+  background-image: url(../img/portfolio4.webp);
 }
 
 .section__portfolioin .portfolio_article .article__info .article__img5a {
-  background-image: url(../img/portfolio5.jpg);
+  background-image: url(../img/portfolio5.webp);
 }
 
 .section__portfolioin .portfolio_article .article__info .article__img6a {
-  background-image: url(../img/portfolio6.jpg);
+  background-image: url(../img/portfolio6.webp);
 }
 
 .section__portfolioin .portfolio_article .article__info .article__content1 {
@@ -504,7 +504,7 @@ header {
 .section__portfolioin .portfolio_article .article__info .article__img1b, .section__portfolioin .portfolio_article .article__info .article__img3b {
   grid-column: span 1;
   grid-row: span 1;
-  background-image: url(../img/17.jpg);
+  background-image: url(../img/17.webp);
   width: 100%;
   padding-bottom: 70%;
   background-size: cover;
@@ -517,7 +517,7 @@ header {
 }
 
 .section__portfolioin .portfolio_article .article__info .article__img3b {
-  background-image: url(../img/portfolio6.jpg);
+  background-image: url(../img/portfolio6.webp);
 }
 
 .section__portfolioin .portfolio_article .article__info .article__content2 {

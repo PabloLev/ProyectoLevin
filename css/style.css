@@ -422,7 +422,7 @@ header {
 
 .section__hero::before {
   content: '';
-  background-image: url(../img/13.jpg);
+  background-image: url(../img/13.webp);
   position: absolute;
   height: 100%;
   width: 80%;
@@ -896,11 +896,11 @@ header {
 }
 
 .section__about .content .about .about__team .team__member .member1 {
-  background-image: url(../img/17.jpg);
+  background-image: url(../img/17.webp);
 }
 
 .section__about .content .about .about__team .team__member .member2 {
-  background-image: url(../img/2.jpg);
+  background-image: url(../img/2.webp);
 }
 
 .section__about .content .about .about__team .team__member .member_info {
@@ -1047,7 +1047,7 @@ header {
 }
 
 .section__portfolio .portfolio .work1 {
-  background-image: url(../img/portfolio1.jpg);
+  background-image: url(../img/portfolio1.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1056,7 +1056,7 @@ header {
 }
 
 .section__portfolio .portfolio .work2 {
-  background-image: url(../img/portfolio2.jpg);
+  background-image: url(../img/portfolio2.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1065,7 +1065,7 @@ header {
 }
 
 .section__portfolio .portfolio .work3 {
-  background-image: url(../img/portfolio3.jpg);
+  background-image: url(../img/portfolio3.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1074,7 +1074,7 @@ header {
 }
 
 .section__portfolio .portfolio .work4 {
-  background-image: url(../img/portfolio4.jpg);
+  background-image: url(../img/portfolio4.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1083,7 +1083,7 @@ header {
 }
 
 .section__portfolio .portfolio .work5 {
-  background-image: url(../img/portfolio5.jpg);
+  background-image: url(../img/portfolio5.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1092,7 +1092,7 @@ header {
 }
 
 .section__portfolio .portfolio .work6 {
-  background-image: url(../img/portfolio6.jpg);
+  background-image: url(../img/portfolio6.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1247,15 +1247,15 @@ header {
 }
 
 .section__blog .blog .blog__publication .publication__img1 {
-  background-image: url(../img/blog1.jpg);
+  background-image: url(../img/blog1.webp);
 }
 
 .section__blog .blog .blog__publication .publication__img2 {
-  background-image: url(../img/blog2.jpg);
+  background-image: url(../img/blog2.webp);
 }
 
 .section__blog .blog .blog__publication .publication__img3 {
-  background-image: url(../img/blog3.jpg);
+  background-image: url(../img/blog3.webp);
 }
 
 .section__blog .blog .blog__publication .publication__img {

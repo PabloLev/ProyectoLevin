@@ -421,7 +421,7 @@ header {
 
 .section__error404::before {
   content: '';
-  background-image: url(../img/17.jpg);
+  background-image: url(../img/17.webp);
   position: absolute;
   height: 100%;
   width: 100%;

@@ -59,18 +59,18 @@
 			$blogNum: 3;
 			@for $i from 1 through $blogNum {
 				.publication__img#{$i}{
-					background-image: url(../img/blog#{$i}.jpg);
+					background-image: url(../img/blog#{$i}.webp);
 				}
 			}
 
 			// .publication__img1{
-			// 	background-image: url(../img/blog1.jpg);
+			// 	background-image: url(../img/blog1.webp);
 			// }
 			// .publication__img2{
-			// 	background-image: url(../img/blog2.jpg);
+			// 	background-image: url(../img/blog2.webp);
 			// }
 			// .publication__img3{
-			// 	background-image: url(../img/blog3.jpg);
+			// 	background-image: url(../img/blog3.webp);
 			// }
 			.publication__img{
 				position: relative;

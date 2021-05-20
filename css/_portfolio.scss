@@ -54,7 +54,7 @@
 		$workNum: 6;
 		@for $i from 1 through $workNum {
 			.work#{$i}{
-				background-image: url(../img/portfolio#{$i}.jpg);
+				background-image: url(../img/portfolio#{$i}.webp);
 				background-size: cover;
 				background-position: center;
 				background-repeat: no-repeat;
