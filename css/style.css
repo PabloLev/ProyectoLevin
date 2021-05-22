@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
 .loader {
   position: fixed;
-  z-index: 99;
+  z-index: 99999;
   top: 0;
   left: 0;
   width: 100%;
