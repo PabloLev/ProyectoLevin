@@ -24,15 +24,35 @@
     <!-- LOAD -->
     <link rel="icon" type="image/png" href="img/favicon.png"/>
     <!-- <link rel="shortcut icon" type="image/png" href="/img/favicon.png"/> -->
-    <script>
+    <!-- <script>
         const terminationEvent = 'onpagehide' in self ? 'pagehide' : 'unload';
         addEventListener(terminationEvent, (event) => {
         // Note: if the browser is able to cache the page, `event.persisted`
         // is `true`, and the state is frozen rather than terminated.
         }, {capture: true});
+    </script> -->
+    <!-- <script>
+        function ready(fn) {
+            if (document.readyState != 'loading'){
+                fn();
+                console.log("Hello world!");
+            } else {
+                document.addEventListener('DOMContentLoaded', fn);
+                
+            }
+        }
+    </script> -->
+    <script>
+        window.addEventListener("load", function () {
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden"; // class "loader hidden"
+        });
     </script>
 </head>
 <body>
+    <div class="loader">
+        <img src="img/Logo.png" alt="Loading..." />
+    </div>
     <!-- HERO hero de la página, a modo de slider-->
     <section id="hero" class="section__hero bg-color">
         <article class="hero__slide">
