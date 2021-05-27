@@ -15,9 +15,39 @@ body{
 	background-color: #ffffff;
 	width: 100%;
 	line-height: 1.5;
+	min-width: 325px;
 	
 }
 /*---GENERAL---*/
+/*---LOADER---*/
+.loader {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .loader__img {
+        width: 10rem;
+        height: 10rem;
+    }
+}
+.hidden {
+    animation: fadeOut 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+/*---END LOADER---*/
 p{
 	font-size: 1.6rem;
 	margin-top: 0;
@@ -51,7 +81,7 @@ a:hover {
 	min-width: 4rem;
 	height: 4rem;
 	text-decoration: none;
-	font-size: 2rem;
+	font-size: calc(0.3rem + 0.3vw);
 	color: black;
 	background-color: $color2;
 	&:hover{

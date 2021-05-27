@@ -49,21 +49,24 @@
 @media (min-width: 1200px) {
 	/* BOOTSTRAP
 	/* NAVBAR*/
-	.navbar{
-		padding: 1rem 15%;
-		.navbar-brand{			
-			span{
-				font-size: 2.5rem;
+	.header{
+		height: auto;
+		width: 70%;
+		li {
+			float: left;
+			a {
+				padding: 2rem 2rem
 			}
 		}
-		.navbar-collapse{
-			.navbar-nav {
-				padding-top: 0rem;
-				.nav-item{
-					font-size: 2rem;
-					padding: 0 0 0 2rem;
-				}
-			}
+		.menu {
+			clear: none;
+			float: right;
+			max-height: none;
+			position: relative;
+			margin-top: 0;
+		}
+		.menu-icon {
+			display: none;
 		}
 	}
 	// .navbar a, .navbar-expand-md .navbar-nav .nav-link {
@@ -90,6 +93,9 @@
     button--transparent:hover {
         background-color: $color2;
     }
+	.arrow{
+		font-size: calc(0.6rem + 0.6vw);
+	}
 	/*---hero---*/
 	.section__hero{
 		&::before{
@@ -340,6 +346,11 @@
 				grid-row: span 1;
 			}
 		}
+		.work__btn{
+			i{
+				font-size: calc(0.3rem + 0.3vw);
+			}
+		}
 	}
 	/*---BLOG---*/
 	.section__blog{
@@ -349,6 +360,7 @@
 		}
 		.blog{
 			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: auto auto;
 			margin: 4rem auto;
 			grid-gap: 5%;
 			width: 70%;
@@ -398,7 +410,8 @@
 					}
 					.blog__btn{
 						
-						i{				
+						i{	
+							font-size: calc(0.3rem + 0.3vw);			
 						}
 					}
 				}
@@ -429,7 +442,13 @@
 				
 			}
 			
-		
+			.blog__button{
+				grid-column: 2 / span 1;
+				background-color: transparent;
+				&:hover{
+					background-color: $color2;
+				}
+			}
 		}
 	}
 	/*---CONTACT---*/

@@ -44,6 +44,9 @@
 			.work__btn{
 				opacity: 0;
 				transform: scale(0) rotate(-180deg);
+				i{
+					font-size: calc (0.3rem + 0.3 vw);
+				}
 			}
 			&:hover .work__btn{
 				opacity: 1;
