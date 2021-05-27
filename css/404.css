@@ -111,7 +111,6 @@ a:hover {
   min-width: 4rem;
   height: 4rem;
   text-decoration: none;
-  font-size: calc(0.3rem + 0.3vw);
   color: black;
   background-color: #c6f327;
 }
@@ -119,6 +118,10 @@ a:hover {
 .arrow:hover {
   color: white;
   background-color: black;
+}
+
+.arrow i {
+  font-size: calc(1rem + 1vw);
 }
 
 button {
@@ -768,7 +771,7 @@ header {
   button--transparent:hover {
     background-color: #c6f327;
   }
-  .arrow {
+  .arrow i {
     font-size: calc(0.6rem + 0.6vw);
   }
   /*---hero---*/

@@ -81,12 +81,15 @@ a:hover {
 	min-width: 4rem;
 	height: 4rem;
 	text-decoration: none;
-	font-size: calc(0.3rem + 0.3vw);
+	
 	color: black;
 	background-color: $color2;
 	&:hover{
 		color: white;
 		background-color: black;
+	}
+	i{
+		font-size: calc(1rem + 1vw);
 	}
 }
 button{

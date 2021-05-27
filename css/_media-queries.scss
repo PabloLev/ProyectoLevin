@@ -94,7 +94,10 @@
         background-color: $color2;
     }
 	.arrow{
-		font-size: calc(0.6rem + 0.6vw);
+		
+		i{
+			font-size: calc(0.6rem + 0.6vw);
+		}
 	}
 	/*---hero---*/
 	.section__hero{
@@ -494,7 +497,6 @@
 			width: 50%;
 			.social{
 				.social__icon{
-					
     				text-align: right;
 					font-size: 2.5rem;
 					margin: 0 0 0 3rem;
