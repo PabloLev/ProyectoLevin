@@ -1001,6 +1001,14 @@ header {
   margin: 0 0 0 1.5rem;
 }
 
+.section__about .content .about .about__team .team__member .member_info .info__social .social__icon:hover {
+  background-color: black;
+}
+
+.section__about .content .about .about__team .team__member .member_info .info__social .social__icon:hover i {
+  color: white;
+}
+
 .section__about .content .about .about__team .team__member .member_info .info__social .social__icon i {
   font-family: "Font Awesome 5 Brands";
   font-size: 1.6rem;

@@ -150,10 +150,17 @@
                                 min-width: 3rem;
                                 min-height: 3rem;
                                 margin: 0 0 0 1.5rem;
+                                &:hover{
+                                    background-color: black;
+                                    i{
+                                        color: white;
+                                    }
+                                }
                                 i{
                                     font-family: "Font Awesome 5 Brands";
                                     font-size: 1.6rem;
                                     color: black;
+                                    
                                 }
                                 
                             }
