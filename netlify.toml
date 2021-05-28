@@ -7,21 +7,25 @@
   [headers.values]
     Cache-Control = "public, max-age=604800"
 [[headers]]
-  for = "*.jpg"
+  for = "*.min.css" # css files too
   [headers.values]
     Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=2419200"
 [[headers]]
   for = "*.png"
   [headers.values]
-    Cache-Control = "public, max-age=604800"
+    Cache-Control = "public, max-age=2419200"
 [[headers]]
   for = "*.jpeg"
   [headers.values]
-    Cache-Control = "public, max-age=604800"
+    Cache-Control = "public, max-age=2419200"
 [[headers]]
   for = "*.webp"
   [headers.values]
-    Cache-Control = "public, max-age=604800"
+    Cache-Control = "public, max-age=2419200"
 [[headers]]
   for = "*.html"
   [headers.values]
