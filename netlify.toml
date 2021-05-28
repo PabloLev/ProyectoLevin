@@ -19,6 +19,10 @@
   [headers.values]
     Cache-Control = "public, max-age=604800"
 [[headers]]
+  for = "*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+[[headers]]
   for = "*.html"
   [headers.values]
     Cache-Control = "public, max-age=604800"
