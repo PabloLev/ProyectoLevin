@@ -1,37 +1,41 @@
 // FONTS
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
 
-// @font-face{
-//     font-family: "Lato";
-//     src: url('../fonts/lato/lato-regular-webfont.woff') format('woff'), 
-//     url('../fonts/lato/lato-regular-webfont.woff2') format('woff2'); 
-//     font-weight: 400;
-//     font-style:normal;
-// }
-// @font-face{
-//     font-family: "Lato";
-//     src: url('../fonts/lato/lato-bold-webfont.woff') format('woff'), 
-//     url('../fonts/lato/lato-bold-webfont.woff2') format('woff2'); 
-//     font-weight: 700;
-//     font-style:normal;
-// }
-// @font-face{
-//     font-family: "Lato";
-//     src: url('../fonts/lato/lato-black-webfont.woff') format('woff'), 
-//     url('../fonts/lato/lato-black-webfont.woff2') format('woff2'); 
-//     font-weight: 900;
-//     font-style:normal;
-// }
-// @font-face{
-//     font-family: "Playfair Display";
-//     src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.woff') format('woff'), 
-//     url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.woff') format('woff2'),
-//     url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf') format('ttf');
-//     font-weight: bold;
-//     font-style:normal;
-// }
+@font-face{
+    font-family: "Lato";
+    src: url('../fonts/lato/lato-regular-webfont.woff') format('woff'), 
+    url('../fonts/lato/lato-regular-webfont.woff2') format('woff2'); 
+    font-weight: 400;
+    font-style:normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: "Lato";
+    src: url('../fonts/lato/lato-bold-webfont.woff') format('woff'), 
+    url('../fonts/lato/lato-bold-webfont.woff2') format('woff2'); 
+    font-weight: 700;
+    font-style:normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: "Lato";
+    src: url('../fonts/lato/lato-black-webfont.woff') format('woff'), 
+    url('../fonts/lato/lato-black-webfont.woff2') format('woff2'); 
+    font-weight: 900;
+    font-style:normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: "Playfair Display";
+    src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.woff') format('woff'), 
+    url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.woff') format('woff2'),
+    url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style:normal;
+    font-display: swap;
+}
 
 
 /*-------------------------------------------------------------------*/
