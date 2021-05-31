@@ -40,8 +40,21 @@ $(document).ready(function(){
         $("#sliderSubtitle").text(eval('$subtitle'+i));
         $("#sliderText").text(eval('$text'+i));
         $('#sliderImg').css("background-image", eval('$img'+i));  
+        if (i == 1) {
+            $( "#slash1" ).addClass( "current" );
+            $( "#slash3" ).removeClass( "current" );
+        }
+        if (i == 2) {
+            $( "#slash2" ).addClass( "current" );
+            $( "#slash1" ).removeClass( "current" );
+        }
+        if (i == 3) {
+            $( "#slash3" ).addClass( "current" );
+            $( "#slash2" ).removeClass( "current" );
+        }
         if (i >= 3) {
             i=0;
         }
+        
     });
 });
