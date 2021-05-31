@@ -267,6 +267,13 @@ button:visited {
   background-color: #c38fff;
 }
 
+.plus-icon:hover {
+  color: white;
+  -webkit-transform: scale(1.25) rotateZ(180deg);
+          transform: scale(1.25) rotateZ(180deg);
+  border-radius: 50%;
+}
+
 .container__title {
   display: -webkit-box;
   display: -ms-flexbox;

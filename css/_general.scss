@@ -176,7 +176,13 @@ button{
 	text-transform: uppercase;
 	color: black;
 	background-color: $color2;
+	&:hover{
+		color: white;
+		transform: scale(1.25) rotateZ(180deg);
+		border-radius: 50%;
+	}
 }
+
 // .byw{
 // 	filter: grayscale(100%);
 // 	&:hover{

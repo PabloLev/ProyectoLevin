@@ -297,6 +297,13 @@ button:visited {
   background-color: #c38fff;
 }
 
+.plus-icon:hover {
+  color: white;
+  -webkit-transform: scale(1.25) rotateZ(180deg);
+          transform: scale(1.25) rotateZ(180deg);
+  border-radius: 50%;
+}
+
 .container__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -793,7 +800,6 @@ header {
   width: 1.5em;
   height: 0.3em;
   background-color: rgba(255, 255, 255, 0.4);
-  cursor: pointer;
   margin: 0 0.3rem;
 }
 
@@ -1168,6 +1174,13 @@ header {
   opacity: 0;
   -webkit-transform: scale(0) rotate(-180deg);
           transform: scale(0) rotate(-180deg);
+}
+
+.section__portfolio .portfolio .portfolio__work .work__btn:hover {
+  color: white;
+  -webkit-transform: scale(1.25) rotateZ(180deg) !important;
+          transform: scale(1.25) rotateZ(180deg) !important;
+  border-radius: 50%;
 }
 
 .section__portfolio .portfolio .portfolio__work .work__btn i {
@@ -2140,6 +2153,12 @@ header {
   background-color: #000000;
 }
 
+.loader {
+  background-color: #121212;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
 .container__title .title__text {
   color: white;
 }
@@ -2189,7 +2208,7 @@ header {
 }
 
 .section__contact .suscribe__email .email__box__input {
-  background-color: #292929;
+  background-color: #3b3b3b;
 }
 
 .section__hero .hero__slide .slide__info .info__content .content__text .text {
@@ -2214,5 +2233,33 @@ header {
 
 .section__blog .blog .blog__publication .publication__info .publication__info__title {
   background-color: #c38fff;
+}
+
+.section__portfolioin .portfolio_article .article__info .article__content1 {
+  background-color: #121212;
+}
+
+.section__portfolioin .portfolio_article .article__info .article__content1 .content__subtitle {
+  color: white;
+}
+
+.section__portfolioin .portfolio_article .article__info .article__content1 .content__text {
+  color: #969696;
+}
+
+.section__blogin .blogin_article .article__info .article__content1 {
+  background-color: #121212;
+}
+
+.section__blogin .blogin_article .article__info .article__content1 .content__subtitle {
+  color: white;
+}
+
+.section__blogin .blogin_article .article__info .article__content1 .content__text {
+  color: #969696;
+}
+
+.section__blogin .blogin_article .article__info .article__content2 .content__text {
+  color: #969696;
 }
 /*# sourceMappingURL=style.css.map */
