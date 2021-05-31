@@ -20,6 +20,9 @@
 	// 	filter: grayscale(100%);
 	// 	z-index: 1;
 	// }
+	&:hover .hero__backImg{
+		filter: grayscale(0%);
+	}
 	&::after{
 		content: '';
 		position: absolute;
@@ -28,11 +31,8 @@
 		left: 20%;
 		top: 0;
 		transition: all 0.4s ease-out;
-		background-color: $black010;
+		background-color: $black025;
 		z-index: 1;
-		&:hover > .hero__backImg{
-			filter: grayscale(0%);
-		}
 	}
 	// &:hover::before{
 	// 	transition: all 0.4s ease-out;
@@ -61,7 +61,7 @@
 		width: 100%;
 		.slide__text--vertical{
 			writing-mode: vertical-lr;
-			margin: 40% 1.5% 0 0;
+			margin: 60% 1.5% 0 0;
 			color: white;
 			text-transform: uppercase;
 			font-size: calc(#{$XSfontSize3} / 1.5);

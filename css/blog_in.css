@@ -308,7 +308,7 @@ button:visited {
 
 /*---Colour---*/
 .bg-color {
-  background-color: #1e1e1e;
+  background-color: #252525;
 }
 
 .background-color-left, .background-color-right {
@@ -322,7 +322,7 @@ button:visited {
   left: 0;
   width: 50%;
   height: 100%;
-  background-color: #1e1e1e;
+  background-color: #252525;
   z-index: -1;
 }
 
@@ -475,6 +475,7 @@ header {
   padding: 0;
   list-style: none;
   overflow: hidden;
+  background-color: #fff;
 }
 
 .header li a {
@@ -509,7 +510,7 @@ header {
   left: 0;
   width: 50%;
   height: 100%;
-  background-color: #1e1e1e;
+  background-color: #252525;
   z-index: -1;
 }
 
@@ -596,7 +597,7 @@ header {
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
   z-index: 1;
-  background-color: #1e1e1e;
+  background-color: #252525;
 }
 
 .section__blogin .blogin_article .article__info .article__img3b {
@@ -606,7 +607,7 @@ header {
 .section__blogin .blogin_article .article__info .article__content2 {
   grid-column: span 1;
   grid-row: span 1;
-  background-color: #1e1e1e;
+  background-color: #252525;
   padding: 4rem 2rem 2rem 0;
   -webkit-transform: translateY(-4rem);
           transform: translateY(-4rem);
@@ -637,7 +638,7 @@ header {
 
 .section__contact {
   position: relative;
-  background-color: #1e1e1e;
+  background-color: #252525;
 }
 
 .section__contact .suscribe__title {
@@ -716,7 +717,7 @@ header {
   }
   .section__contact {
     position: relative;
-    background-color: #1e1e1e;
+    background-color: #252525;
   }
   .section__contact .suscribe__title {
     color: white;
@@ -827,7 +828,7 @@ header {
 }
 
 .section__contact .suscribe__email .email__box__button i:hover {
-  background-color: #1e1e1e;
+  background-color: #252525;
   color: white;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -867,7 +868,7 @@ header {
 }
 
 .footer .footer__copyright a:hover {
-  color: #1e1e1e;
+  color: #252525;
 }
 
 .footer .footer__social {
@@ -1090,7 +1091,7 @@ header {
     line-height: 100%;
     font-weight: 900;
     letter-spacing: 0.3rem;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.25);
     text-decoration: none;
     text-transform: uppercase;
     -webkit-writing-mode: vertical-lr;
@@ -1105,7 +1106,7 @@ header {
     text-decoration: none;
   }
   .section__hero .text-bg:hover ~ .line {
-    background-color: #1e1e1e;
+    background-color: #252525;
   }
   .section__hero .line {
     position: absolute;
@@ -1113,7 +1114,7 @@ header {
     width: 4%;
     z-index: 5;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.25);
   }
   /*---ABOUT---*/
   .section__about::before {

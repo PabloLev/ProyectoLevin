@@ -338,7 +338,7 @@ button:visited {
 
 /*---Colour---*/
 .bg-color {
-  background-color: #1e1e1e;
+  background-color: #252525;
 }
 
 .background-color-left, .background-color-right {
@@ -352,7 +352,7 @@ button:visited {
   left: 0;
   width: 50%;
   height: 100%;
-  background-color: #1e1e1e;
+  background-color: #252525;
   z-index: -1;
 }
 
@@ -505,6 +505,7 @@ header {
   padding: 0;
   list-style: none;
   overflow: hidden;
+  background-color: #fff;
 }
 
 .header li a {
@@ -545,6 +546,11 @@ header {
   min-height: 100vh;
 }
 
+.section__hero:hover .hero__backImg {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
 .section__hero::after {
   content: '';
   position: absolute;
@@ -554,13 +560,8 @@ header {
   top: 0;
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.25);
   z-index: 1;
-}
-
-.section__hero::after:hover > .hero__backImg {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
 }
 
 .section__hero .hero__backImg {
@@ -573,8 +574,8 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-box-shadow: -10px 0px 40px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: -10px 0px 40px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -10px 0px 40px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: -10px 0px 40px 0px rgba(0, 0, 0, 0.25);
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
   -webkit-filter: grayscale(100%);
@@ -597,7 +598,7 @@ header {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
-  margin: 40% 1.5% 0 0;
+  margin: 60% 1.5% 0 0;
   color: white;
   text-transform: uppercase;
   font-size: calc(calc(1rem + 1vw) / 1.5);
@@ -817,7 +818,7 @@ header {
 /*---SERVICES---*/
 .services-container span i {
   font-size: 5rem;
-  background-color: #1e1e1e;
+  background-color: #252525;
   padding: 4rem;
   border-radius: 50%;
 }
@@ -839,12 +840,12 @@ header {
   left: 0;
   width: 0;
   height: 100%;
-  background-color: #1e1e1e;
+  background-color: #252525;
   z-index: -1;
 }
 
 .section__about .container__title {
-  background-color: #1e1e1e;
+  background-color: #252525;
 }
 
 .section__about .content {
@@ -901,7 +902,7 @@ header {
   color: white;
   margin-bottom: 0;
   padding: 5% 5% 20% 5%;
-  background-color: #1e1e1e;
+  background-color: #252525;
 }
 
 .section__about .content .about .about__intro .button {
@@ -1307,7 +1308,7 @@ header {
   position: absolute;
   width: 50%;
   height: 100%;
-  background-color: #1e1e1e;
+  background-color: #252525;
   z-index: -1;
 }
 
@@ -1464,7 +1465,7 @@ header {
   position: relative;
   padding: 1rem 2rem;
   margin: 0;
-  background-color: #1e1e1e;
+  background-color: #252525;
   width: 100%;
 }
 
@@ -1606,7 +1607,7 @@ header {
 }
 
 .section__contact .suscribe__email .email__box__button i:hover {
-  background-color: #1e1e1e;
+  background-color: #252525;
   color: white;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -1646,7 +1647,7 @@ header {
 }
 
 .footer .footer__copyright a:hover {
-  color: #1e1e1e;
+  color: #252525;
 }
 
 .footer .footer__social {
@@ -1869,7 +1870,7 @@ header {
     line-height: 100%;
     font-weight: 900;
     letter-spacing: 0.3rem;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.25);
     text-decoration: none;
     text-transform: uppercase;
     -webkit-writing-mode: vertical-lr;
@@ -1884,7 +1885,7 @@ header {
     text-decoration: none;
   }
   .section__hero .text-bg:hover ~ .line {
-    background-color: #1e1e1e;
+    background-color: #252525;
   }
   .section__hero .line {
     position: absolute;
@@ -1892,7 +1893,7 @@ header {
     width: 4%;
     z-index: 5;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.25);
   }
   /*---ABOUT---*/
   .section__about::before {
@@ -2205,5 +2206,9 @@ header {
 
 .header li a:hover, .header .menu-btn:hover {
   background-color: #292929;
+}
+
+.header ul {
+  background-color: black;
 }
 /*# sourceMappingURL=style.css.map */
