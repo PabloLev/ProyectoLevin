@@ -7,10 +7,12 @@
     <title>Precious - The art in photography</title>
     <meta name="description" content="We are dedicated to professional photography, for advertising, film and television. Art is our differential seal.">
     <meta name="keywords"  content="photograph, headshot, portrail, advertising, film, television, fashion, flash, studio">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!-- SCRIPTS -->
     <script src="js/loader.js"></script>
     <!-- WEB STYLE -->
-    <link rel="stylesheet" href="css/style.min.css"> 
+    <link rel="stylesheet" href="css/style.css"> 
     <!-- FONTAWSOME -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <!-- LOAD -->
@@ -22,35 +24,36 @@
     </div>
     <!-- HERO hero de la página, a modo de slider-->
     <section id="hero" class="section__hero bg-color">
+        <div id="sliderImg" class="hero__backImg transition"></div>
         <article class="hero__slide">
-            <span class="slide__text--vertical">Laura Pérez</span>
-            <span class="slide__text--vertical number">1/3</span>
+            <span id="sliderPhotographer" class="slide__text--vertical">Laura Pérez</span>
+            <span id="sliderNum" class="slide__text--vertical number">1/3</span>
             <div class="slide__info">
                 <div class="info__header">
                     <div class="header__title">
-                        <h1 class="title__text"> November is magic</h1> <!-- w3.org Me marca un warning pero yo quiero que sea un h1, me gustaría resolverlo -->
-                        <span class="title__text--shadow">November</span>
+                        <h1 id="sliderTitle" class="title__text"> November is magic</h1> <!-- w3.org Me marca un warning pero yo quiero que sea un h1, me gustaría resolverlo -->
+                        <span id="sliderTitleShadow" class="title__text--shadow">November</span>
                     </div>
-                    <h2 class="header__subtitle">Perfect solution</h2>
+                    <h2 id="sliderSubtitle" class="header__subtitle">Perfect solution</h2>
                 </div>
                 <div class="info__content">
-                    <div class="content__tags">
+                    <!-- <div class="content__tags">
                         <span class="tag">Details</span>
                         <span class="tag">Type</span>
                         <span class="tag">Shipping</span>
-                    </div>               
+                    </div>                -->
                     <div class="content__text">
-                        <p class="text bg-color">
+                        <p id="sliderText" class="text bg-color">
                             Holly Golightly is a flighty Manhattan party girl, who expects "money for the powder room as well as for cab fare" for her companionship. She has even gotten a lucrative once weekly job to visit notorious convict Sally Tomato in Sing Sing, she needing to report back to Sally's.
                         </p>
-                        <button class="arrow transition" aria-label="next slide"><i class="fas fa-angle-right"></i></button> <!-- flecha cambio slider -->
+                        <button id="heroBtn" class="arrow transition" aria-label="next slide"><i class="fas fa-angle-right"></i></button> <!-- flecha cambio slider -->
                     </div>
                     <div class="content__nav">
                         <div class="nav__slash current"></div>
                         <div class="nav__slash"></div>
                         <div class="nav__slash"></div>
                     </div>
-                    <a href="index.html" class="button transition">Go november</a>
+                    <a href="index.html" class="button transition">Read more</a>
                 </div>
             </div>
         </article>

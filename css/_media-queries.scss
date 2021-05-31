@@ -90,7 +90,7 @@
 		border: 0.6rem solid $color2;
 		font-size: $XLfontSize3;
 	}
-    button--transparent:hover {
+    .button--transparent:hover {
         background-color: $color2;
     }
 	.arrow{
@@ -101,11 +101,15 @@
 	}
 	/*---hero---*/
 	.section__hero{
-		&::before{
+		// &::before{
+		// 	width: 50%;
+		// 	left: 0;
+		// }
+		&::after{
 			width: 50%;
 			left: 0;
 		}
-		&::after{
+		.hero__backImg{
 			width: 50%;
 			left: 0;
 		}
@@ -126,6 +130,7 @@
 				width: 70%;
 				align-content: center;
 				.info__header{
+					width: 100%;
 					.header__title{
 						.title__text{
 							font-size: calc(#{$XLfontSize1} * 1.7);
@@ -174,8 +179,8 @@
 					.button{
 						margin: 7.5% 0 0 0;
 						background-color: transparent;
-						width: 25rem;
-						height: 6rem;
+						// width: 25rem;
+						// height: 6rem;
 						transform: translateX(0);
 					}
 				}
@@ -432,6 +437,7 @@
 						width: 90%;
 						.publication__info__text{
 							font-size: calc(#{$XLfontSize3} * 0.9);
+							// font-size: $XLfontSize3;
 							text-align: left;
 	
 						}
