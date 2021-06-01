@@ -1475,6 +1475,7 @@ header {
 
 .section__hero .hero__slide .slide__info .info__content .content__text .text {
   color: #969696;
+  background-color: #121212;
 }
 
 .section__portfolio .portfolio .work__load-more .load-more__btn .load-more__btn__text {
