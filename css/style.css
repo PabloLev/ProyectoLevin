@@ -1166,14 +1166,17 @@ header {
 
 .section__portfolio .portfolio .portfolio__work:hover .work__title {
   opacity: 1;
-  -webkit-transform: translateX(0) scale(1.25) rotateZ(180deg);
-          transform: translateX(0) scale(1.25) rotateZ(180deg);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .section__portfolio .portfolio .portfolio__work .work__btn {
   opacity: 0;
-  -webkit-transform: scale(0) rotate(-180deg);
-          transform: scale(0) rotate(-180deg);
+}
+
+.section__portfolio .portfolio .portfolio__work .work__btn:hover {
+  -webkit-transform: translateX(0) scale(1.25) rotateZ(180deg);
+          transform: translateX(0) scale(1.25) rotateZ(180deg);
 }
 
 .section__portfolio .portfolio .portfolio__work .work__btn i {
@@ -1182,8 +1185,6 @@ header {
 
 .section__portfolio .portfolio .portfolio__work:hover .work__btn {
   opacity: 1;
-  -webkit-transform: scale(1) rotate(0);
-          transform: scale(1) rotate(0);
 }
 
 .section__portfolio .portfolio .work1 {

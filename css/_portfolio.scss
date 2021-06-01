@@ -39,18 +39,21 @@
 			}
 			&:hover .work__title{
 				opacity: 1;
-				transform: translateX(0) scale(1.25) rotateZ(180deg);
+				transform: translateX(0);
 			}
 			.work__btn{
 				opacity: 0;
-				transform: scale(0) rotate(-180deg);
+				// transform: scale(0) rotate(-180deg);
+				&:hover{
+					transform: translateX(0) scale(1.25) rotateZ(180deg);
+				}
 				i{
 					font-size: calc (0.3rem + 0.3 vw);
 				}
 			}
 			&:hover .work__btn{
 				opacity: 1;
-				transform: scale(1) rotate(0);
+				// transform: scale(1) rotate(0);
 			}
 		}
 		//.work$ genera las clases .work1, .work2, ....., work6
