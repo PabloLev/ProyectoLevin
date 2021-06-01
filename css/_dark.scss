@@ -4,6 +4,18 @@ body{
 header{
     background-color: #000000;
 }
+.header .logo{
+    color: #969696;
+}
+.header .menu-icon .navicon{
+    background-color: #969696;
+}
+.header .menu-icon .navicon:before{
+    background-color: #969696;
+}
+.header .menu-icon .navicon:after{
+    background-color: #969696;
+}
 .loader {
     background-color: #121212;
     filter: grayscale(100%);

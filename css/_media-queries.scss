@@ -52,10 +52,14 @@
 	.header{
 		height: auto;
 		width: 70%;
+		.logo{
+			font-size: $XLfontSize3;
+		}
 		li {
 			float: left;
 			a {
-				padding: 2rem 2rem
+				padding: 2rem 2rem;
+				font-size: $XLfontSize3;
 			}
 		}
 		.menu {

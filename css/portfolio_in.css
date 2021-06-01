@@ -393,7 +393,7 @@ header {
   padding: 10px 20px;
   letter-spacing: 0.8rem;
   text-decoration: none;
-  font-size: calc(0.6rem + 0.6vw);
+  font-size: calc(1rem + 1vw);
   font-weight: 700;
   text-transform: uppercase;
   color: #777777;
@@ -491,7 +491,7 @@ header {
   text-decoration: none;
   color: #777777;
   text-transform: uppercase;
-  font-size: calc(0.6rem + 0.6vw);
+  font-size: calc(1rem + 1vw);
   font-weight: 400;
 }
 
@@ -985,11 +985,15 @@ header {
     height: auto;
     width: 70%;
   }
+  .header .logo {
+    font-size: calc(0.6rem + 0.6vw);
+  }
   .header li {
     float: left;
   }
   .header li a {
     padding: 2rem 2rem;
+    font-size: calc(0.6rem + 0.6vw);
   }
   .header .menu {
     clear: none;
@@ -1393,6 +1397,22 @@ body {
 
 header {
   background-color: #000000;
+}
+
+.header .logo {
+  color: #969696;
+}
+
+.header .menu-icon .navicon {
+  background-color: #969696;
+}
+
+.header .menu-icon .navicon:before {
+  background-color: #969696;
+}
+
+.header .menu-icon .navicon:after {
+  background-color: #969696;
 }
 
 .loader {
