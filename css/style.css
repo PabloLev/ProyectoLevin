@@ -1025,11 +1025,11 @@ header {
 }
 
 .section__about .content .about .about__team .team__member .member1 {
-  background-image: url(../img/17.webp);
+  background-image: url(../img/index/29index.webp);
 }
 
 .section__about .content .about .about__team .team__member .member2 {
-  background-image: url(../img/2.webp);
+  background-image: url(../img/index/28index.webp);
 }
 
 .section__about .content .about .about__team .team__member .member_info {
@@ -1189,7 +1189,7 @@ header {
 }
 
 .section__portfolio .portfolio .work1 {
-  background-image: url(../img/portfolio1.webp);
+  background-image: url(../img/index/portfolio1index.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1198,7 +1198,7 @@ header {
 }
 
 .section__portfolio .portfolio .work2 {
-  background-image: url(../img/portfolio2.webp);
+  background-image: url(../img/index/portfolio2index.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1207,7 +1207,7 @@ header {
 }
 
 .section__portfolio .portfolio .work3 {
-  background-image: url(../img/portfolio3.webp);
+  background-image: url(../img/index/portfolio3index.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1216,7 +1216,7 @@ header {
 }
 
 .section__portfolio .portfolio .work4 {
-  background-image: url(../img/portfolio4.webp);
+  background-image: url(../img/index/portfolio4index.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1225,7 +1225,7 @@ header {
 }
 
 .section__portfolio .portfolio .work5 {
-  background-image: url(../img/portfolio5.webp);
+  background-image: url(../img/index/portfolio5index.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1234,7 +1234,7 @@ header {
 }
 
 .section__portfolio .portfolio .work6 {
-  background-image: url(../img/portfolio6.webp);
+  background-image: url(../img/index/portfolio6index.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1389,15 +1389,15 @@ header {
 }
 
 .section__blog .blog .blog__publication .publication__img1 {
-  background-image: url(../img/blog1.webp);
+  background-image: url(../img/index/blog1index.webp);
 }
 
 .section__blog .blog .blog__publication .publication__img2 {
-  background-image: url(../img/blog2.webp);
+  background-image: url(../img/index/blog2index.webp);
 }
 
 .section__blog .blog .blog__publication .publication__img3 {
-  background-image: url(../img/blog3.webp);
+  background-image: url(../img/index/blog3index.webp);
 }
 
 .section__blog .blog .blog__publication .publication__img {

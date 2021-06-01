@@ -59,7 +59,7 @@
 			$blogNum: 3;
 			@for $i from 1 through $blogNum {
 				.publication__img#{$i}{
-					background-image: url(../img/blog#{$i}.webp);
+					background-image: url(../img/index/blog#{$i}index.webp);
 				}
 			}
 
