@@ -599,6 +599,7 @@ header {
           justify-content: center;
   height: auto;
   width: 100%;
+  min-height: 66rem;
 }
 
 .section__hero .hero__slide .slide__text--vertical {
