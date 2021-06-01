@@ -1,0 +1,3 @@
+User-Agent: *
+Disallow:
+Sitemap: https://preciouslevin.netlify.app/sitemap.xml
