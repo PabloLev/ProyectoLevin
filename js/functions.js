@@ -2,6 +2,7 @@ window.addEventListener("load", function () {
     const loader = document.querySelector(".loader");
     loader.className += " hidden"; // class "loader hidden"
 });
+//VALUE 1
 var $num1 = "1/3";
 var $photographer1 = "Laura Pérez";
 var $title1 = "November is magic"
@@ -29,32 +30,107 @@ var $text3="Bringing unlocked me an striking ye perceive. Mr by wound hours oh h
 var $img3 = "url(img/2.webp)"
 
 var i=1;
-$(document).ready(function(){
-    $("#heroBtn").click(function(){
+//VANILLA JAVASCRIPT
+document.addEventListener('DOMContentLoaded', function () {
+    var heroBtn = document.querySelector('#heroBtn');
+    heroBtn.addEventListener('click', function() {
         i++;
-        // alert("i= "+ i);
-        $("#sliderNum").text(eval('$num'+i));
-        $("#sliderPhotographer").text(eval('$photographer'+i));
-        $("#sliderTitle").text(eval('$title'+i));
-        $("#sliderTitleShadow").text(eval('$titleShadow'+i));
-        $("#sliderSubtitle").text(eval('$subtitle'+i));
-        $("#sliderText").text(eval('$text'+i));
-        $('#sliderImg').css("background-image", eval('$img'+i));  
+        
+        var sliderNum = document.querySelector('#sliderNum');
+        sliderNum.textContent = eval('$num'+i);
+        var sliderPhotographer = document.querySelector('#sliderPhotographer');
+        sliderPhotographer.textContent = eval('$photographer'+i);
+        var sliderTitle = document.querySelector('#sliderTitle');
+        sliderTitle.textContent = eval('$title'+i);
+        var sliderTitleShadow = document.querySelector('#sliderTitleShadow');
+        sliderTitleShadow.textContent = eval('$titleShadow'+i);
+        var sliderSubtitle = document.querySelector('#sliderSubtitle');
+        sliderSubtitle.textContent = eval('$subtitle'+i);
+        var sliderText = document.querySelector('#sliderText');
+        sliderText.textContent = eval('$text'+i);
+        var sliderImg = document.querySelector('#sliderImg');
+        sliderImg.style.backgroundImage = eval('$img'+i);
+
         if (i == 1) {
-            $( "#slash1" ).addClass( "current");
-            $( "#slash3" ).removeClass( "current");
+            document.getElementById('slash1').className += ' current';
+            document.getElementById('slash3').classList.remove("current");
         }
         if (i == 2) {
-            $( "#slash2" ).addClass( "current");
-            $( "#slash1" ).removeClass( "current");
+            document.getElementById('slash2').className += ' current';
+            document.getElementById('slash1').classList.remove("current");
+
         }
         if (i == 3) {
-            $( "#slash3" ).addClass( "current");
-            $( "#slash2" ).removeClass( "current");
+            document.getElementById('slash3').className += ' current';
+            document.getElementById('slash2').classList.remove("current");
         }
         if (i >= 3) {
             i=0;
         }
-        
+
+    });
+    var slash1 = document.querySelector('#slash1');
+    slash1.addEventListener('click', function() {
+        i=1;
+        var sliderNum = document.querySelector('#sliderNum');
+        sliderNum.textContent = eval('$num'+i);
+        var sliderPhotographer = document.querySelector('#sliderPhotographer');
+        sliderPhotographer.textContent = eval('$photographer'+i);
+        var sliderTitle = document.querySelector('#sliderTitle');
+        sliderTitle.textContent = eval('$title'+i);
+        var sliderTitleShadow = document.querySelector('#sliderTitleShadow');
+        sliderTitleShadow.textContent = eval('$titleShadow'+i);
+        var sliderSubtitle = document.querySelector('#sliderSubtitle');
+        sliderSubtitle.textContent = eval('$subtitle'+i);
+        var sliderText = document.querySelector('#sliderText');
+        sliderText.textContent = eval('$text'+i);
+        var sliderImg = document.querySelector('#sliderImg');
+        sliderImg.style.backgroundImage = eval('$img'+i);
+        document.getElementById('slash1').className += ' current';
+        document.getElementById('slash2').classList.remove("current");
+        document.getElementById('slash3').classList.remove("current");
+    });
+    var slash2 = document.querySelector('#slash2');
+    slash2.addEventListener('click', function() {
+        i=2;
+        var sliderNum = document.querySelector('#sliderNum');
+        sliderNum.textContent = eval('$num'+i);
+        var sliderPhotographer = document.querySelector('#sliderPhotographer');
+        sliderPhotographer.textContent = eval('$photographer'+i);
+        var sliderTitle = document.querySelector('#sliderTitle');
+        sliderTitle.textContent = eval('$title'+i);
+        var sliderTitleShadow = document.querySelector('#sliderTitleShadow');
+        sliderTitleShadow.textContent = eval('$titleShadow'+i);
+        var sliderSubtitle = document.querySelector('#sliderSubtitle');
+        sliderSubtitle.textContent = eval('$subtitle'+i);
+        var sliderText = document.querySelector('#sliderText');
+        sliderText.textContent = eval('$text'+i);
+        var sliderImg = document.querySelector('#sliderImg');
+        sliderImg.style.backgroundImage = eval('$img'+i);
+        document.getElementById('slash2').className += ' current';
+        document.getElementById('slash1').classList.remove("current");
+        document.getElementById('slash3').classList.remove("current");
+    });
+    var slash3 = document.querySelector('#slash3');
+    slash3.addEventListener('click', function() {
+        i=3;
+        var sliderNum = document.querySelector('#sliderNum');
+        sliderNum.textContent = eval('$num'+i);
+        var sliderPhotographer = document.querySelector('#sliderPhotographer');
+        sliderPhotographer.textContent = eval('$photographer'+i);
+        var sliderTitle = document.querySelector('#sliderTitle');
+        sliderTitle.textContent = eval('$title'+i);
+        var sliderTitleShadow = document.querySelector('#sliderTitleShadow');
+        sliderTitleShadow.textContent = eval('$titleShadow'+i);
+        var sliderSubtitle = document.querySelector('#sliderSubtitle');
+        sliderSubtitle.textContent = eval('$subtitle'+i);
+        var sliderText = document.querySelector('#sliderText');
+        sliderText.textContent = eval('$text'+i);
+        var sliderImg = document.querySelector('#sliderImg');
+        sliderImg.style.backgroundImage = eval('$img'+i);
+        document.getElementById('slash3').className += ' current';
+        document.getElementById('slash1').classList.remove("current");
+        document.getElementById('slash2').classList.remove("current");
+        i=0;
     });
 });
