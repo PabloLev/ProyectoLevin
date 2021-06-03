@@ -8,24 +8,13 @@
     <meta name="description" content="Good lighting It is one of our promises. We are dedicated to professional photography.">
     <meta name="keywords"  content="photograph, headshot, portrail, advertising, film, television, fashion, flash, studio">
     
-    <!-- SCRIPTS -->
-    <script src="js/functions.js"></script>
-    <!-- jQUERY -->
-    <!-- <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script> -->
-    <!-- BOOTSTRAP 4.0 -->
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
-    <!------------>
-    <!-- STYLES -->
-    <!-- BOOTSTRAP -->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-    <!-- FONTAWSOME -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.min.css" rel="stylesheet">
     <!-- WEB STYLE -->
     <link rel="stylesheet" href="css/portfolio_in.css">
-    <!------------>
+    <!-- FONTAWSOME -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- SCRIPTS -->
+    <script src="js/loader.js"></script>
+    <!-- FAVICON -->
     <link rel="icon" type="image/png" href="img/favicon.png"/>
 </head>
 <body>
@@ -54,10 +43,6 @@
                 </div>
                 <div class="article__info">
                     <div class="article__img3a"></div>
-                    <!-- <div class="article__img">
-                        <img src="img/13.jpg" alt="image">
-                    </div> -->
-                    
                     <div class="article__content1">
                         <h2 class="content__subtitle">Day and night</h2>
                         <p class="content__text">
@@ -68,16 +53,15 @@
                         </p>
                             
                     </div>
-                    <!-- <div class="article__img">
-                        <img src="img/13.jpg" alt="image">
-                    </div> -->
-                    
                 </div>
                 
             </article>
-            <a href="index.html#portfolio" class="button portfolioin__back__btn transition">back to portfolio</a>
+            <div class="controls">
+                <a href="portfolio2.html" class="arrow transition" aria-label="next slide"><i class="fas fa-angle-left"></i></a>
+                <a href="index.html#portfolio" class="button back__btn transition">back</a>
+                <a href="portfolio4.html" class="arrow transition" aria-label="next slide"><i class="fas fa-angle-right"></i></a>
+            </div>
         </section>
-
         <section id="contact" class="section__contact">
             <h1 class="suscribe__title">Stay in touch</h1>
             <h2 class="suscribe__subtitle">A heart is not judged by how much you love; but by how much you are loved by others.</h2>
@@ -87,13 +71,13 @@
             </form> 
         </section>
     </main>
-    <footer class="footer">
-        <span class="footer__copyright">Precious is powered by <a class="transition" href="https://www.coderhouse.com" target="_blank">coderhouse </a>© 2021</span>  
+    <footer class="footer">      
+        <span class="footer__copyright">Precious is powered by <a class="transition" href="https://www.coderhouse.com" target="_blank" rel="noreferrer">coderhouse </a>© 2021</span>  
         <div class="footer__social">
-            <a class="social transition" href=""><i class="social__icon fas fa-linkedin-in transition"></i></a> <!-- flecha -->
-            <a class="social transition" href=""><i class="social__icon fas fa-facebook transition"></i></a> <!-- flecha -->
-            <a class="social transition" href=""><i class="social__icon fas fa-vimeo transition"></i></a> <!-- flecha -->
-            <a class="social transition" href=""><i class="social__icon fas fa-youtube transition"></i></a> <!-- flecha -->
+            <a class="social transition" href="https://www.linkedin.com/" aria-label="Linkedin" target="_blank" rel="noreferrer"><i class="social__icon fas fa-linkedin-in transition"></i></a>
+            <a class="social transition" href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noreferrer"><i class="social__icon fas fa-facebook transition"></i></a>
+            <a class="social transition" href="https://vimeo.com/" aria-label="Vimeo" target="_blank" rel="noreferrer"><i class="social__icon fas fa-vimeo transition"></i></a>
+            <a class="social transition" href="https://www.youtube.com/" aria-label="Youtube" target="_blank" rel="noreferrer"><i class="social__icon fas fa-youtube transition"></i></a>
         </div>
     </footer>
 </body>

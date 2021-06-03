@@ -14,9 +14,9 @@
     <!-- FONTAWSOME -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <!-- SCRIPTS -->
+    <script src="js/loader.js"></script>
     <script src="js/functions.js"></script>
-    
-    <!-- LOAD -->
+    <!-- FAVICON -->
     <link rel="icon" type="image/png" href="img/favicon.png"/>
     
 </head>
@@ -24,7 +24,7 @@
     <div class="loader">
         <img class="loader__img" src="img/Logo.png" alt="Loading..." />
     </div>
-    <!-- HERO hero de la página, a modo de slider-->
+    <!-- HERO de la página, a modo de slider-->
     <section id="hero" class="section__hero bg-color">
         <div id="sliderImg" class="hero__backImg"></div>
         <article class="hero__slide">
@@ -55,13 +55,14 @@
                         <div id="slash2" class="nav__slash"></div>
                         <div id="slash3" class="nav__slash"></div>
                     </div>
-                    <a href="index.html" class="button transition">Read more</a>
+                    <a id="readMore" href="hero1.html" class="button transition">Read more</a>
                 </div>
             </div>
         </article>
         <a href="#portfolio" class="text-bg transition">works</a>
         <div class="line transition"></div>
     </section>
+    <!-- END HERO -->
     <!-- HEADER NAV -->
     <header>
         <nav class="header">
@@ -76,12 +77,14 @@
             </ul>
         </nav>
     </header>
+    <!-- END HEADER -->
+    <!-- MAIN CONTENT -->
     <main>
         <!-- ABOUT -->
         <section id="about" class="section__about">
             <div class="container__title">
                 <h1 class="title__text">About us</h1>
-                <span class="title__text--shadow">About us</span>
+                <span class="title__text--shadow">About</span>
             </div>
             <div class="content">
                 <div class="about">
@@ -96,7 +99,7 @@
                                 <a class="plus-icon transition" href="index.html" aria-label="Mas sobre esta persona"><i class="fas fa-plus"></i></a> 
                             </div>
                             <div class="member_info">
-                                <h3 class="info__name">James Dean</h3>
+                                <h3 class="info__name">Michael Smith</h3>
                                 <p class="info__resume">That’s not my business. I don’t want to rule or conquer anyone. I should like to help everyone if possible.</p>
                                 <div class="info__social transition">
                                     <a class="social__icon transition" href="https://www.linkedin.com/" aria-label="linkedin" target="_blank" rel="noreferrer"><i class="fas fa-linkedin-in"></i></a>
@@ -111,7 +114,7 @@
                                 <a class="plus-icon transition" href="index.html" aria-label="Mas sobre esta persona"><i class="fas fa-plus"></i></a> 
                             </div>
                             <div class="member_info">
-                                <h3 class="info__name">Sophia loren</h3>
+                                <h3 class="info__name">Sophia Meren</h3>
                                 <p class="info__resume">We all want to help one another. Human beings are like that. We want to live by each others happiness.</p>
                                 <div class="info__social transition">
                                     <a class="social__icon transition" href="https://www.linkedin.com/" aria-label="linkedin" target="_blank" rel="noreferrer"><i class="fas fa-linkedin-in"></i></a>
@@ -124,6 +127,7 @@
                 </div>
             </div>
         </section>
+        <!-- END ABOUT US -->
         <!-- PORTFOLIO -->
         <section id="portfolio" class="section__portfolio">
             <div class="container__title">
@@ -133,37 +137,38 @@
             <div class="portfolio">
                 <article class="portfolio__work work1 transition">
                     <h2 class="work__title transition">Speed for all</h2>
-                    <a class="work__btn plus-icon transition" href="portfolio1.html" aria-label="Ver Speed for all"><i class="fas fa-plus"></i></a> <!-- flecha -->
+                    <a class="work__btn plus-icon transition" href="portfolio1.html" aria-label="Ver Speed for all"><i class="fas fa-plus"></i></a>
                 </article>
                 <article class="portfolio__work work2 transition">
                     <h2 class="work__title transition">Love is magic</h2>
-                    <a class="work__btn plus-icon transition" href="portfolio2.html" aria-label="Ver Love is magic"><i class="fas fa-plus"></i></a> <!-- flecha -->
+                    <a class="work__btn plus-icon transition" href="portfolio2.html" aria-label="Ver Love is magic"><i class="fas fa-plus"></i></a>
                 </article>
                 <article class="portfolio__work work3 transition">
                     <h2 class="work__title transition">lighting</h2>
-                    <a class="work__btn plus-icon transition" href="portfolio3.html" aria-label="Ver lighting"><i class="fas fa-plus"></i></a> <!-- flecha -->
+                    <a class="work__btn plus-icon transition" href="portfolio3.html" aria-label="Ver lighting"><i class="fas fa-plus"></i></a>
                 </article>
                 <article class="portfolio__work work4 transition">
                     <h2 class="work__title transition">Your eyes</h2>
-                    <a class="work__btn plus-icon transition" href="portfolio4.html" aria-label="Ver your eyes"><i class="fas fa-plus"></i></a> <!-- flecha -->
+                    <a class="work__btn plus-icon transition" href="portfolio4.html" aria-label="Ver your eyes"><i class="fas fa-plus"></i></a>
                 </article>
                 <article class="portfolio__work work5 transition">
                     <h2 class="work__title transition">Work hard</h2>
-                    <a class="work__btn plus-icon transition" href="portfolio5.html" aria-label="Ver Work hard"><i class="fas fa-plus"></i></a> <!-- flecha -->
+                    <a class="work__btn plus-icon transition" href="portfolio5.html" aria-label="Ver Work hard"><i class="fas fa-plus"></i></a>
                 </article>
                 <article class="portfolio__work work6 transition">
                     <h2 class="work__title transition">Blood for your life</h2>
-                    <a class="work__btn plus-icon transition" href="portfolio6.html" aria-label="Ver Blood for your life"><i class="fas fa-plus"></i></a> <!-- flecha -->
+                    <a class="work__btn plus-icon transition" href="portfolio6.html" aria-label="Ver Blood for your life"><i class="fas fa-plus"></i></a>
                 </article>
                 <article class="portfolio__work work__load-more transition border bg-color">
                     <div class="load-more__btn">
                         <h3 class="load-more__btn__text">Load more</h3>
                         <span class="title__text--shadow">More</span>
-                        <button class="arrow transition" aria-label="Load more"><i class="fas fa-angle-right"></i></button> <!-- flecha -->
+                        <button class="arrow transition" aria-label="Load more"><i class="fas fa-angle-right"></i></button> 
                     </div>
                 </article>
             </div>
         </section>
+        <!-- END PORTFOLIO -->
         <!-- BLOG -->
         <section id="blog" class="section__blog">
             <div class="container__title">
@@ -179,7 +184,7 @@
                     <div class="publication__info transition">
                         <h2 class="publication__info__title">Gene Kelly</h2>
                         <div class="publication__text">
-                            <p class="publication__info__text">A fine quality of movie lines from classic movies has been gathered here to wet your movie appetite and to remind movies(...)</p>
+                            <p class="publication__info__text">Now seven world think timed while her. Spoil large oh he rooms on since an. Am up unwilling eagerness perceived incommode(...)</p>
                             <span class="publication__comments">4</span> 
                         </div>   
                     </div>   
@@ -192,7 +197,7 @@
                     <div class="publication__info transition">
                         <h2 class="publication__info__title">Miriam Lin</h2>
                         <div class="publication__text">
-                            <p class="publication__info__text">A fine quality of movie lines from classic movies has been gathered here to wet your movie appetite and to remind movies(...)</p>
+                            <p class="publication__info__text">Improve him believe opinion offered met and end cheered forbade. Friendly as stronger speedily by recurred(...)</p>
                             <span class="publication__comments">2</span> 
                         </div>
                     </div>
@@ -205,7 +210,7 @@
                     <div class="publication__info transition">
                         <h2 class="publication__info__title">Auderey Hepbu</h2>
                         <div class="publication__text">
-                            <p class="publication__info__text">A fine quality of movie lines from classic movies has been gathered here to wet your movie appetite and to remind movies(...)</p>
+                            <p class="publication__info__text">Case read they must it of cold that. Speaking trifling an to unpacked moderate debating learning. An particular contrasted(...)</p>
                             <span class="publication__comments">1</span> 
                         </div>   
                     </div>   
@@ -213,6 +218,7 @@
                 <a href="#portfolio" class="blog__button button transition">see our works</a>
             </div>
         </section>
+        <!-- END BLOG -->
         <!-- CONTACT -->
         <section id="contact" class="section__contact">
             <h1 class="suscribe__title">Stay in touch</h1>
@@ -222,10 +228,11 @@
                 <button type="submit" class="email__box__button"><i class="fas fa-angle-right transition" aria-label="submit email"></i></button>
             </form>
         </section>
+        <!-- END CONTACT -->
     </main> 
+    <!-- END MAIN CONTENT -->
     <!-- FOOTER -->
     <footer class="footer">
-            
         <span class="footer__copyright">Precious is powered by <a class="transition" href="https://www.coderhouse.com" target="_blank" rel="noreferrer">coderhouse </a>© 2021</span>  
         <div class="footer__social">
             <a class="social transition" href="https://www.linkedin.com/" aria-label="Linkedin" target="_blank" rel="noreferrer"><i class="social__icon fas fa-linkedin-in transition"></i></a> <!-- flecha -->
@@ -234,6 +241,6 @@
             <a class="social transition" href="https://www.youtube.com/" aria-label="Youtube" target="_blank" rel="noreferrer"><i class="social__icon fas fa-youtube transition"></i></a> <!-- flecha -->
         </div>
     </footer>
-    
+    <!-- END FOOTER -->
 </body>
 </html>

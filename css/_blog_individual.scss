@@ -45,6 +45,18 @@
                 @extend .article__img1a;
                 background-image: url(../img/blog3.webp);
             }
+            .article__img1a--hero{
+                @extend .article__img1a;
+                background-image: url(../img/13.webp);
+            }
+            .article__img2a--hero{
+                @extend .article__img1a;
+                background-image: url(../img/17.webp);
+            }
+            .article__img3a--hero{
+                @extend .article__img1a;
+                background-image: url(../img/2.webp);
+            }
             .article__content1{
                 grid-column: span 1;
                 grid-row: span 1;   
@@ -76,7 +88,7 @@
             }
             .article__img3b{
                 @extend .article__img1b;
-                background-image: url(../img/portfolio6.webp);
+                background-image: url(../img/portfolio5.webp);
             }
             .article__content2{
                 grid-column: span 1;
@@ -107,6 +119,22 @@
         position: relative;
         background-color: $color2;
         margin-bottom: 5rem;
+    }
+    .controls{
+        @include flex(center, flex-start, center); //(justify-content, align-content, align-items)
+        padding-bottom: 6rem;
+        .back__btn{
+                // display: inline-block;
+                // margin: 0 auto;
+                // left: 50%;
+                // transform: translateX(-50%);
+                // position: relative;
+                background-color: $color2;
+                // margin-bottom: 5rem;
+            }  
+        .arrow{
+            margin: 0 2rem;
+        }
     }  
 }
 .section__contact{

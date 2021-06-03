@@ -109,15 +109,31 @@
             
         }
     } 
-    .portfolioin__back__btn{
-        display: inline-block;
-        margin: 0 auto;
-        left: 50%;
-        transform: translateX(-50%);
-        position: relative;
-        background-color: $color2;
-        margin-bottom: 5rem;
-    }  
+    // .portfolioin__back__btn{
+    //     display: inline-block;
+    //     margin: 0 auto;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    //     position: relative;
+    //     background-color: $color2;
+    //     margin-bottom: 5rem;
+    // }  
+    .controls{
+        @include flex(center, flex-start, center); //(justify-content, align-content, align-items)
+        padding-bottom: 6rem;
+        .back__btn{
+                // display: inline-block;
+                // margin: 0 auto;
+                // left: 50%;
+                // transform: translateX(-50%);
+                // position: relative;
+                background-color: $color2;
+                // margin-bottom: 5rem;
+            }  
+        .arrow{
+            margin: 0 2rem;
+        }
+    }
 }
 .section__contact{
     position: relative;
