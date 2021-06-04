@@ -1,7 +1,6 @@
 /*---HERO---*/
 .section__hero{
 	@include flex(center, center, center); //(justify-content, align-content, align-items)
-	// @include flexCenterAll;
     position: relative;
 	min-height: 100vh;
 	// &::before{
@@ -39,7 +38,7 @@
 	// 	filter: grayscale(0%);
 	// }
 	.hero__backImg{
-		background-image: url(../img/13.webp);
+		background-image: url(../img/indexJPG/13index.jpg);
 		position: absolute;
 		height: 100%;
 		width: 80%;
