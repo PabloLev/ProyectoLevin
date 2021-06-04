@@ -172,7 +172,7 @@ a:hover {
   height: 4rem;
   text-decoration: none;
   color: black;
-  background-color: #c38fff;
+  background-color: #c6f327;
 }
 
 .arrow:hover {
@@ -237,11 +237,11 @@ button:visited {
   text-transform: uppercase;
   color: black;
   padding: 1rem 3rem;
-  border: 0.3rem solid #c38fff;
+  border: 0.3rem solid #c6f327;
 }
 
 .button:hover {
-  background-color: #c38fff;
+  background-color: #c6f327;
   color: white;
 }
 
@@ -264,7 +264,7 @@ button:visited {
   font-weight: 300;
   text-transform: uppercase;
   color: black;
-  background-color: #c38fff;
+  background-color: #c6f327;
 }
 
 .plus-icon:hover {
@@ -315,7 +315,7 @@ button:visited {
 
 /*---Colour---*/
 .bg-color {
-  background-color: #252525;
+  background-color: #5ec8cc;
 }
 
 .background-color-left, .background-color-right {
@@ -329,7 +329,7 @@ button:visited {
   left: 0;
   width: 50%;
   height: 100%;
-  background-color: #252525;
+  background-color: #5ec8cc;
   z-index: -1;
 }
 
@@ -517,7 +517,7 @@ header {
   left: 0;
   width: 50%;
   height: 100%;
-  background-color: #252525;
+  background-color: #5ec8cc;
   z-index: -1;
 }
 
@@ -616,7 +616,7 @@ header {
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
   z-index: 1;
-  background-color: #252525;
+  background-color: #5ec8cc;
 }
 
 .section__portfolioin .portfolio_article .article__info .article__img3b {
@@ -626,7 +626,7 @@ header {
 .section__portfolioin .portfolio_article .article__info .article__content2 {
   grid-column: span 1;
   grid-row: span 1;
-  background-color: #252525;
+  background-color: #5ec8cc;
   padding: 4rem 2rem 2rem 0;
   -webkit-transform: translateY(-4rem);
           transform: translateY(-4rem);
@@ -660,7 +660,7 @@ header {
 }
 
 .section__portfolioin .controls .back__btn {
-  background-color: #c38fff;
+  background-color: #c6f327;
 }
 
 .section__portfolioin .controls .arrow {
@@ -669,7 +669,7 @@ header {
 
 .section__contact {
   position: relative;
-  background-color: #252525;
+  background-color: #5ec8cc;
 }
 
 .section__contact .suscribe__title {
@@ -763,7 +763,7 @@ header {
   }
   .section__contact {
     position: relative;
-    background-color: #252525;
+    background-color: #5ec8cc;
   }
   .section__contact .suscribe__title {
     color: white;
@@ -868,13 +868,13 @@ header {
           align-items: center;
   height: 2.5rem;
   width: 2.5rem;
-  background-color: #c38fff;
+  background-color: #c6f327;
   font-size: 1.5rem;
   cursor: pointer;
 }
 
 .section__contact .suscribe__email .email__box__button i:hover {
-  background-color: #252525;
+  background-color: #5ec8cc;
   color: white;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -909,12 +909,12 @@ header {
 }
 
 .footer .footer__copyright a {
-  color: #c38fff;
+  color: #c6f327;
   font-weight: 700;
 }
 
 .footer .footer__copyright a:hover {
-  color: #252525;
+  color: #5ec8cc;
 }
 
 .footer .footer__social {
@@ -943,7 +943,7 @@ header {
 }
 
 .footer .footer__social .social .social__icon:hover {
-  color: #c38fff;
+  color: #c6f327;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
@@ -1029,11 +1029,11 @@ header {
   }
   .button {
     padding: 1.5rem 9rem;
-    border: 0.6rem solid #c38fff;
+    border: 0.6rem solid #c6f327;
     font-size: calc(0.6rem + 0.6vw);
   }
   .button--transparent:hover {
-    background-color: #c38fff;
+    background-color: #c6f327;
   }
   .arrow i {
     font-size: calc(0.6rem + 0.6vw);
@@ -1152,11 +1152,11 @@ header {
     z-index: 10;
   }
   .section__hero .text-bg:hover {
-    color: #c38fff;
+    color: #c6f327;
     text-decoration: none;
   }
   .section__hero .text-bg:hover ~ .line {
-    background-color: #252525;
+    background-color: #5ec8cc;
   }
   .section__hero .line {
     position: absolute;
@@ -1352,7 +1352,7 @@ header {
     background-color: transparent;
   }
   .section__blog .blog .blog__button:hover {
-    background-color: #c38fff;
+    background-color: #c6f327;
   }
   /*---CONTACT---*/
   .section__contact .suscribe__title {
@@ -1401,47 +1401,5 @@ header {
     font-size: 2.5rem;
     margin: 0 0 0 3rem;
   }
-}
-
-.loader {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
-body, .section__portfolioin .portfolio_article .article__info .article__content1, .section__blogin .blogin_article .article__info .article__content1, .section__hero .hero__slide .slide__info .info__content .content__text .text, .loader {
-  background-color: #121212;
-}
-
-header, .header ul {
-  background-color: #000000;
-}
-
-.header .menu-icon .navicon, .header .menu-icon .navicon:before, .header .menu-icon .navicon:after {
-  background-color: #969696;
-}
-
-.section__hero .hero__slide .slide__info .info__content .button:hover, .section__about .content .about .about__intro .button:hover, .section__blog .blog .blog__publication .publication__info .publication__info__title {
-  background-color: #c38fff;
-}
-
-.section__contact .suscribe__email .email__box__input {
-  background-color: #3b3b3b;
-}
-
-.header li a:hover,
-.header .menu-btn:hover {
-  background-color: #292929;
-}
-
-.button, .section__about .content .about .about__team .team__member .member_info .info__name, .section__contact .suscribe__title, .container__title .title__text, .section__portfolioin .portfolio_article .article__info .article__content1 .content__subtitle, .section__blogin .blogin_article .article__info .article__content1 .content__subtitle {
-  color: #ffffff;
-}
-
-.header .logo, .publication__info__text, .section__about .content .about .about__to-works, .section__contact .suscribe__subtitle, .section__portfolio .portfolio .work__load-more .load-more__btn .load-more__btn__text, .section__blog .blog .blog__publication .publication__img .publication__date, .section__blogin .blogin_article .article__info .article__content1 .content__text, .section__blogin .blogin_article .article__info .article__content2 .content__text, .section__portfolioin .portfolio_article .article__info .article__content1 .content__text, .section__hero .hero__slide .slide__info .info__content .content__text .text {
-  color: #969696;
-}
-
-.section__portfolio .portfolio .work__load-more .load-more__btn .title__text--shadow, .container__title .title__text--shadow {
-  color: rgba(255, 255, 255, 0.103);
 }
 /*# sourceMappingURL=portfolio_in.css.map */

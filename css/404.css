@@ -172,7 +172,7 @@ a:hover {
   height: 4rem;
   text-decoration: none;
   color: black;
-  background-color: #c38fff;
+  background-color: #c6f327;
 }
 
 .arrow:hover {
@@ -237,11 +237,11 @@ button:visited {
   text-transform: uppercase;
   color: black;
   padding: 1rem 3rem;
-  border: 0.3rem solid #c38fff;
+  border: 0.3rem solid #c6f327;
 }
 
 .button:hover {
-  background-color: #c38fff;
+  background-color: #c6f327;
   color: white;
 }
 
@@ -264,7 +264,7 @@ button:visited {
   font-weight: 300;
   text-transform: uppercase;
   color: black;
-  background-color: #c38fff;
+  background-color: #c6f327;
 }
 
 .plus-icon:hover {
@@ -315,7 +315,7 @@ button:visited {
 
 /*---Colour---*/
 .bg-color {
-  background-color: #252525;
+  background-color: #5ec8cc;
 }
 
 .background-color-left, .background-color-right {
@@ -329,7 +329,7 @@ button:visited {
   left: 0;
   width: 50%;
   height: 100%;
-  background-color: #252525;
+  background-color: #5ec8cc;
   z-index: -1;
 }
 
@@ -563,7 +563,7 @@ header {
   color: white;
   text-transform: uppercase;
   padding: 2rem;
-  background-color: #252525;
+  background-color: #5ec8cc;
   margin: 4rem 0;
 }
 
@@ -576,7 +576,7 @@ header {
 }
 
 .section__error404 .error404__container .error404__back__btn {
-  background-color: #c38fff;
+  background-color: #c6f327;
   margin: 4rem 0;
 }
 
@@ -675,13 +675,13 @@ header {
           align-items: center;
   height: 2.5rem;
   width: 2.5rem;
-  background-color: #c38fff;
+  background-color: #c6f327;
   font-size: 1.5rem;
   cursor: pointer;
 }
 
 .section__contact .suscribe__email .email__box__button i:hover {
-  background-color: #252525;
+  background-color: #5ec8cc;
   color: white;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -716,12 +716,12 @@ header {
 }
 
 .footer .footer__copyright a {
-  color: #c38fff;
+  color: #c6f327;
   font-weight: 700;
 }
 
 .footer .footer__copyright a:hover {
-  color: #252525;
+  color: #5ec8cc;
 }
 
 .footer .footer__social {
@@ -750,7 +750,7 @@ header {
 }
 
 .footer .footer__social .social .social__icon:hover {
-  color: #c38fff;
+  color: #c6f327;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
@@ -836,11 +836,11 @@ header {
   }
   .button {
     padding: 1.5rem 9rem;
-    border: 0.6rem solid #c38fff;
+    border: 0.6rem solid #c6f327;
     font-size: calc(0.6rem + 0.6vw);
   }
   .button--transparent:hover {
-    background-color: #c38fff;
+    background-color: #c6f327;
   }
   .arrow i {
     font-size: calc(0.6rem + 0.6vw);
@@ -959,11 +959,11 @@ header {
     z-index: 10;
   }
   .section__hero .text-bg:hover {
-    color: #c38fff;
+    color: #c6f327;
     text-decoration: none;
   }
   .section__hero .text-bg:hover ~ .line {
-    background-color: #252525;
+    background-color: #5ec8cc;
   }
   .section__hero .line {
     position: absolute;
@@ -1159,7 +1159,7 @@ header {
     background-color: transparent;
   }
   .section__blog .blog .blog__button:hover {
-    background-color: #c38fff;
+    background-color: #c6f327;
   }
   /*---CONTACT---*/
   .section__contact .suscribe__title {
