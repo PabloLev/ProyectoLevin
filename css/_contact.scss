@@ -8,11 +8,13 @@
 		text-transform: uppercase;
 		font-size: calc(1.5rem + 1vw);
 		margin: 2rem 0;
+		color: var(--font1);
 	}
 	.suscribe__subtitle{
 		font-size: calc(0.9rem + 0.9vw);
 		text-align: center;
-		padding: 0 2rem
+		padding: 0 2rem;
+		color: var(--font-color2)
 	}
 	.suscribe__email{
 		@include flex(center, center, center);
@@ -26,7 +28,7 @@
 			width: 100%;
 			letter-spacing: 0.5rem;
 			padding: 0 3rem;
-			background-color: #f1f1f1;
+			background-color: var(--bg-color2);
 			border: none;
 		}
 		.email__box__button{
@@ -39,11 +41,11 @@
 				@include flex(center, center, center);
 				height: 2.5rem;
 				width: 2.5rem;
-				background-color: $color2;
+				background-color: var(--color2);
 				font-size: 1.5rem;
 				cursor: pointer;
 				&:hover{
-					background-color: $color1;
+					background-color: var(--color1);
 					color: white;
 					transform: scale(1.2);
 				}

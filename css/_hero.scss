@@ -165,7 +165,7 @@
 						line-height: 1.5em;
 						font-weight: 400;
 						text-align: right;
-						color: white;
+						color: var(--font-color);
 					}
 					.arrow{
 						transform: translate(-50%, 0);
@@ -186,12 +186,12 @@
 					margin: 0 0.3rem;
 				}
 				.current{
-					background-color: $color2;
+					background-color: var(--color2);
 				}
 			}
 			.button{
 				margin: 3rem 0;
-				background-color: $color2;
+				// background-color: var(--color2);
 				padding: 0;
 				// height: 5rem;
 				// width: 15rem;

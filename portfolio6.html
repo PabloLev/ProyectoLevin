@@ -14,6 +14,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <!-- SCRIPTS -->
     <script src="js/loader.js"></script>
+    <script src="js/dark.js"></script>
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="img/favicon.png"/>
 </head>
@@ -22,6 +23,14 @@
         <img class="loader__img" src="img/Logo.png" alt="Loading..." />
     </div>
     <header>
+        <nav>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+        </nav>  
         <nav class="header">
             <a href="index.html" class="logo">Precious</a>
             <input class="menu-btn" type="checkbox" id="menu-btn" />

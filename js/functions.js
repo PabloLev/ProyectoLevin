@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var heroBtn = document.querySelector('#heroBtn');
     heroBtn.addEventListener('click', function() {
         i++; 
-        
+        // alert (document.getElementById('sliderNum'));
         var sliderNum = document.querySelector('#sliderNum');
         sliderNum.textContent = eval('$num'+i);
         var sliderPhotographer = document.querySelector('#sliderPhotographer');
@@ -141,9 +141,37 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('slash2').classList.remove("current");
         i=0;
     });
+    // var bg0 = "#252525";
+    // var bg1 = "#121212";
+    // var bg2 = "#000000";
+    // var bg3 = "#969696";
+    // var bg4 = "#c38fff";
+    // var darkBtn = document.querySelector('#darkBtn');
+    // darkBtn.addEventListener('click', function() {
+        
+    //     var bgColor = document.querySelectorAll('.bg-color');
+    //     for (var i = 0; i < bgColor.length; i++) {
+    //         bgColor[i].style.backgroundColor = bg0;
+    //     }
+    //     document.getElementById('body').style.backgroundColor = bg1;
+    //     document.querySelector('.text').style.backgroundColor = bg1;
+
+    //     document.querySelector('header').style.backgroundColor = bg2;
+    //     document.querySelector('.header ul').style.backgroundColor = bg2;
+
+    //     document.querySelector('.header .menu-icon .navicon').style.backgroundColor = bg3;
+
+    //     var pubInfoTitle = document.querySelectorAll('.publication__info__title');
+    //     for (var i = 0; i < pubInfoTitle.length; i++) {
+    //         pubInfoTitle[i].style.backgroundColor = bg4;
+    //     }
+    // });
+    
+
 });
 
 // window.addEventListener("load", function() {
 //     var bannerNode = document.querySelector('[alt="www.000webhost.com"]').parentNode.parentNode;
 //     bannerNode.parentNode.removeChild(bannerNode);
 // });
+

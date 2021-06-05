@@ -18,7 +18,7 @@ html {
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #ffffff;
+  background-color: var(--level1);
   width: 100%;
   line-height: 1.5;
   min-width: 325px;
@@ -33,7 +33,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: white;
+  background: var(--level1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,7 +172,7 @@ a:hover {
   height: 4rem;
   text-decoration: none;
   color: black;
-  background-color: #c6f327;
+  background-color: var(--color2);
 }
 
 .arrow:hover {
@@ -235,13 +235,13 @@ button:visited {
   font-size: calc(1rem + 1vw);
   font-weight: 900;
   text-transform: uppercase;
-  color: black;
+  background-color: var(--color2);
+  color: var(--font1);
   padding: 1rem 3rem;
-  border: 0.3rem solid #c6f327;
+  border: 0.3rem solid var(--color2);
 }
 
 .button:hover {
-  background-color: #c6f327;
   color: white;
 }
 
@@ -260,11 +260,10 @@ button:visited {
   width: 4rem;
   height: 4rem;
   text-decoration: none;
-  font-size: 3rem;
   font-weight: 300;
   text-transform: uppercase;
   color: black;
-  background-color: #c6f327;
+  background-color: var(--color2);
 }
 
 .plus-icon:hover {
@@ -302,7 +301,7 @@ button:visited {
   text-transform: uppercase;
   text-align: center;
   font-weight: 900;
-  color: black;
+  color: var(--font1);
 }
 
 .container__title .title__text--shadow {
@@ -310,12 +309,13 @@ button:visited {
   font-weight: 900;
   letter-spacing: 0.3rem;
   font-size: 15vw;
-  color: rgba(0, 0, 0, 0.1);
+  color: var(--font1);
+  opacity: 0.15;
 }
 
 /*---Colour---*/
 .bg-color {
-  background-color: #5ec8cc;
+  background-color: var(--color1);
 }
 
 .background-color-left, .background-color-right {
@@ -329,7 +329,7 @@ button:visited {
   left: 0;
   width: 50%;
   height: 100%;
-  background-color: #5ec8cc;
+  background-color: var(--color1);
   z-index: -1;
 }
 
@@ -365,7 +365,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: #fff;
+  background-color: var(--bg-color);
   width: 100%;
   -webkit-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
@@ -396,7 +396,7 @@ header {
   font-size: calc(1rem + 1vw);
   font-weight: 700;
   text-transform: uppercase;
-  color: #777777;
+  color: var(--heading-color);
 }
 
 .header .menu-icon {
@@ -411,7 +411,7 @@ header {
 }
 
 .header .menu-icon .navicon {
-  background: #333;
+  background-color: #333;
   display: block;
   height: 2px;
   position: relative;
@@ -421,7 +421,7 @@ header {
 }
 
 .header .menu-icon .navicon:before {
-  background: #333;
+  background-color: inherit;
   content: '';
   display: block;
   height: 100%;
@@ -433,7 +433,7 @@ header {
 }
 
 .header .menu-icon .navicon:after {
-  background: #333;
+  background-color: inherit;
   content: '';
   display: block;
   height: 100%;
@@ -449,24 +449,39 @@ header {
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 340px;
+  padding-bottom: 2rem;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
+  background-color: transparent;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon:before {
+  background-color: #969696;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+  opacity: 1;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon:after {
+  background-color: #969696;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  opacity: 1;
 }
 
 .header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   clear: both;
   max-height: 0;
   -webkit-transition: max-height .2s ease-out;
@@ -482,14 +497,14 @@ header {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #fff;
+  background-color: var(--bg-color);
 }
 
 .header li a {
   display: block;
   padding: 2rem 1rem;
   text-decoration: none;
-  color: #777777;
+  color: var(--heading-color);
   text-transform: uppercase;
   font-size: calc(1rem + 1vw);
   font-weight: 400;
@@ -497,7 +512,7 @@ header {
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
+  background-color: var(--bg-color2);
 }
 
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
@@ -576,7 +591,7 @@ header {
 }
 
 .section__error404 .error404__container .error404__back__btn {
-  background-color: #c6f327;
+  background-color: var(--color2);
   margin: 4rem 0;
 }
 
@@ -605,12 +620,14 @@ header {
   text-transform: uppercase;
   font-size: calc(1.5rem + 1vw);
   margin: 2rem 0;
+  color: var(--font1);
 }
 
 .section__contact .suscribe__subtitle {
   font-size: calc(0.9rem + 0.9vw);
   text-align: center;
   padding: 0 2rem;
+  color: var(--font-color2);
 }
 
 .section__contact .suscribe__email {
@@ -638,7 +655,7 @@ header {
   width: 100%;
   letter-spacing: 0.5rem;
   padding: 0 3rem;
-  background-color: #f1f1f1;
+  background-color: var(--bg-color2);
   border: none;
 }
 
@@ -675,13 +692,13 @@ header {
           align-items: center;
   height: 2.5rem;
   width: 2.5rem;
-  background-color: #c6f327;
+  background-color: var(--color2);
   font-size: 1.5rem;
   cursor: pointer;
 }
 
 .section__contact .suscribe__email .email__box__button i:hover {
-  background-color: #5ec8cc;
+  background-color: var(--color1);
   color: white;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -716,7 +733,7 @@ header {
 }
 
 .footer .footer__copyright a {
-  color: #c6f327;
+  color: var(--color2);
   font-weight: 700;
 }
 
@@ -750,7 +767,7 @@ header {
 }
 
 .footer .footer__social .social .social__icon:hover {
-  color: #c6f327;
+  color: var(--color2);
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
@@ -815,6 +832,13 @@ header {
     font-size: calc(0.6rem + 0.6vw);
   }
   .header .menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     clear: none;
     float: right;
     max-height: none;
@@ -836,11 +860,15 @@ header {
   }
   .button {
     padding: 1.5rem 9rem;
-    border: 0.6rem solid #c6f327;
+    border: 0.6rem solid var(--color2);
     font-size: calc(0.6rem + 0.6vw);
+    background-color: transparent;
+  }
+  .button:hover {
+    background-color: var(--color2);
   }
   .button--transparent:hover {
-    background-color: #c6f327;
+    background-color: var(--color2);
   }
   .arrow i {
     font-size: calc(0.6rem + 0.6vw);
@@ -929,7 +957,6 @@ header {
   }
   .section__hero .hero__slide .slide__info .info__content .button {
     margin: 7.5% 0 0 0;
-    background-color: transparent;
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
@@ -959,11 +986,11 @@ header {
     z-index: 10;
   }
   .section__hero .text-bg:hover {
-    color: #c6f327;
+    color: var(--color2);
     text-decoration: none;
   }
   .section__hero .text-bg:hover ~ .line {
-    background-color: #5ec8cc;
+    background-color: var(--color1);
   }
   .section__hero .line {
     position: absolute;
@@ -1009,7 +1036,6 @@ header {
     background-color: transparent;
   }
   .section__about .content .about .about__intro .button {
-    background-color: transparent;
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
@@ -1159,7 +1185,7 @@ header {
     background-color: transparent;
   }
   .section__blog .blog .blog__button:hover {
-    background-color: #c6f327;
+    background-color: var(--color2);
   }
   /*---CONTACT---*/
   .section__contact .suscribe__title {

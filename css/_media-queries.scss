@@ -63,6 +63,8 @@
 			}
 		}
 		.menu {
+			flex-direction: row;
+			align-items: center;
 			clear: none;
 			float: right;
 			max-height: none;
@@ -91,11 +93,15 @@
 	} 
 	.button{
 		padding: 1.5rem 9rem;
-		border: 0.6rem solid $color2;
+		border: 0.6rem solid var(--color2);
 		font-size: $XLfontSize3;
+		background-color: transparent;
+		&:hover{
+			background-color: var(--color2);
+		}
 	}
     .button--transparent:hover {
-        background-color: $color2;
+        background-color: var(--color2);
     }
 	.arrow{
 		
@@ -182,7 +188,7 @@
 					}
 					.button{
 						margin: 7.5% 0 0 0;
-						background-color: transparent;
+						// background-color: transparent;
 						// width: 25rem;
 						// height: 6rem;
 						transform: translateX(0);
@@ -208,11 +214,11 @@
 			transform: rotate(-180deg);
 			z-index: 10;
 			&:hover{
-				color: $color2;
+				color: var(--color2);
 				text-decoration: none;
 			}
 			&:hover ~ .line{
-				background-color: $color1;
+				background-color: var(--color1);
 			}
 		}
 		.line{
@@ -253,7 +259,7 @@
 						background-color: transparent;
 					}
 					.button{
-						background-color: transparent;
+						// background-color: transparent;
 						transform: translateY(0)
 					}
 				}
@@ -459,7 +465,7 @@
 				grid-column: 2 / span 1;
 				background-color: transparent;
 				&:hover{
-					background-color: $color2;
+					background-color: var(--color2);
 				}
 			}
 		}

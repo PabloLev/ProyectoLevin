@@ -7,7 +7,7 @@
         left: 0;
         width: 50%;
         height: 100%;
-        background-color: $color1;
+        background-color: var(--color1);
         z-index: -1;
     }
     .blogin_article{
@@ -60,15 +60,17 @@
             .article__content1{
                 grid-column: span 1;
                 grid-row: span 1;   
-                background-color: white;
+                background-color: var(--level1);
                 padding: 2rem;
                 .content__subtitle{
                     font-size: $XSfontSize2;
                     text-transform: uppercase;
                     font-weight: 700;
+                    color: var(--font1);
                 }
                 .content__text{
                     font-size: $XSfontSize3;
+                    color: var(--font-color2);
                 }
                 
             }
@@ -84,7 +86,7 @@
                 background-position: center;
                 transition: all 0.4s ease-out;
                 z-index: 1;
-                background-color: $color1;
+                background-color: var(--color1);
             }
             .article__img3b{
                 @extend .article__img1b;
@@ -93,18 +95,18 @@
             .article__content2{
                 grid-column: span 1;
                 grid-row: span 1;   
-                background-color: $color1;
+                background-color: var(--color1);
                 padding: 4rem 2rem 2rem 0;
                 transform: translateY(-4rem);
                 .content__subtitle{
                     font-size: $XSfontSize2;
                     text-transform: uppercase;
                     font-weight: 700;
-                    color: white;
+                    color: var(--font1);
                 }
                 .content__text{
                     font-size: $XSfontSize3;
-                    color: white;
+                    color: var(--font-color2);
                 }
                 
             }
@@ -117,7 +119,7 @@
         left: 50%;
         transform: translateX(-50%);
         position: relative;
-        background-color: $color2;
+        background-color: var(--color2);
         margin-bottom: 5rem;
     }
     .controls{
@@ -129,7 +131,7 @@
                 // left: 50%;
                 // transform: translateX(-50%);
                 // position: relative;
-                background-color: $color2;
+                background-color: var(--color2);
                 // margin-bottom: 5rem;
             }  
         .arrow{
@@ -139,7 +141,7 @@
 }
 .section__contact{
     position: relative;
-    background-color: $color1;
+    background-color: var(--color1);
     .suscribe__title{
         color: white;
     }
@@ -220,7 +222,7 @@
     }
     .section__contact{
         position: relative;
-        background-color: $color1;
+        background-color: var(--color1);
         // &::before {
         //     content: '';
         //     position: absolute;

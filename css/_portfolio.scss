@@ -20,7 +20,7 @@
 			overflow: hidden;
 			&:hover{
 				filter: grayscale(0%);
-				border: 1rem solid $color2;
+				border: 1rem solid var(--color2);
 				margin: -1rem;
 			}
 			.work__title{
@@ -82,7 +82,7 @@
 					letter-spacing: 0.3rem;
 					text-transform: uppercase;
 					font-weight: 900;
-					color: rgb(0, 0, 0);
+					color: var(--font-color2);
 					text-align: center;
 					padding-right: 3rem;
 					
@@ -97,7 +97,8 @@
 					text-transform: uppercase;
 					font-weight: 900;
 					letter-spacing: 0.3rem;
-					color: $black010;
+					color: var(--font1);
+					opacity: 0.1;
 					padding-right: 3rem;
 				}
 				.arrow{

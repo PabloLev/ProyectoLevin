@@ -9,11 +9,11 @@
         left: 0;
         width: 0;
         height: 100%;
-        background-color: $color1;
+        background-color: var(--color1);
         z-index: -1;
     }
     .container__title{
-        background-color: $color1;
+        background-color: var(--color1);
     }
     .content{
         @include flex(center, center, center); //(justify-content, align-content, align-items)
@@ -40,11 +40,11 @@
                     color: white;
                     margin-bottom: 0;
                     padding: 5% 5% 20% 5%;
-                    background-color: $color1;
+                    background-color: var(--color1);
                 }
                 .button{
                     padding: 1.5rem 4rem;
-                    background-color: $color2;
+                    // background-color: var(--color2);
                     transform: translateY(-50%)
                 }
             }
@@ -53,7 +53,7 @@
                 // @include flexRightCenter;
                 position: absolute;
                 writing-mode: vertical-lr;
-                color: black;
+                color: var(--font1);
                 text-transform: uppercase;
                 font-size: calc(#{$XSfontSize3} / 1.5);
                 line-height: 2rem;
@@ -84,11 +84,11 @@
                         background-position: center;
                         box-shadow: -10px 0px 10px 0px $black010;
                         filter: grayscale(100%);
-                        border: 0 solid $color2;
+                        border: 0 solid var(--color2);
                         z-index: 20;
                         &:hover{
                             filter: grayscale(0);
-                            border: 1rem solid $color2;
+                            border: 1rem solid var(--color2);
                         }
                         
                         .plus-icon{
@@ -130,6 +130,7 @@
                             text-align: right;
                             margin-bottom: 1.0rem;
                             font-size: $XSfontSize2;
+                            color: var(--font1);
                         }
                         .info__resume{
                             color: #969696;
@@ -146,7 +147,7 @@
                             .social__icon{
                                 @include flex(center, center, center); //(justify-content, align-content, align-items)
                                 // @include flexCenterAll;
-                                background-color: $color2;
+                                background-color: var(--color2);
                                 min-width: 3rem;
                                 min-height: 3rem;
                                 margin: 0 0 0 1.5rem;

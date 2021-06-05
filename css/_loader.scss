@@ -3,7 +3,7 @@ header{
 	@include flex(center, center, center);
 	position: sticky;
 	top: 0;
-	background-color: #fff;
+	background-color: var(--bg-color);
 	width: 100%;
 	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
 	z-index: 9999;
@@ -24,7 +24,7 @@ header{
 		font-size: $XSfontSize3;
 		font-weight: 700;
 		text-transform: uppercase;
-		color: rgb(119, 119, 119);
+		color: var(--heading-color);
 	}
 	.menu-icon {
 		cursor: pointer;
@@ -34,14 +34,14 @@ header{
 		position: relative;
 		user-select: none;
 		.navicon {
-			background: #333;
+			background-color: #333;
 			display: block;
 			height: 2px;
 			position: relative;
 			transition: background .2s ease-out;
 			width: 18px;
 			&:before{
-				background: #333;
+				background-color: inherit;
 				content: '';
 				display: block;
 				height: 100%;
@@ -51,7 +51,7 @@ header{
 				top: 5px;
 			}
 			&:after{
-				background: #333;
+				background-color: inherit;
 				content: '';
 				display: block;
 				height: 100%;
@@ -65,20 +65,31 @@ header{
 	.menu-btn {
 		display: none;
 		&:checked ~ .menu {
-			max-height: 240px;
+			max-height: 340px;
+			padding-bottom: 2rem;
+			// height: auto;
 		
 		}
 		&:checked ~ .menu-icon .navicon {
-			background: transparent;
+			background-color: transparent;
+			// opacity: 0;
 		}
 		&:checked ~ .menu-icon .navicon:before {
+			background-color: #969696;
 			transform: rotate(-45deg);
+			opacity: 1;
 		}
 		&:checked ~ .menu-icon .navicon:after {
+			background-color: #969696;
 			transform: rotate(45deg);
+			opacity: 1;
 		}
 	}
 	.menu{
+		// @include flex(center, center, center);
+		display: flex;
+    	flex-direction: column;
+		align-items: flex-start;
 		clear: both;
 		max-height: 0;
 		transition: max-height .2s ease-out;
@@ -93,14 +104,14 @@ header{
 		padding: 0;
 		list-style: none;
 		overflow: hidden;
-		background-color: #fff;
+		background-color: var(--bg-color);
 		}
 		li{
 			a {
 				display: block;
 				padding: 2rem 1rem;
 				text-decoration: none;
-				color: rgb(119, 119, 119);
+				color: var(--heading-color);
 				text-transform: uppercase;
 				font-size: $XSfontSize3;
 				font-weight: 400;
@@ -109,7 +120,7 @@ header{
 }
 .header li a:hover,
 .header .menu-btn:hover {
-	background-color: #f4f4f4;
+	background-color: var(--bg-color2);
 }
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {

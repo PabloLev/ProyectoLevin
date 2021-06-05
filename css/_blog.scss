@@ -6,7 +6,7 @@
 		position: absolute;
 		width: 50%;
 		height: 100%;
-		background-color: $color1;
+		background-color: var(--color1);
 		z-index: -1;
 		// box-shadow: 10px 0px 10px 0px rgba(0, 0, 0, 0.1);
 	}
@@ -46,7 +46,7 @@
 			}
 			&:hover .publication__img{
 				filter: grayscale(0);
-				// border: 0.5rem solid $color2;
+				// border: 0.5rem solid var(--color2);
 				.blog__btn{
 					opacity: 1;
 				}
@@ -81,11 +81,11 @@
 				background-position: center;
 				margin-left: auto;
 				filter: grayscale(100%);
-				border: 0 solid $color2;
+				border: 0 solid var(--color2);
 				.publication__date{
 					position: absolute;
 					writing-mode: vertical-lr;
-					color: rgb(0, 0, 0);
+					color: var(--font-color2);
 					text-transform: uppercase;
 					font-size: calc(#{$XSfontSize3} / 2);
 					letter-spacing: 0.4rem;
@@ -128,8 +128,9 @@
 					position: relative;
 					padding: 1rem 2rem;
 					margin: 0;
-					background-color: $color1;
+					background-color: var(--color1);
 					width: 100%;
+					color: var(--font-color2);
 
 					.publication__info__text{
 						font-size: $XSfontSize3;
@@ -143,7 +144,7 @@
 						top: 0;
 						left: 0;
 						transform: translate(-50%, -50%);
-						background-color: $color2;
+						background-color: var(--color2);
 						color: rgb(0, 0, 0);
 						font-weight: 400;
 						width: 3rem;
@@ -159,7 +160,7 @@
 		.blog__button{
 			padding: 1.5rem 4rem;
 			// grid-column: 2 / span 1
-			background-color: $color2;
+			// background-color: var(--color2);
 			margin: 0 auto 7rem;
 			width: auto;
 		}
