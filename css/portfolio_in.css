@@ -851,6 +851,7 @@ header {
   letter-spacing: 0.5rem;
   padding: 0 3rem;
   background-color: var(--bg-color2);
+  color: var(--font-color2);
   border: none;
 }
 
