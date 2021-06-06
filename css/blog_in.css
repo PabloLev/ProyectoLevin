@@ -176,8 +176,8 @@ a:hover {
 }
 
 .arrow:hover {
-  color: white;
-  background-color: black;
+  color: var(--bg-color);
+  background-color: var(--font1);
 }
 
 .arrow i {
@@ -411,7 +411,7 @@ header {
 }
 
 .header .menu-icon .navicon {
-  background-color: #333;
+  background-color: var(--heading-color);
   display: block;
   height: 2px;
   position: relative;
@@ -520,6 +520,7 @@ header {
   top: 0;
 }
 
+/*---END NAVBAR---*/
 /*----SECCIONES---*/
 .section__blogin {
   position: relative;
@@ -567,7 +568,7 @@ header {
   margin-top: 2rem;
 }
 
-.section__blogin .blogin_article .article__info .article__img1a, .section__blogin .blogin_article .article__info .article__img2a, .section__blogin .blogin_article .article__info .article__img3a, .section__blogin .blogin_article .article__info .article__img1a--hero, .section__blogin .blogin_article .article__info .article__img2a--hero, .section__blogin .blogin_article .article__info .article__img3a--hero {
+.section__blogin .blogin_article .article__info .article__img1a, .section__blogin .blogin_article .article__info .article__img2a, .section__blogin .blogin_article .article__info .article__img3a, .section__blogin .blogin_article .article__info .article__img1a--hero, .section__blogin .blogin_article .article__info .article__img2a--hero, .section__blogin .blogin_article .article__info .article__img3a--hero, .section__blogin .blogin_article .article__info .article__img4a--hero, .section__blogin .blogin_article .article__info .article__img5a--hero, .section__blogin .blogin_article .article__info .article__img6a--hero {
   background-image: url(../img/blog1.webp);
   grid-column: span 1;
   grid-row: span 1;
@@ -600,6 +601,18 @@ header {
 
 .section__blogin .blogin_article .article__info .article__img3a--hero {
   background-image: url(../img/2.webp);
+}
+
+.section__blogin .blogin_article .article__info .article__img4a--hero {
+  background-image: url(../img/history.webp);
+}
+
+.section__blogin .blogin_article .article__info .article__img5a--hero {
+  background-image: url(../img/MichaelSmith.webp);
+}
+
+.section__blogin .blogin_article .article__info .article__img6a--hero {
+  background-image: url(../img/SophiaMeren.webp);
 }
 
 .section__blogin .blogin_article .article__info .article__content1 {
@@ -661,6 +674,51 @@ header {
   color: var(--font-color2);
 }
 
+.section__blogin .blogin_article .article__info .article__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+  margin: 3rem 0;
+}
+
+.section__blogin .blogin_article .article__info .article__social .social__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--color2);
+  min-width: 3rem;
+  min-height: 3rem;
+  margin: 0 1.5rem 0 0;
+}
+
+.section__blogin .blogin_article .article__info .article__social .social__icon:hover {
+  background-color: var(--font1);
+}
+
+.section__blogin .blogin_article .article__info .article__social .social__icon:hover i {
+  color: var(--bg-color);
+}
+
+.section__blogin .blogin_article .article__info .article__social .social__icon i {
+  font-family: "Font Awesome 5 Brands";
+  font-size: 1.6rem;
+  color: black;
+}
+
 .section__blogin .blogin__back__btn {
   display: inline-block;
   margin: 0 auto;
@@ -720,7 +778,7 @@ header {
         grid-template-rows: auto auto;
     margin-top: 5rem;
   }
-  .section__blogin .blogin_article .article__info .article__img1a, .section__blogin .blogin_article .article__info .article__img2a, .section__blogin .blogin_article .article__info .article__img3a, .section__blogin .blogin_article .article__info .article__img1a--hero, .section__blogin .blogin_article .article__info .article__img2a--hero, .section__blogin .blogin_article .article__info .article__img3a--hero {
+  .section__blogin .blogin_article .article__info .article__img1a, .section__blogin .blogin_article .article__info .article__img2a, .section__blogin .blogin_article .article__info .article__img3a, .section__blogin .blogin_article .article__info .article__img1a--hero, .section__blogin .blogin_article .article__info .article__img2a--hero, .section__blogin .blogin_article .article__info .article__img3a--hero, .section__blogin .blogin_article .article__info .article__img4a--hero, .section__blogin .blogin_article .article__info .article__img5a--hero, .section__blogin .blogin_article .article__info .article__img6a--hero {
     grid-column: span 1;
     grid-row: span 2;
     background-position: center;
@@ -786,7 +844,7 @@ header {
   }
 }
 
-/*---Contact---*/
+/*---CONTACT---*/
 .section__contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -842,7 +900,7 @@ header {
 
 .section__contact .suscribe__email .email__box__input {
   font-size: calc(0.5rem + 0.5vw);
-  line-height: 4rem;
+  line-height: 5rem;
   width: 100%;
   letter-spacing: 0.5rem;
   padding: 0 3rem;
@@ -896,6 +954,7 @@ header {
           transform: scale(1.2);
 }
 
+/*---END CONTACT---*/
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1464,7 +1523,7 @@ header {
   --heading-color: #969696;
 }
 
-/*slider switch css */
+/*---SWITCH DARK LIGHT---*/
 .theme-switch-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1495,8 +1554,7 @@ header {
   position: absolute;
   height: 3.4rem;
   position: relative;
-  width: 60px;
-  margin-left: 1rem;
+  width: 6rem;
 }
 
 .theme-switch input {
@@ -1528,14 +1586,14 @@ header {
 
 .slider:before {
   background-color: var(--bg-color);
-  bottom: 4px;
+  bottom: 0.4rem;
   content: "";
-  height: 26px;
-  left: 4px;
+  height: 2.6rem;
+  left: 0.4rem;
   position: absolute;
   -webkit-transition: .4s;
   transition: .4s;
-  width: 26px;
+  width: 2.6rem;
 }
 
 input:checked + .slider {
@@ -1543,15 +1601,17 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-          transform: translateX(26px);
+  -webkit-transform: translateX(2.6rem);
+          transform: translateX(2.6rem);
 }
 
 .slider.round {
-  border-radius: 34px;
+  border-radius: 3.4rem;
 }
 
 .slider.round:before {
   border-radius: 50%;
 }
+
+/*---END SWITCH DARK LIGHT---*/
 /*# sourceMappingURL=blog_in.css.map */

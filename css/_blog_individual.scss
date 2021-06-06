@@ -57,6 +57,18 @@
                 @extend .article__img1a;
                 background-image: url(../img/2.webp);
             }
+            .article__img4a--hero{
+                @extend .article__img1a;
+                background-image: url(../img/history.webp);
+            }
+            .article__img5a--hero{
+                @extend .article__img1a;
+                background-image: url(../img/MichaelSmith.webp);
+            }
+            .article__img6a--hero{
+                @extend .article__img1a;
+                background-image: url(../img/SophiaMeren.webp);
+            }
             .article__content1{
                 grid-column: span 1;
                 grid-row: span 1;   
@@ -71,8 +83,7 @@
                 .content__text{
                     font-size: $XSfontSize3;
                     color: var(--font-color2);
-                }
-                
+                }   
             }
             .article__img1b{
                 grid-column: span 1;
@@ -80,7 +91,6 @@
                 background-image: url(../img/17.webp);
                 width: 100%;
                 padding-bottom: 70%;
-                // margin: 4rem;
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -110,7 +120,31 @@
                 }
                 
             }
+            .article__social{
+                @include flexJustify(flex-start); //(justify-content)
+                transform: translateX(0);
+                opacity: 1;
+                margin:3rem 0;
+                .social__icon{
+                    @include flex(center, center, center); //(justify-content, align-content, align-items)
+                    background-color: var(--color2);
+                    min-width: 3rem;
+                    min-height: 3rem;
+                    margin: 0 1.5rem 0 0;
+                    &:hover{
+                        background-color: var(--font1);
+                        i{
+                            color: var(--bg-color);
             
+                        }
+                    }
+                    i{
+                        font-family: "Font Awesome 5 Brands";
+                        font-size: 1.6rem;
+                        color: black;  
+                    }
+                }
+            }
         }
     } 
     .blogin__back__btn{
@@ -126,13 +160,7 @@
         @include flex(center, flex-start, center); //(justify-content, align-content, align-items)
         padding-bottom: 6rem;
         .back__btn{
-                // display: inline-block;
-                // margin: 0 auto;
-                // left: 50%;
-                // transform: translateX(-50%);
-                // position: relative;
                 background-color: var(--color2);
-                // margin-bottom: 5rem;
             }  
         .arrow{
             margin: 0 2rem;
@@ -223,16 +251,6 @@
     .section__contact{
         position: relative;
         background-color: var(--color1);
-        // &::before {
-        //     content: '';
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     width: calc(36% + 2rem);
-        //     height: 100%;
-        //     background-color: #5ec8cc;
-        //     z-index: -1;
-        // }
         .suscribe__title{
             color: white;
         }
@@ -241,3 +259,6 @@
         }
     }
 }
+
+
+

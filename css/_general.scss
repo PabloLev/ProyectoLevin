@@ -115,8 +115,8 @@ a:hover {
 	color: black;
 	background-color: var(--color2);
 	&:hover{
-		color: white;
-		background-color: black;
+		color: var(--bg-color);
+		background-color: var(--font1);
 	}
 	i{
 		font-size: calc(1rem + 1vw);

@@ -10,9 +10,19 @@
 		grid-row-gap: 2rem;
 		grid-template-columns: 1fr;
 		
+		//.work$ genera las clases .work1, .work2, ....., work9
+		$workNum: 9;
+		@for $i from 1 through $workNum {
+			.work#{$i}{
+				background-image: url(../img/index/portfolio#{$i}index.webp);
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				filter: grayscale(100%);
+			}
+		}
 		.portfolio__work{
 			@include flex(flex-end, flex-end, flex-end); //(justify-content, align-content, align-items)
-			// @include flexRightBottom;
 			min-height: 20rem;
 			min-width: 20rem;
 			padding: 1rem;
@@ -25,17 +35,17 @@
 			}
 			.work__title{
 				font-size: 1.2rem;
-				margin-right: 1rem;
-				padding: 1rem;
+				margin: 0 1rem 0 0;
+				padding: 0 1rem;
+				line-height: 4rem;
 				letter-spacing: 0.8rem;
 				word-spacing: 0.5rem;
 				text-transform: uppercase;
 				font-weight: 400;
-				text-align: right;
-				color: white;
-				// background-color: $color1;
+				color: var(--font1);
 				opacity: 0;
 				transform: translateX(-300%);
+				background-color: var(--color1);
 			}
 			&:hover .work__title{
 				opacity: 1;
@@ -43,7 +53,6 @@
 			}
 			.work__btn{
 				opacity: 0;
-				// transform: scale(0) rotate(-180deg);
 				&:hover{
 					transform: translateX(0) scale(1.25) rotateZ(180deg);
 				}
@@ -53,27 +62,15 @@
 			}
 			&:hover .work__btn{
 				opacity: 1;
-				// transform: scale(1) rotate(0);
 			}
 		}
-		//.work$ genera las clases .work1, .work2, ....., work6
-		$workNum: 9;
-		@for $i from 1 through $workNum {
-			.work#{$i}{
-				background-image: url(../img/index/portfolio#{$i}index.webp);
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-				filter: grayscale(100%);
-			}
-		}
+		
 		.work__load-more{
 			grid-column: span 1;
 			grid-row: span 1;
 			overflow: visible;
 			.load-more__btn{
 				@include flex(center, center, center); //(justify-content, align-content, align-items)
-				// @include flexCenterAll;
 				height: 100%;
 				position: relative;
 				z-index: 20;
@@ -85,11 +82,9 @@
 					color: var(--font-color2);
 					text-align: center;
 					padding-right: 3rem;
-					
 				}
 				.title__text--shadow{
 					@include flex(center, center, center); //(justify-content, align-content, align-items)
-					// @include flexCenterX;
 					position: absolute;
 					width: 100%;
 					left: 0;

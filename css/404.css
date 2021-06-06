@@ -176,8 +176,8 @@ a:hover {
 }
 
 .arrow:hover {
-  color: white;
-  background-color: black;
+  color: var(--bg-color);
+  background-color: var(--font1);
 }
 
 .arrow i {
@@ -411,7 +411,7 @@ header {
 }
 
 .header .menu-icon .navicon {
-  background-color: #333;
+  background-color: var(--heading-color);
   display: block;
   height: 2px;
   position: relative;
@@ -520,6 +520,7 @@ header {
   top: 0;
 }
 
+/*---END NAVBAR---*/
 /*----SECCIONES---*/
 .section__error404 {
   display: -webkit-box;
@@ -595,7 +596,7 @@ header {
   margin: 4rem 0;
 }
 
-/*---Contact---*/
+/*---CONTACT---*/
 .section__contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -651,7 +652,7 @@ header {
 
 .section__contact .suscribe__email .email__box__input {
   font-size: calc(0.5rem + 0.5vw);
-  line-height: 4rem;
+  line-height: 5rem;
   width: 100%;
   letter-spacing: 0.5rem;
   padding: 0 3rem;
@@ -705,6 +706,7 @@ header {
           transform: scale(1.2);
 }
 
+/*---END CONTACT---*/
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;

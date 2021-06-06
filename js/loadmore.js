@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function obtainData(){
         const xhttp = new XMLHttpRequest();
     
-        xhttp.open('GET', '/js/loadmore.json', true);
+        xhttp.open('GET', '../js/loadmore.json', true);
     
         xhttp.send();
     

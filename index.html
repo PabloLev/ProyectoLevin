@@ -26,7 +26,7 @@
     <div class="loader">
         <img class="loader__img" src="img/Logo.png" alt="Loading..." />
     </div>
-    <!-- HERO de la página, a modo de slider-->
+    <!-- HERO ---a modo de slider-->
     <section id="hero" class="section__hero bg-color">
         <div id="sliderImg" class="hero__backImg"></div>
         <article class="hero__slide">
@@ -35,7 +35,7 @@
             <div class="slide__info">
                 <div class="info__header">
                     <div class="header__title">
-                        <h1 id="sliderTitle" class="title__text"> November is magic</h1> <!-- w3.org Me marca un warning pero yo quiero que sea un h1, me gustaría resolverlo -->
+                        <h1 id="sliderTitle" class="title__text"> November is magic</h1> 
                         <span id="sliderTitleShadow" class="title__text--shadow">November</span>
                     </div>
                     <h2 id="sliderSubtitle" class="header__subtitle">Perfect solution</h2>
@@ -72,28 +72,23 @@
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
-                
                 <li><a href="#about">about</a></li>
                 <li><a href="#portfolio">portfolio</a></li>
                 <li><a href="#blog">blog</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
                     <div class="theme-switch-wrapper">
-                        
                         <label class="theme-switch" for="checkbox">
-                            
                             <input type="checkbox" id="checkbox" />
                             <div class="slider round">
                                 <i class="moon-icon fas fa-moon"></i>
                                 <i class="sun-icon fas fa-sun"></i>
                             </div>
-                            
                         </label>
                     </div>
                 </li>  
             </ul>
         </nav>
-        
     </header>
     <!-- END HEADER -->
     <!-- MAIN CONTENT -->
@@ -108,13 +103,13 @@
                 <div class="about">
                     <div class="about__intro">
                         <h2 class="intro__text">Fasten your seatbelts, it’s going to be a bumpy night!</h2>
-                        <a href="index.html" class="button transition">history</a>
+                        <a href="history.html" class="button transition">history</a>
                     </div>
                     <span class="about__to-works">Scroll for works</span>
                     <div class="about__team">
                         <article class="team__member">
                             <div class="member__img member1 transition">
-                                <a class="plus-icon transition" href="index.html" aria-label="Mas sobre esta persona"><i class="fas fa-plus"></i></a> 
+                                <a class="plus-icon transition" href="member1.html" aria-label="Mas sobre esta persona"><i class="fas fa-plus"></i></a> 
                             </div>
                             <div class="member_info">
                                 <h3 class="info__name">Michael Smith</h3>
@@ -124,12 +119,11 @@
                                     <a class="social__icon transition" href="https://twitter.com/" aria-label="twitter" target="_blank" rel="noreferrer"><i class="fas fa-twitter"></i></a>
                                     <a class="social__icon transition" href="https://www.instagram.com/" aria-label="instagram" target="_blank" rel="noreferrer"><i class="fas fa-instagram"></i></a>
                                 </div>
-                                
                             </div>
                         </article>
                         <article class="team__member">
                             <div class="member__img member2 transition">
-                                <a class="plus-icon transition" href="index.html" aria-label="Mas sobre esta persona"><i class="fas fa-plus"></i></a> 
+                                <a class="plus-icon transition" href="member2.html" aria-label="Mas sobre esta persona"><i class="fas fa-plus"></i></a> 
                             </div>
                             <div class="member_info">
                                 <h3 class="info__name">Sophia Meren</h3>
@@ -152,7 +146,7 @@
                 <h1 class="title__text">Portfolio</h1>
                 <span class="title__text--shadow">Portfolio</span>
             </div>
-            <div id="res" class="portfolio">
+            <div id="res" class="portfolio"> <!-- CARGA CON AJAX + PROYECTOS -->
                 <article class="portfolio__work work1 transition">
                     <h2 class="work__title transition">Speed for all</h2>
                     <a class="work__btn plus-icon transition" href="portfolio1.html" aria-label="Ver Speed for all"><i class="fas fa-plus"></i></a>
@@ -177,7 +171,7 @@
                     <h2 class="work__title transition">Blood for your life</h2>
                     <a class="work__btn plus-icon transition" href="portfolio6.html" aria-label="Ver Blood for your life"><i class="fas fa-plus"></i></a>
                 </article>
-                <article id="removeBtn" class="portfolio__work work__load-more transition border bg-color">
+                <article id="removeBtn" class="portfolio__work work__load-more transition border bg-color"> <!-- Desaparece cuando se cargó todo -->
                     <div class="load-more__btn">
                         <h3 class="load-more__btn__text">Load more</h3>
                         <span class="title__text--shadow">More</span>
@@ -185,9 +179,6 @@
                     </div>
                 </article>
             </div>
-            <!-- <div id="res2" class="portfolio">
-                
-            </div> -->
         </section>
         <!-- END PORTFOLIO -->
         <!-- BLOG -->
@@ -199,7 +190,7 @@
             <div class="blog">
                 <article class="blog__publication transition">
                     <div class="publication__img publication__img1 transition">
-                        <a class="blog__btn plus-icon transition" href="blog1.html" aria-label="Ver Gene Kelly"><i class="fas fa-plus"></i></a> <!-- flecha -->
+                        <a class="blog__btn plus-icon transition" href="blog1.html" aria-label="Ver Gene Kelly"><i class="fas fa-plus"></i></a> 
                         <span class="publication__date ">03-May-21</span>
                     </div>
                     <div class="publication__info transition">
@@ -212,7 +203,7 @@
                 </article>
                 <article class="blog__publication transition">
                     <div class="publication__img publication__img2 transition">
-                        <a class="blog__btn plus-icon transition" href="blog2.html" aria-label="Ver Miriam Lin"><i class="fas fa-plus"></i></a> <!-- flecha -->
+                        <a class="blog__btn plus-icon transition" href="blog2.html" aria-label="Ver Miriam Lin"><i class="fas fa-plus"></i></a> 
                         <span class="publication__date">02-May-21</span>
                     </div>
                     <div class="publication__info transition">
@@ -225,7 +216,7 @@
                 </article>
                 <article class="blog__publication transition">
                     <div class="publication__img publication__img3 transition">
-                        <a class="blog__btn plus-icon transition" href="blog3.html" aria-label="Ver Audrey Hepbu"><i class="fas fa-plus"></i></a> <!-- flecha -->
+                        <a class="blog__btn plus-icon transition" href="blog3.html" aria-label="Ver Audrey Hepbu"><i class="fas fa-plus"></i></a> 
                         <span class="publication__date">01-May-21</span>
                     </div>
                     <div class="publication__info transition">
@@ -244,8 +235,8 @@
         <section id="contact" class="section__contact">
             <h1 class="suscribe__title">Stay in touch</h1>
             <h2 class="suscribe__subtitle">A heart is not judged by how much you love; but by how much you are loved by others.</h2>
-            <form class="suscribe__email" action="#" method="post">
-                <input type="email" class="email__box__input" placeholder="SUBSCRIBE" required/>
+            <form class="suscribe__email" action="enviar.php" method="post">
+                <input name="correo" type="email" class="email__box__input" placeholder="SUBSCRIBE" required/>
                 <button type="submit" class="email__box__button"><i class="fas fa-angle-right transition" aria-label="submit email"></i></button>
             </form>
         </section>
@@ -256,10 +247,10 @@
     <footer class="footer">
         <span class="footer__copyright">Precious is powered by <a class="transition" href="https://www.coderhouse.com" target="_blank" rel="noreferrer">coderhouse </a>© 2021</span>  
         <div class="footer__social">
-            <a class="social transition" href="https://www.linkedin.com/" aria-label="Linkedin" target="_blank" rel="noreferrer"><i class="social__icon fas fa-linkedin-in transition"></i></a> <!-- flecha -->
-            <a class="social transition" href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noreferrer"><i class="social__icon fas fa-facebook transition"></i></a> <!-- flecha -->
-            <a class="social transition" href="https://vimeo.com/" aria-label="Vimeo" target="_blank" rel="noreferrer"><i class="social__icon fas fa-vimeo transition"></i></a> <!-- flecha -->
-            <a class="social transition" href="https://www.youtube.com/" aria-label="Youtube" target="_blank" rel="noreferrer"><i class="social__icon fas fa-youtube transition"></i></a> <!-- flecha -->
+            <a class="social transition" href="https://www.linkedin.com/" aria-label="Linkedin" target="_blank" rel="noreferrer"><i class="social__icon fas fa-linkedin-in transition"></i></a> 
+            <a class="social transition" href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noreferrer"><i class="social__icon fas fa-facebook transition"></i></a> 
+            <a class="social transition" href="https://vimeo.com/" aria-label="Vimeo" target="_blank" rel="noreferrer"><i class="social__icon fas fa-vimeo transition"></i></a> 
+            <a class="social transition" href="https://www.youtube.com/" aria-label="Youtube" target="_blank" rel="noreferrer"><i class="social__icon fas fa-youtube transition"></i></a> 
         </div>
     </footer>
     <!-- END FOOTER -->

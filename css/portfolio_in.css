@@ -176,8 +176,8 @@ a:hover {
 }
 
 .arrow:hover {
-  color: white;
-  background-color: black;
+  color: var(--bg-color);
+  background-color: var(--font1);
 }
 
 .arrow i {
@@ -411,7 +411,7 @@ header {
 }
 
 .header .menu-icon .navicon {
-  background-color: #333;
+  background-color: var(--heading-color);
   display: block;
   height: 2px;
   position: relative;
@@ -520,6 +520,7 @@ header {
   top: 0;
 }
 
+/*---END NAVBAR---*/
 /*----SECCIONES---*/
 .section__portfolioin {
   position: relative;
@@ -802,7 +803,7 @@ header {
   }
 }
 
-/*---Contact---*/
+/*---CONTACT---*/
 .section__contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -858,7 +859,7 @@ header {
 
 .section__contact .suscribe__email .email__box__input {
   font-size: calc(0.5rem + 0.5vw);
-  line-height: 4rem;
+  line-height: 5rem;
   width: 100%;
   letter-spacing: 0.5rem;
   padding: 0 3rem;
@@ -912,6 +913,7 @@ header {
           transform: scale(1.2);
 }
 
+/*---END CONTACT---*/
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1480,7 +1482,7 @@ header {
   --heading-color: #969696;
 }
 
-/*slider switch css */
+/*---SWITCH DARK LIGHT---*/
 .theme-switch-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1511,8 +1513,7 @@ header {
   position: absolute;
   height: 3.4rem;
   position: relative;
-  width: 60px;
-  margin-left: 1rem;
+  width: 6rem;
 }
 
 .theme-switch input {
@@ -1544,14 +1545,14 @@ header {
 
 .slider:before {
   background-color: var(--bg-color);
-  bottom: 4px;
+  bottom: 0.4rem;
   content: "";
-  height: 26px;
-  left: 4px;
+  height: 2.6rem;
+  left: 0.4rem;
   position: absolute;
   -webkit-transition: .4s;
   transition: .4s;
-  width: 26px;
+  width: 2.6rem;
 }
 
 input:checked + .slider {
@@ -1559,15 +1560,17 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-          transform: translateX(26px);
+  -webkit-transform: translateX(2.6rem);
+          transform: translateX(2.6rem);
 }
 
 .slider.round {
-  border-radius: 34px;
+  border-radius: 3.4rem;
 }
 
 .slider.round:before {
   border-radius: 50%;
 }
+
+/*---END SWITCH DARK LIGHT---*/
 /*# sourceMappingURL=portfolio_in.css.map */

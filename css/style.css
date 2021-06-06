@@ -206,8 +206,8 @@ a:hover {
 }
 
 .arrow:hover {
-  color: white;
-  background-color: black;
+  color: var(--bg-color);
+  background-color: var(--font1);
 }
 
 .arrow i {
@@ -441,7 +441,7 @@ header {
 }
 
 .header .menu-icon .navicon {
-  background-color: #333;
+  background-color: var(--heading-color);
   display: block;
   height: 2px;
   position: relative;
@@ -550,6 +550,7 @@ header {
   top: 0;
 }
 
+/*---END NAVBAR---*/
 /*----SECCIONES---*/
 /*---HERO---*/
 .section__hero {
@@ -1111,11 +1112,11 @@ header {
 }
 
 .section__about .content .about .about__team .team__member .member_info .info__social .social__icon:hover {
-  background-color: black;
+  background-color: var(--font1);
 }
 
 .section__about .content .about .about__team .team__member .member_info .info__social .social__icon:hover i {
-  color: white;
+  color: var(--bg-color);
 }
 
 .section__about .content .about .about__team .team__member .member_info .info__social .social__icon i {
@@ -1137,70 +1138,6 @@ header {
   grid-row-gap: 2rem;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-}
-
-.section__portfolio .portfolio .portfolio__work {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  min-height: 20rem;
-  min-width: 20rem;
-  padding: 1rem;
-  border: 0rem solid transparent;
-  overflow: hidden;
-}
-
-.section__portfolio .portfolio .portfolio__work:hover {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
-  border: 1rem solid var(--color2);
-  margin: -1rem;
-}
-
-.section__portfolio .portfolio .portfolio__work .work__title {
-  font-size: 1.2rem;
-  margin-right: 1rem;
-  padding: 1rem;
-  letter-spacing: 0.8rem;
-  word-spacing: 0.5rem;
-  text-transform: uppercase;
-  font-weight: 400;
-  text-align: right;
-  color: white;
-  opacity: 0;
-  -webkit-transform: translateX(-300%);
-          transform: translateX(-300%);
-}
-
-.section__portfolio .portfolio .portfolio__work:hover .work__title {
-  opacity: 1;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-
-.section__portfolio .portfolio .portfolio__work .work__btn {
-  opacity: 0;
-}
-
-.section__portfolio .portfolio .portfolio__work .work__btn:hover {
-  -webkit-transform: translateX(0) scale(1.25) rotateZ(180deg);
-          transform: translateX(0) scale(1.25) rotateZ(180deg);
-}
-
-.section__portfolio .portfolio .portfolio__work .work__btn i {
-  font-size: calc 0.6rem vw;
-}
-
-.section__portfolio .portfolio .portfolio__work:hover .work__btn {
-  opacity: 1;
 }
 
 .section__portfolio .portfolio .work1 {
@@ -1282,6 +1219,71 @@ header {
   background-repeat: no-repeat;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+}
+
+.section__portfolio .portfolio .portfolio__work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  min-height: 20rem;
+  min-width: 20rem;
+  padding: 1rem;
+  border: 0rem solid transparent;
+  overflow: hidden;
+}
+
+.section__portfolio .portfolio .portfolio__work:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  border: 1rem solid var(--color2);
+  margin: -1rem;
+}
+
+.section__portfolio .portfolio .portfolio__work .work__title {
+  font-size: 1.2rem;
+  margin: 0 1rem 0 0;
+  padding: 0 1rem;
+  line-height: 4rem;
+  letter-spacing: 0.8rem;
+  word-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--font1);
+  opacity: 0;
+  -webkit-transform: translateX(-300%);
+          transform: translateX(-300%);
+  background-color: var(--color1);
+}
+
+.section__portfolio .portfolio .portfolio__work:hover .work__title {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.section__portfolio .portfolio .portfolio__work .work__btn {
+  opacity: 0;
+}
+
+.section__portfolio .portfolio .portfolio__work .work__btn:hover {
+  -webkit-transform: translateX(0) scale(1.25) rotateZ(180deg);
+          transform: translateX(0) scale(1.25) rotateZ(180deg);
+}
+
+.section__portfolio .portfolio .portfolio__work .work__btn i {
+  font-size: calc 0.6rem vw;
+}
+
+.section__portfolio .portfolio .portfolio__work:hover .work__btn {
+  opacity: 1;
 }
 
 .section__portfolio .portfolio .work__load-more {
@@ -1557,7 +1559,7 @@ header {
   width: auto;
 }
 
-/*---Contact---*/
+/*---CONTACT---*/
 .section__contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1613,7 +1615,7 @@ header {
 
 .section__contact .suscribe__email .email__box__input {
   font-size: calc(0.5rem + 0.5vw);
-  line-height: 4rem;
+  line-height: 5rem;
   width: 100%;
   letter-spacing: 0.5rem;
   padding: 0 3rem;
@@ -1667,6 +1669,7 @@ header {
           transform: scale(1.2);
 }
 
+/*---END CONTACT---*/
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2235,7 +2238,7 @@ header {
   --heading-color: #969696;
 }
 
-/*slider switch css */
+/*---SWITCH DARK LIGHT---*/
 .theme-switch-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2266,8 +2269,7 @@ header {
   position: absolute;
   height: 3.4rem;
   position: relative;
-  width: 60px;
-  margin-left: 1rem;
+  width: 6rem;
 }
 
 .theme-switch input {
@@ -2299,14 +2301,14 @@ header {
 
 .slider:before {
   background-color: var(--bg-color);
-  bottom: 4px;
+  bottom: 0.4rem;
   content: "";
-  height: 26px;
-  left: 4px;
+  height: 2.6rem;
+  left: 0.4rem;
   position: absolute;
   -webkit-transition: .4s;
   transition: .4s;
-  width: 26px;
+  width: 2.6rem;
 }
 
 input:checked + .slider {
@@ -2314,15 +2316,17 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-          transform: translateX(26px);
+  -webkit-transform: translateX(2.6rem);
+          transform: translateX(2.6rem);
 }
 
 .slider.round {
-  border-radius: 34px;
+  border-radius: 3.4rem;
 }
 
 .slider.round:before {
   border-radius: 50%;
 }
+
+/*---END SWITCH DARK LIGHT---*/
 /*# sourceMappingURL=style.css.map */

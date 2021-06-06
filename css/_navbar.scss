@@ -34,7 +34,7 @@ header{
 		position: relative;
 		user-select: none;
 		.navicon {
-			background-color: #333;
+			background-color: var(--heading-color);
 			display: block;
 			height: 2px;
 			position: relative;
@@ -126,3 +126,4 @@ header{
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 	top: 0;
 }
+/*---END NAVBAR---*/
