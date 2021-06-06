@@ -1257,6 +1257,33 @@ header {
           filter: grayscale(100%);
 }
 
+.section__portfolio .portfolio .work7 {
+  background-image: url(../img/index/portfolio7index.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.section__portfolio .portfolio .work8 {
+  background-image: url(../img/index/portfolio8index.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.section__portfolio .portfolio .work9 {
+  background-image: url(../img/index/portfolio9index.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
 .section__portfolio .portfolio .work__load-more {
   grid-column: span 1;
   grid-row: span 1;
@@ -2060,6 +2087,18 @@ header {
     grid-row: span 1;
   }
   .section__portfolio .portfolio .work6 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .section__portfolio .portfolio .work7 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .section__portfolio .portfolio .work8 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .section__portfolio .portfolio .work9 {
     grid-column: span 2;
     grid-row: span 1;
   }

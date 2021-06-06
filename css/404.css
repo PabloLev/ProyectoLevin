@@ -1128,6 +1128,18 @@ header {
     grid-column: span 2;
     grid-row: span 1;
   }
+  .section__portfolio .portfolio .work7 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .section__portfolio .portfolio .work8 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .section__portfolio .portfolio .work9 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
   .section__portfolio .work__btn i {
     font-size: calc(0.3rem + 0.3vw);
   }

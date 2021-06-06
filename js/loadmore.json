@@ -1,0 +1,17 @@
+[
+    {
+        "img": "work7",
+        "titulo": "Apple",
+        "href": "portfolio7.html"
+    }, 
+    {
+        "img": "work8",
+        "titulo": "Apple2",
+        "href": "portfolio8.html"
+    },
+    {
+        "img": "work9",
+        "titulo": "Apple3",
+        "href": "portfolio9.html"
+    }        
+]

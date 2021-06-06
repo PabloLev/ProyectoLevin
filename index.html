@@ -16,6 +16,7 @@
     <!-- SCRIPTS -->
     <script src="js/loader.js"></script>
     <script src="js/functions.js"></script>
+    <script src="js/loadmore.js"></script>
     <script src="js/dark.js"></script>
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="img/favicon.png"/>
@@ -151,7 +152,7 @@
                 <h1 class="title__text">Portfolio</h1>
                 <span class="title__text--shadow">Portfolio</span>
             </div>
-            <div class="portfolio">
+            <div id="res" class="portfolio">
                 <article class="portfolio__work work1 transition">
                     <h2 class="work__title transition">Speed for all</h2>
                     <a class="work__btn plus-icon transition" href="portfolio1.html" aria-label="Ver Speed for all"><i class="fas fa-plus"></i></a>
@@ -176,14 +177,17 @@
                     <h2 class="work__title transition">Blood for your life</h2>
                     <a class="work__btn plus-icon transition" href="portfolio6.html" aria-label="Ver Blood for your life"><i class="fas fa-plus"></i></a>
                 </article>
-                <article class="portfolio__work work__load-more transition border bg-color">
+                <article id="removeBtn" class="portfolio__work work__load-more transition border bg-color">
                     <div class="load-more__btn">
                         <h3 class="load-more__btn__text">Load more</h3>
                         <span class="title__text--shadow">More</span>
-                        <button class="arrow transition" aria-label="Load more"><i class="fas fa-angle-right"></i></button> 
+                        <button id="loadMore" class="arrow transition" aria-label="Load more"><i class="fas fa-angle-right"></i></button> 
                     </div>
                 </article>
             </div>
+            <!-- <div id="res2" class="portfolio">
+                
+            </div> -->
         </section>
         <!-- END PORTFOLIO -->
         <!-- BLOG -->

@@ -567,7 +567,7 @@ header {
   margin-top: 2rem;
 }
 
-.section__portfolioin .portfolio_article .article__info .article__img1a, .section__portfolioin .portfolio_article .article__info .article__img2a, .section__portfolioin .portfolio_article .article__info .article__img3a, .section__portfolioin .portfolio_article .article__info .article__img4a, .section__portfolioin .portfolio_article .article__info .article__img5a, .section__portfolioin .portfolio_article .article__info .article__img6a {
+.section__portfolioin .portfolio_article .article__info .article__img1a, .section__portfolioin .portfolio_article .article__info .article__img2a, .section__portfolioin .portfolio_article .article__info .article__img3a, .section__portfolioin .portfolio_article .article__info .article__img4a, .section__portfolioin .portfolio_article .article__info .article__img5a, .section__portfolioin .portfolio_article .article__info .article__img6a, .section__portfolioin .portfolio_article .article__info .article__img7a, .section__portfolioin .portfolio_article .article__info .article__img8a, .section__portfolioin .portfolio_article .article__info .article__img9a {
   background-image: url(../img/portfolio1.webp);
   grid-column: span 1;
   grid-row: span 1;
@@ -600,6 +600,18 @@ header {
 
 .section__portfolioin .portfolio_article .article__info .article__img6a {
   background-image: url(../img/portfolio6.webp);
+}
+
+.section__portfolioin .portfolio_article .article__info .article__img7a {
+  background-image: url(../img/portfolio7.webp);
+}
+
+.section__portfolioin .portfolio_article .article__info .article__img8a {
+  background-image: url(../img/portfolio8.webp);
+}
+
+.section__portfolioin .portfolio_article .article__info .article__img9a {
+  background-image: url(../img/portfolio9.webp);
 }
 
 .section__portfolioin .portfolio_article .article__info .article__content1 {
@@ -709,7 +721,7 @@ header {
         grid-template-rows: auto auto;
     margin-top: 5rem;
   }
-  .section__portfolioin .portfolio_article .article__info .article__img1a, .section__portfolioin .portfolio_article .article__info .article__img2a, .section__portfolioin .portfolio_article .article__info .article__img3a, .section__portfolioin .portfolio_article .article__info .article__img4a, .section__portfolioin .portfolio_article .article__info .article__img5a, .section__portfolioin .portfolio_article .article__info .article__img6a {
+  .section__portfolioin .portfolio_article .article__info .article__img1a, .section__portfolioin .portfolio_article .article__info .article__img2a, .section__portfolioin .portfolio_article .article__info .article__img3a, .section__portfolioin .portfolio_article .article__info .article__img4a, .section__portfolioin .portfolio_article .article__info .article__img5a, .section__portfolioin .portfolio_article .article__info .article__img6a, .section__portfolioin .portfolio_article .article__info .article__img7a, .section__portfolioin .portfolio_article .article__info .article__img8a, .section__portfolioin .portfolio_article .article__info .article__img9a {
     grid-column: span 1;
     grid-row: span 1;
     background-position: center;
@@ -1320,6 +1332,18 @@ header {
     grid-row: span 1;
   }
   .section__portfolio .portfolio .work6 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .section__portfolio .portfolio .work7 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .section__portfolio .portfolio .work8 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .section__portfolio .portfolio .work9 {
     grid-column: span 2;
     grid-row: span 1;
   }

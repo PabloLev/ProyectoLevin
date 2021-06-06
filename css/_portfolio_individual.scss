@@ -56,6 +56,18 @@
                 @extend .article__img1a;
                 background-image: url(../img/portfolio6.webp);
             }
+            .article__img7a{
+                @extend .article__img1a;
+                background-image: url(../img/portfolio7.webp);
+            }
+            .article__img8a{
+                @extend .article__img1a;
+                background-image: url(../img/portfolio8.webp);
+            }
+            .article__img9a{
+                @extend .article__img1a;
+                background-image: url(../img/portfolio9.webp);
+            }
             .article__content1{
                 grid-column: span 1;
                 grid-row: span 1;   

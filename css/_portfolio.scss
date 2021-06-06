@@ -57,7 +57,7 @@
 			}
 		}
 		//.work$ genera las clases .work1, .work2, ....., work6
-		$workNum: 6;
+		$workNum: 9;
 		@for $i from 1 through $workNum {
 			.work#{$i}{
 				background-image: url(../img/index/portfolio#{$i}index.webp);
