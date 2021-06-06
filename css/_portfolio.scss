@@ -9,7 +9,6 @@
 		grid-column-gap: 2rem;
 		grid-row-gap: 2rem;
 		grid-template-columns: 1fr;
-		
 		//.work$ genera las clases .work1, .work2, ....., work9
 		$workNum: 9;
 		@for $i from 1 through $workNum {
@@ -64,7 +63,6 @@
 				opacity: 1;
 			}
 		}
-		
 		.work__load-more{
 			grid-column: span 1;
 			grid-row: span 1;

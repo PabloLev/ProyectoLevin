@@ -132,13 +132,11 @@
                         }
                         .info__social{
                             @include flexJustify(flex-end); //(justify-content)
-                            // @include flexRightCenter;
                             transform: translateX(0);
                             opacity: 1;
                             margin-bottom: 5rem;
                             .social__icon{
                                 @include flex(center, center, center); //(justify-content, align-content, align-items)
-                                // @include flexCenterAll;
                                 background-color: var(--color2);
                                 min-width: 3rem;
                                 min-height: 3rem;

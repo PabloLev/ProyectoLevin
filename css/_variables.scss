@@ -1,12 +1,6 @@
 // COLORS
 $color1: #5ec8cc;
 $color2: #c6f327;
-
-
-// DARk
-// $color1: #252525;
-// $color2: #c38fff;
-
 $black025: rgba(0, 0, 0, 0.25);
 $black050: rgba(0, 0, 0, 0.5);
 $black010: rgba(0, 0, 0, 0.1);
@@ -21,8 +15,6 @@ $XLfontSize1: calc(2.5rem + 1vw);
 $XLfontSize2: calc(1.5rem + 1vw);
 $XLfontSize3: calc(0.6rem + 0.6vw);
 
-
-
 // MIXINS
 @mixin flex($justify-content, $align-content, $align-items){
 	display: flex;
@@ -34,54 +26,4 @@ $XLfontSize3: calc(0.6rem + 0.6vw);
 	display: flex;
 	justify-content: $justify-content;
 }
-// @mixin flexCenterAll{
-// 	display: flex;
-// 	justify-content: center;
-//     align-content: center;
-// 	align-items: center;
-// }
-// @mixin flexCenterX{
-// 	display: flex;
-// 	justify-content: center;
-// }
-// @mixin flexCenterY{
-// 	display: flex;
-//     align-content: center;
-// 	align-items: center;
-// }
-// @mixin flexLeftCenter{
-// 	display: flex;
-// 	justify-content: flex-start;
-//     align-content: center;
-// 	align-items: center;
-// }
-// @mixin flexRightCenter{
-// 	display: flex;
-// 	justify-content: flex-end;
-//     align-content: center;
-// 	align-items: center;
-// }
-// @mixin flexLeftTop{
-// 	display: flex;
-// 	justify-content: flex-start;
-//     align-content: flex-start;
-// 	align-items: flex-start;
-// }
-// @mixin flexRightTop{
-// 	display: flex;
-// 	justify-content: flex-end;
-//     align-content: flex-start;
-// 	align-items: flex-start;
-// }
-// @mixin flexLeftBottom{
-// 	display: flex;
-// 	justify-content: flex-start;
-//     align-content: flex-end;
-// 	align-items: flex-end;
-// }
-// @mixin flexRightBottom{
-// 	display: flex;
-// 	justify-content: flex-end;
-//     align-content: flex-end;
-// 	align-items: flex-end;
-// }
+

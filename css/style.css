@@ -1,3 +1,4 @@
+/*---FONTS SPEED IMPRUBE---*/
 @font-face {
   font-family: "Lato";
   src: url("../fonts/lato/lato-regular-webfont.woff") format("woff"), url("../fonts/lato/lato-regular-webfont.woff2") format("woff2");
@@ -30,8 +31,8 @@
   font-display: swap;
 }
 
+/*---END FONTS IMPORT---*/
 /*-------------------------------------------------------------------*/
-/*---normalize---*/
 * {
   margin: 0;
   padding: 0;
@@ -39,7 +40,6 @@
           box-sizing: border-box;
 }
 
-/*------------------------------------------------------------------*/
 html {
   width: 100%;
   font-size: 62.5%;
@@ -343,7 +343,6 @@ button:visited {
   opacity: 0.15;
 }
 
-/*---Colour---*/
 .bg-color {
   background-color: var(--color1);
 }
@@ -501,6 +500,10 @@ header {
   opacity: 1;
 }
 
+.header .menu-btn:hover {
+  background-color: var(--bg-color2);
+}
+
 .header .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -540,8 +543,7 @@ header {
   font-weight: 400;
 }
 
-.header li a:hover,
-.header .menu-btn:hover {
+.header li a:hover {
   background-color: var(--bg-color2);
 }
 
@@ -588,7 +590,7 @@ header {
 }
 
 .section__hero .hero__backImg {
-  background-image: url(../img/indexJPG/13index.jpg);
+  background-image: url(../img/index/13index.webp);
   position: absolute;
   height: 100%;
   width: 80%;
@@ -838,19 +840,6 @@ header {
 }
 
 /*---END HERO---*/
-/*---SERVICES---*/
-.services-container span i {
-  font-size: 5rem;
-  background-color: #5ec8cc;
-  padding: 4rem;
-  border-radius: 50%;
-}
-
-.service-info {
-  margin: 5rem 0;
-}
-
-/*---END SERVICES---*/
 /*---ABOUT---*/
 .section__about {
   position: relative;
@@ -1738,13 +1727,8 @@ header {
           transform: rotate(360deg);
 }
 
-/* Small devices (landscape phones, 576px and up) */
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* 768px and up */
 @media (min-width: 768px) {
-  /*---NAVBAR BOOTSTRAP---*/
-  .navbar .navbar-collapse .navbar-nav {
-    padding-top: 0rem;
-  }
   /*---PORTFOLIO---*/
   .section__portfolio .portfolio {
     -ms-grid-columns: 1fr 1fr;
@@ -1778,11 +1762,9 @@ header {
   }
 }
 
-/* Large devices (desktops, 992px and up) */
-/* Extra large devices (large desktops, 1200px and up) */
+/* 1200px and up */
 @media (min-width: 1200px) {
-  /* BOOTSTRAP
-	/* NAVBAR*/
+  /* NAVBAR*/
   .header {
     height: auto;
     width: 70%;

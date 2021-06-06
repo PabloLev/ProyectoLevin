@@ -3,22 +3,6 @@
 	@include flex(center, center, center); //(justify-content, align-content, align-items)
     position: relative;
 	min-height: 100vh;
-	// &::before{
-	// 	content: '';
-	// 	background-image: url(../img/13.webp);
-	// 	position: absolute;
-	// 	height: 100%;
-	// 	width: 80%;
-	// 	left: 20%;
-	// 	top: 0;
-	// 	background-size: cover;
-	// 	background-repeat: no-repeat;
-	// 	background-position: center;
-	// 	box-shadow: -10px 0px 40px 0px $black025;
-	// 	transition: all 0.4s ease-out;
-	// 	filter: grayscale(100%);
-	// 	z-index: 1;
-	// }
 	&:hover .hero__backImg{
 		filter: grayscale(0%);
 	}
@@ -33,12 +17,8 @@
 		background-color: $black025;
 		z-index: 1;
 	}
-	// &:hover::before{
-	// 	transition: all 0.4s ease-out;
-	// 	filter: grayscale(0%);
-	// }
 	.hero__backImg{
-		background-image: url(../img/indexJPG/13index.jpg);
+		background-image: url(../img/index/13index.webp);
 		position: absolute;
 		height: 100%;
 		width: 80%;
@@ -55,7 +35,6 @@
 	}
 	.hero__slide{
 		@include flexJustify(center); //(justify-content)
-		// @include flexCenterX;
 		height: auto;
 		width: 100%;
 		min-height: 66rem;
@@ -77,7 +56,6 @@
 		}
 		.slide__info{
 			@include flexJustify(center); //(justify-content)
-			// @include flexCenterX;
 			align-content: space-between;
 			flex-wrap: wrap;
 			position: relative;
@@ -85,18 +63,15 @@
 			min-height: 100vh;
 			.info__header{
 				@include flexJustify(center); //(justify-content)
-				// @include flexCenterX;
 				flex-wrap: wrap;
 				.header__title{
 					@include flex(center, center, center); //(justify-content, align-content, align-items)
-					// @include flexCenterAll;
 					display: flex;
 					justify-content: center;
 					align-items: center;
 					width: 100%;
 					.title__text{
 						@include flexJustify(center); //(justify-content)
-						// @include flexCenterX;
 						position: absolute;
 						width: 100%;
 						font-size: calc(#{$XSfontSize1} * 0.65);
@@ -108,7 +83,6 @@
 					}
 					.title__text--shadow{
 						@include flexJustify(center); //(justify-content)
-						// @include flexCenterX;
 						font-size: calc(#{$XSfontSize1} * 1.4);
 						text-transform: uppercase;
 						font-weight: 900;
@@ -118,7 +92,6 @@
 				}
 				.header__subtitle {
 					@include flexJustify(center); //(justify-content)
-					// @include flexCenterX;
 					justify-content: center;
 					width: 100%;
 					letter-spacing: 0.3rem;
@@ -131,7 +104,6 @@
 			}
 			.info__content{
 				@include flexJustify(center); //(justify-content)
-				// @include flexCenterX;
 				flex-wrap: wrap;
 				.content__tags{
 					display: flex;
@@ -147,21 +119,17 @@
 						color: white;
 						display: flex;
 						font-size: calc(#{$XSfontSize3} * 0.7);
-						// width: 100%;
 						margin-bottom: 2%;
-						// justify-content: center;
 					}
 				}
 				.content__text{
 					@include flex(center, center, center); //(justify-content, align-content, align-items)
-					// @include flexCenterAll;
 					flex-wrap: nowrap;
 					width: 100%;
 					.text{
 						padding: 2rem 3rem;
 						width: 100%;
 						font-size: $XSfontSize3;
-						// font-size: 1.6rem;
 						line-height: 1.5em;
 						font-weight: 400;
 						text-align: right;
@@ -174,7 +142,6 @@
 			}
 			.content__nav {
 				@include flexJustify(center); //(justify-content)
-				// @include flexCenterX;
 				width: 90%;
 				margin-left: 10%;
 				padding: 3% 0 0;
@@ -191,10 +158,7 @@
 			}
 			.button{
 				margin: 3rem 0;
-				// background-color: var(--color2);
 				padding: 0;
-				// height: 5rem;
-				// width: 15rem;
 				padding: 1.5rem 4rem;
 				transform: translateX(10%);
 			}

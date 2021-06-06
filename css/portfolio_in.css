@@ -1,7 +1,38 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+/*---FONTS SPEED IMPRUBE---*/
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato/lato-regular-webfont.woff") format("woff"), url("../fonts/lato/lato-regular-webfont.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato/lato-bold-webfont.woff") format("woff"), url("../fonts/lato/lato-bold-webfont.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato/lato-black-webfont.woff") format("woff"), url("../fonts/lato/lato-black-webfont.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../fonts/PlayfairDisplay/PlayfairDisplay-Bold.woff") format("woff"), url("../fonts/PlayfairDisplay/PlayfairDisplay-Bold.woff") format("woff2"), url("../fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*---END FONTS IMPORT---*/
 /*-------------------------------------------------------------------*/
-/*---normalize---*/
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +40,6 @@
           box-sizing: border-box;
 }
 
-/*------------------------------------------------------------------*/
 html {
   width: 100%;
   font-size: 62.5%;
@@ -313,7 +343,6 @@ button:visited {
   opacity: 0.15;
 }
 
-/*---Colour---*/
 .bg-color {
   background-color: var(--color1);
 }
@@ -471,6 +500,10 @@ header {
   opacity: 1;
 }
 
+.header .menu-btn:hover {
+  background-color: var(--bg-color2);
+}
+
 .header .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -510,8 +543,7 @@ header {
   font-weight: 400;
 }
 
-.header li a:hover,
-.header .menu-btn:hover {
+.header li a:hover {
   background-color: var(--bg-color2);
 }
 
@@ -710,7 +742,7 @@ header {
   color: var(--font-color2);
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
+/* 1200px and up */
 @media (min-width: 1200px) {
   .section__portfolioin .portfolio_article {
     width: 70%;
@@ -982,13 +1014,8 @@ header {
           transform: rotate(360deg);
 }
 
-/* Small devices (landscape phones, 576px and up) */
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* 768px and up */
 @media (min-width: 768px) {
-  /*---NAVBAR BOOTSTRAP---*/
-  .navbar .navbar-collapse .navbar-nav {
-    padding-top: 0rem;
-  }
   /*---PORTFOLIO---*/
   .section__portfolio .portfolio {
     -ms-grid-columns: 1fr 1fr;
@@ -1022,11 +1049,9 @@ header {
   }
 }
 
-/* Large devices (desktops, 992px and up) */
-/* Extra large devices (large desktops, 1200px and up) */
+/* 1200px and up */
 @media (min-width: 1200px) {
-  /* BOOTSTRAP
-	/* NAVBAR*/
+  /* NAVBAR*/
   .header {
     height: auto;
     width: 70%;

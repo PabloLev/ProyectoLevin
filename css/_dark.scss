@@ -44,7 +44,6 @@
     position: relative;
     width: 6rem;
 }
-
 .theme-switch input {
     display:none;
 }
@@ -76,11 +75,9 @@ input:checked + .slider {
 input:checked + .slider:before {
     transform: translateX(2.6rem);
 }
-
 .slider.round {
     border-radius: 3.4rem;
 }
-
 .slider.round:before {
     border-radius: 50%;
 }

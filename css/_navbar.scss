@@ -29,7 +29,6 @@ header{
 	.menu-icon {
 		cursor: pointer;
 		display: inline-block;
-		// float: right;
 		padding: 28px 20px;
 		position: relative;
 		user-select: none;
@@ -67,12 +66,9 @@ header{
 		&:checked ~ .menu {
 			max-height: 340px;
 			padding-bottom: 2rem;
-			// height: auto;
-		
 		}
 		&:checked ~ .menu-icon .navicon {
 			background-color: transparent;
-			// opacity: 0;
 		}
 		&:checked ~ .menu-icon .navicon:before {
 			background-color: #969696;
@@ -84,11 +80,13 @@ header{
 			transform: rotate(45deg);
 			opacity: 1;
 		}
+		&:hover{
+			background-color: var(--bg-color2);
+		}
 	}
 	.menu{
-		// @include flex(center, center, center);
 		display: flex;
-    	flex-direction: column;
+		flex-direction: column;
 		align-items: flex-start;
 		clear: both;
 		max-height: 0;
@@ -99,7 +97,6 @@ header{
 		margin-top: 5.7rem;
 	}
 	ul {
-		
 		margin: 0;
 		padding: 0;
 		list-style: none;
@@ -115,12 +112,11 @@ header{
 				text-transform: uppercase;
 				font-size: $XSfontSize3;
 				font-weight: 400;
+				&:hover{
+					background-color: var(--bg-color2);
 				}
+			}
 		}
-}
-.header li a:hover,
-.header .menu-btn:hover {
-	background-color: var(--bg-color2);
 }
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {

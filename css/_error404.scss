@@ -18,7 +18,7 @@
 	}
     .error404__container{
         @include flex(space-evenly, center, center); //(justify-content, align-content, align-items)
-	    flex-direction: column;
+        flex-direction: column;
         .error404__title{
             font-size: calc(#{$XSfontSize1} * 1.5);
             color: white;

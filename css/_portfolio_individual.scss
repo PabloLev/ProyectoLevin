@@ -123,26 +123,11 @@
             
         }
     } 
-    // .portfolioin__back__btn{
-    //     display: inline-block;
-    //     margin: 0 auto;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    //     position: relative;
-    //     background-color: var(--color2);
-    //     margin-bottom: 5rem;
-    // }  
     .controls{
         @include flex(center, flex-start, center); //(justify-content, align-content, align-items)
         padding-bottom: 6rem;
         .back__btn{
-                // display: inline-block;
-                // margin: 0 auto;
-                // left: 50%;
-                // transform: translateX(-50%);
-                // position: relative;
                 background-color: var(--color2);
-                // margin-bottom: 5rem;
             }  
         .arrow{
             margin: 0 2rem;
@@ -159,10 +144,7 @@
         color: var(--font-color2);
     }
 }
-
-
-
-/* Extra large devices (large desktops, 1200px and up) */
+/* 1200px and up */
 @media (min-width: 1200px) {
     .section__portfolioin{
         &::before {
@@ -251,16 +233,6 @@
     .section__contact{
         position: relative;
         background-color: var(--color1);
-        // &::before {
-        //     content: '';
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     width: calc(36% + 2rem);
-        //     height: 100%;
-        //     background-color: #5ec8cc;
-        //     z-index: -1;
-        // }
         .suscribe__title{
             color: white;
         }

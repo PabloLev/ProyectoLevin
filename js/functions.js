@@ -5,7 +5,7 @@ var $title1 = "November is magic";
 var $titleShadow1 = "November";
 var $subtitle1 = "Perfect solution";
 var $text1='Holly Golightly is a flighty Manhattan party girl, who expects "money for the powder room as well as for cab fare" for her companionship. She has even gotten a lucrative once weekly job to visit notorious convict Sally Tomato in Sing Sing, she needing to report back to Sally.';
-var $img1 = "url(img/indexJPG/13index.jpg)";
+var $img1 = "url(img/index/13index.webp)";
 var $url1= "hero1.html";
 
 //VALUE 2
@@ -15,7 +15,7 @@ var $title2 = "Lighting for life";
 var $titleShadow2 = "Lighting";
 var $subtitle2 = "A way of life";
 var $text2="Sportsman do offending supported extremity breakfast by listening. Decisively advantages nor expression unpleasing she led met. Estate was tended ten boy nearer seemed. As so seeing latter he should thirty whence. Steepest speaking up attended it as.";
-var $img2 = "url(img/indexJPG/17index.jpg)";
+var $img2 = "url(img/index/17index.webp)";
 var $url2= "hero2.html";
 
 //VALUE 3
@@ -25,7 +25,7 @@ var $title3 = "Power any shot";
 var $titleShadow3 = "Power";
 var $subtitle3 = "Fast and slow";
 var $text3="Bringing unlocked me an striking ye perceive. Mr by wound hours oh happy. Me in resolution pianoforte continuing we. Most my no spot felt by no. He he in forfeited furniture sweetness he arranging. Me tedious so to behaved written account ferrars moments.";
-var $img3 = "url(img/indexJPG/2index.jpg)";
+var $img3 = "url(img/index/2index.webp)";
 var $url3= "hero3.html";
 
 var i=1;

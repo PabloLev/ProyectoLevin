@@ -1,14 +1,5 @@
-/* Small devices (landscape phones, 576px and up) */
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* 768px and up */
 @media (min-width: 768px) {
-	/*---NAVBAR BOOTSTRAP---*/
-	.navbar{
-		.navbar-collapse{
-			.navbar-nav {
-				padding-top: 0rem;
-			}
-		}
-	}
 	/*---PORTFOLIO---*/
 	.section__portfolio{
 		.portfolio{
@@ -44,10 +35,8 @@
 	
 	
 }
-/* Large devices (desktops, 992px and up) */
-/* Extra large devices (large desktops, 1200px and up) */
+/* 1200px and up */
 @media (min-width: 1200px) {
-	/* BOOTSTRAP
 	/* NAVBAR*/
 	.header{
 		height: auto;
@@ -75,11 +64,6 @@
 			display: none;
 		}
 	}
-	// .navbar a, .navbar-expand-md .navbar-nav .nav-link {
-	// 	font-size: 2rem;
-	// 	padding-right: 1.5rem;
-	// 	padding-left: 1.5rem;
-	// }
 	/*---GENERAL---*/
 	.container__title{
 		.title__text--shadow {
@@ -104,17 +88,12 @@
         background-color: var(--color2);
     }
 	.arrow{
-		
 		i{
 			font-size: calc(0.6rem + 0.6vw);
 		}
 	}
 	/*---hero---*/
 	.section__hero{
-		// &::before{
-		// 	width: 50%;
-		// 	left: 0;
-		// }
 		&::after{
 			width: 50%;
 			left: 0;
@@ -188,9 +167,6 @@
 					}
 					.button{
 						margin: 7.5% 0 0 0;
-						// background-color: transparent;
-						// width: 25rem;
-						// height: 6rem;
 						transform: translateX(0);
 					}
 				}
@@ -246,27 +222,22 @@
 				margin: 4rem 0;
 				.about__intro{
 					@include flex(flex-end, flex-start, flex-start); //(justify-content, align-content, align-items)
-					// @include flexRightTop;
 					margin-bottom: $line-height/2;
 					padding: 0 5% 0 0;
 					.intro__text{
-						// font-size: 4.5rem;
 						font-size: $XLfontSize1;
 						text-align: right;
-						// line-height: 6rem;
 						margin-bottom: 4rem;
 						padding: 0;
 						background-color: transparent;
 					}
 					.button{
-						// background-color: transparent;
 						transform: translateY(0)
 					}
 				}
 				.about__to-works{
 					position: relative;
 					font-size: calc(#{$XLfontSize3} / 1.5);
-					// color: black;
 					line-height: $line-height;
 					left: 10%;
 					opacity: 0.5;
@@ -274,31 +245,13 @@
 				.about__team{
 					.team__member{
 						@include flex(flex-start, flex-start, flex-start); //(justify-content, align-content, align-items)
-						// @include flexLeftTop;
 						flex-direction: row;
 						margin-bottom: 5rem;
 						.member__img{
 							min-height: calc(10rem + 4vw);
 							min-width: calc(10rem + 4vw);
-							&:hover{
-							}
-							&:hover ~ .member_info .info__social{
-							}
-							.plus-icon{
-								&:hover{
-								}
-							}
-							&:hover .plus-icon{
-							}
-						}
-						.member1{
-							
-						}
-						.member2{
-							
 						}
 						.member_info{
-							// width: 50%;
 							margin-left: calc(1.5rem + 1vw);
 							text-align: left;
 							margin-top: 0;
@@ -318,11 +271,7 @@
 								opacity: 0;
 								margin-bottom: 0;
 								.social__icon{
-									margin: 0 1.5rem 0 0;
-									i{
-
-									}
-									
+									margin: 0 1.5rem 0 0;		
 								}
 							}
 						}
@@ -394,63 +343,25 @@
 			margin: 4rem auto;
 			grid-gap: 5%;
 			width: 70%;
-			.blog__arrows{
-				
-				.arrow{
-					
-				}
-				.arrow--left{
-					
-				}
-				.arrow--right{
-					
-				}
-			}
 			.blog__publication{
-				
 				&:hover .publication__info{
-					// justify-content: flex-end;
 					transform: translate(10%, -50%);
-					// .publication__info__title{
-					// 	transform: translateX(50%);
-					// }
-				}
-				&:hover .publication__info{
-					// .publication__info__text{
-					// 	transform: translateX(50%);
-					// }
-				}
-				
-				.publication__img1{
-					
-				}
-				.publication__img2{
-					
-				}
-				.publication__img3{
-					
 				}
 				.publication__img{
-
 					width: 70%;
-					
 					.publication__date{
 						font-size: calc(#{$XLfontSize3} / 2);
 						padding-left: 1rem;
 					}
 					.blog__btn{
-						
 						i{	
 							font-size: calc(0.3rem + 0.3vw);			
 						}
 					}
 				}
-				
 				.publication__info{
 					justify-content: flex-start;
 					.publication__info__title{
-						// display: table-caption;
-						// width: 100%;
 						font-size: calc(#{$XLfontSize2} / 1.5);
 						margin: 0 0 0 1rem;
 						padding: 1rem 1rem;
@@ -459,20 +370,14 @@
 						width: 90%;
 						.publication__info__text{
 							font-size: calc(#{$XLfontSize3} * 0.9);
-							// font-size: $XLfontSize3;
 							text-align: left;
-	
 						}
 						.publication__comments{
 							left: 100%;
 						}
-			
 					}
-					
 				}
-				
 			}
-			
 			.blog__button{
 				grid-column: 2 / span 1;
 				background-color: transparent;
@@ -496,7 +401,6 @@
 			.email__box__input{
 				font-size: calc(0.5rem + 0.5vw);
 				line-height: 6rem;
-				// width: 100%;
 			}
 			.email__box__button{
 				i{
@@ -504,7 +408,6 @@
 					height: 4rem;
 					width: 4rem;
 					font-size: 2rem;
-					
 				}
 			}
 		}
@@ -512,20 +415,16 @@
 	/*---FOOTER---*/
 	.footer{
 		padding: 10rem 15% 5rem 15%;
-
 		.footer__copyright{
 			font-size: calc(0.5rem + 0.4vw);
 			letter-spacing: 0.4rem;
 			width: 50%;
-			a{
-
-			}
 		}
 		.footer__social{
 			width: 50%;
 			.social{
 				.social__icon{
-    				text-align: right;
+					text-align: right;
 					font-size: 2.5rem;
 					margin: 0 0 0 3rem;
 				}
