@@ -579,7 +579,7 @@ header {
   color: white;
   text-transform: uppercase;
   padding: 2rem;
-  background-color: #5ec8cc;
+  background-color: var(--color1);
   margin: 4rem 0;
 }
 
@@ -1250,4 +1250,120 @@ header {
     margin: 0 0 0 3rem;
   }
 }
+
+:root {
+  --color1: #5ec8cc;
+  --color2: #c6f327;
+  --level1: #ffffff;
+  --font-color: #ffffff;
+  --font-color2: #000000;
+  --font1: #000000;
+  --bg-color: #fff;
+  --bg-color2: #f1f1f1;
+  --heading-color: #777777;
+}
+
+[data-theme="dark"] {
+  --color1: #252525;
+  --color2: #c38fff;
+  --level1: #121212;
+  --font-color: #969696;
+  --font-color2: #969696;
+  --font1: #ffffff;
+  --bg-color: #000;
+  --bg-color2: #3b3b3b;
+  --heading-color: #969696;
+}
+
+/*---SWITCH DARK LIGHT---*/
+.theme-switch-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.theme-switch-wrapper em {
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+.moon-icon, .sun-icon {
+  font-size: 1.8rem;
+  padding: 0 0.3rem;
+}
+
+.sun-icon {
+  color: #6d6d6d;
+}
+
+.theme-switch {
+  display: inline-block;
+  position: absolute;
+  height: 3.4rem;
+  position: relative;
+  width: 6rem;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: var(--bg-color);
+  bottom: 0.4rem;
+  content: "";
+  height: 2.6rem;
+  left: 0.4rem;
+  position: absolute;
+  -webkit-transition: .4s;
+  transition: .4s;
+  width: 2.6rem;
+}
+
+input:checked + .slider {
+  background-color: var(--color2);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(2.6rem);
+          transform: translateX(2.6rem);
+}
+
+.slider.round {
+  border-radius: 3.4rem;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*---END SWITCH DARK LIGHT---*/
 /*# sourceMappingURL=404.css.map */
