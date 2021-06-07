@@ -816,8 +816,11 @@ header {
   .section__hero .hero__slide .slide__info .info__header .header__title .title__text--shadow {
     font-size: calc(calc(3.5rem + 1vw) * 2.1);
   }
+  .section__hero .hero__slide .slide__info .info__content .content__text .text {
+    font-size: calc(calc(0.6rem + 0.6vw) * 1.4);
+  }
   .section__hero .hero__slide .slide__text--vertical {
-    margin: 40% 1.5% 0 0;
+    margin: 30% 1.5% 0 0;
   }
   /*---ABOUT---*/
   .section__about::before {
@@ -827,7 +830,7 @@ header {
     background-color: transparent;
   }
   .section__about .content .about {
-    width: 70%;
+    width: 90%;
     -ms-grid-columns: calc(45% - (calc(6rem + 1vw)/2)) auto calc(55% - (calc(6rem + 1vw)/2));
         grid-template-columns: calc(45% - (calc(6rem + 1vw)/2)) auto calc(55% - (calc(6rem + 1vw)/2));
     margin: 4rem 0;
@@ -899,7 +902,7 @@ header {
   .section__about .content .about .about__team .team__member .member_info .info__resume {
     padding: 0;
     text-align: left;
-    font-size: calc(0.6rem + 0.6vw);
+    font-size: calc(calc(0.6rem + 0.6vw) * 1.4);
   }
   .section__about .content .about .about__team .team__member .member_info .info__social {
     -webkit-box-pack: start;
@@ -919,6 +922,7 @@ header {
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 90%;
   }
   .section__portfolio .portfolio .work1 {
     grid-column: span 2;
@@ -956,7 +960,7 @@ header {
         grid-template-rows: auto auto;
     margin: 4rem auto;
     grid-gap: 5%;
-    width: 70%;
+    width: 90%;
   }
   .section__blog .blog .blog__publication:hover .publication__info {
     -webkit-transform: translate(10%, -50%);
@@ -966,7 +970,7 @@ header {
     width: 70%;
   }
   .section__blog .blog .blog__publication .publication__img .publication__date {
-    font-size: calc(calc(0.6rem + 0.6vw) / 2);
+    font-size: calc(calc(0.6rem + 0.6vw) / 1.3);
     padding-left: 1rem;
   }
   .section__blog .blog .blog__publication .publication__img .blog__btn i {
@@ -978,7 +982,7 @@ header {
             justify-content: flex-start;
   }
   .section__blog .blog .blog__publication .publication__info .publication__info__title {
-    font-size: calc(calc(1.5rem + 1vw) / 1.5);
+    font-size: calc(calc(1.5rem + 1vw) / 1.2);
     margin: 0 0 0 1rem;
     padding: 1rem 1rem;
   }
@@ -986,7 +990,7 @@ header {
     width: 90%;
   }
   .section__blog .blog .blog__publication .publication__info .publication__text .publication__info__text {
-    font-size: calc(calc(0.6rem + 0.6vw) * 0.9);
+    font-size: calc(calc(0.6rem + 0.6vw) * 1.4);
     text-align: left;
   }
   .section__blog .blog .blog__publication .publication__info .publication__text .publication__comments {
@@ -1237,52 +1241,10 @@ header {
     font-size: calc(0.3rem + 0.3vw);
   }
   /*---BLOG---*/
-  .section__blog:before {
-    width: 100%;
-    height: 60%;
-  }
   .section__blog .blog {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: auto auto;
-        grid-template-rows: auto auto;
-    margin: 4rem auto;
-    grid-gap: 5%;
     width: 70%;
-  }
-  .section__blog .blog .blog__publication:hover .publication__info {
-    -webkit-transform: translate(10%, -50%);
-            transform: translate(10%, -50%);
-  }
-  .section__blog .blog .blog__publication .publication__img {
-    width: 70%;
-  }
-  .section__blog .blog .blog__publication .publication__img .publication__date {
-    font-size: calc(calc(0.6rem + 0.6vw) / 2);
-    padding-left: 1rem;
-  }
-  .section__blog .blog .blog__publication .publication__img .blog__btn i {
-    font-size: calc(0.3rem + 0.3vw);
-  }
-  .section__blog .blog .blog__publication .publication__info {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .section__blog .blog .blog__publication .publication__info .publication__info__title {
-    font-size: calc(calc(1.5rem + 1vw) / 1.5);
-    margin: 0 0 0 1rem;
-    padding: 1rem 1rem;
-  }
-  .section__blog .blog .blog__publication .publication__info .publication__text {
-    width: 90%;
-  }
-  .section__blog .blog .blog__publication .publication__info .publication__text .publication__info__text {
-    font-size: calc(calc(0.6rem + 0.6vw) * 0.9);
-    text-align: left;
-  }
-  .section__blog .blog .blog__publication .publication__info .publication__text .publication__comments {
-    left: 100%;
   }
   .section__blog .blog .blog__button {
     -ms-grid-column: 2;

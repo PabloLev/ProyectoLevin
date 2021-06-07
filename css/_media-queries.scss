@@ -14,9 +14,16 @@
 						}
 					}
 				}
+				.info__content {
+					.content__text {
+						.text {
+							font-size: calc(#{$XLfontSize3} * 1.4);
+						}
+					}
+				}
 			}
 			.slide__text--vertical{
-				margin: 40% 1.5% 0 0;
+				margin: 30% 1.5% 0 0;
 			}
 		}
 	}
@@ -31,7 +38,7 @@
 		.content{
 			.about{
 				$line-height: calc(6rem + 1vw);
-				width: 70%;
+				width: 90%;
 				grid-template-columns: calc(45% - (#{$line-height}/2)) auto calc(55% - (#{$line-height}/2));//Se calcula con el line height de .about__to-works
 				margin: 4rem 0;
 				.about__intro{
@@ -77,7 +84,7 @@
 							.info__resume{
 								padding: 0;
 								text-align: left;
-								font-size: $XLfontSize3;
+								font-size: calc(#{$XLfontSize3} * 1.4);
 							}
 							.info__social{
 								justify-content: flex-start;
@@ -97,9 +104,11 @@
 	}
 	/*---PORTFOLIO---*/
 	.section__portfolio{
+		
 		.portfolio{
 			grid-template-columns: 1fr 1fr;
 			grid-template-rows: 1fr 1fr 1fr 1fr;
+			width: 90%;
 			.work1{
 				grid-column: span 2;
 				grid-row: span 1;
@@ -138,7 +147,7 @@
 			grid-template-rows: auto auto;
 			margin: 4rem auto;
 			grid-gap: 5%;
-			width: 70%;
+			width: 90%;
 			.blog__publication{
 				&:hover .publication__info{
 					transform: translate(10%, -50%);
@@ -146,7 +155,7 @@
 				.publication__img{
 					width: 70%;
 					.publication__date{
-						font-size: calc(#{$XLfontSize3} / 2);
+						font-size: calc(#{$XLfontSize3} / 1.3);
 						padding-left: 1rem;
 					}
 					.blog__btn{
@@ -158,14 +167,14 @@
 				.publication__info{
 					justify-content: flex-start;
 					.publication__info__title{
-						font-size: calc(#{$XLfontSize2} / 1.5);
+						font-size: calc(#{$XLfontSize2} / 1.2);
 						margin: 0 0 0 1rem;
 						padding: 1rem 1rem;
 					}
 					.publication__text{
 						width: 90%;
 						.publication__info__text{
-							font-size: calc(#{$XLfontSize3} * 0.9);
+							font-size: calc(#{$XLfontSize3} * 1.4);
 							text-align: left;
 						}
 						.publication__comments{
@@ -410,51 +419,9 @@
 	}
 	/*---BLOG---*/
 	.section__blog{
-		&:before{
-			width: 100%;
-			height: 60%;
-		}
 		.blog{
 			grid-template-columns: 1fr 1fr 1fr;
-			grid-template-rows: auto auto;
-			margin: 4rem auto;
-			grid-gap: 5%;
 			width: 70%;
-			.blog__publication{
-				&:hover .publication__info{
-					transform: translate(10%, -50%);
-				}
-				.publication__img{
-					width: 70%;
-					.publication__date{
-						font-size: calc(#{$XLfontSize3} / 2);
-						padding-left: 1rem;
-					}
-					.blog__btn{
-						i{	
-							font-size: calc(0.3rem + 0.3vw);			
-						}
-					}
-				}
-				.publication__info{
-					justify-content: flex-start;
-					.publication__info__title{
-						font-size: calc(#{$XLfontSize2} / 1.5);
-						margin: 0 0 0 1rem;
-						padding: 1rem 1rem;
-					}
-					.publication__text{
-						width: 90%;
-						.publication__info__text{
-							font-size: calc(#{$XLfontSize3} * 0.9);
-							text-align: left;
-						}
-						.publication__comments{
-							left: 100%;
-						}
-					}
-				}
-			}
 			.blog__button{
 				grid-column: 2 / span 1;
 				background-color: transparent;
