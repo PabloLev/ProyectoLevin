@@ -186,8 +186,9 @@
 			.blog__button{
 				grid-column: span 1;
 				margin: 0 0 7rem auto;
+				width: 95%;
+				height: 81%;
 				&:hover{
-					// background-color: var(--color2);
 					transform: scale(1.1);
 				}
 			}
@@ -366,7 +367,81 @@
 			background-color: $black025;
 		}
 	}
+	/*---ABOUT---*/
+	.section__about{
+		&::before {
+			width: 50%;
+		}
+		.container__title{
+			background-color: transparent;
+		}
+		.content{
+			.about{
+				$line-height: calc(6rem + 1vw);
+				width: 70%;
+				grid-template-columns: calc(45% - (#{$line-height}/2)) auto calc(55% - (#{$line-height}/2));//Se calcula con el line height de .about__to-works
+				margin: 4rem 0;
+				.about__intro{
+					@include flex(flex-end, flex-start, flex-start); //(justify-content, align-content, align-items)
+					margin-bottom: $line-height/2;
+					padding: 0 5% 0 0;
+					.intro__text{
+						font-size: $XLfontSize1;
+						text-align: right;
+						margin-bottom: 4rem;
+						padding: 0;
+						background-color: transparent;
+					}
+					.button{
+						transform: translateY(0)
+					}
+				}
+				.about__to-works{
+					position: relative;
+					font-size: calc(#{$XLfontSize3} / 1.5);
+					line-height: $line-height;
+					left: 10%;
+					opacity: 0.5;
+				}
+				.about__team{
+					.team__member{
+						@include flex(flex-start, flex-start, flex-start); //(justify-content, align-content, align-items)
+						flex-direction: row;
+						margin-bottom: 5rem;
+						.member__img{
+							min-height: calc(10rem + 4vw);
+							min-width: calc(10rem + 4vw);
+						}
+						.member_info{
+							margin-left: calc(1.5rem + 1vw);
+							text-align: left;
+							margin-top: 0;
 	
+							.info__name{
+								text-align: left;
+								font-size: $XLfontSize2;
+							}
+							.info__resume{
+								padding: 0;
+								text-align: left;
+								font-size: calc(#{$XLfontSize3});
+							}
+							.info__social{
+								justify-content: flex-start;
+								transform: translateX(-16rem);
+								opacity: 0;
+								margin-bottom: 0;
+								.social__icon{
+									margin: 0 1.5rem 0 0;		
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		
+	}
 	/*---PORTFOLIO---*/
 	.section__portfolio{
 		.portfolio {
@@ -422,9 +497,37 @@
 		.blog{
 			grid-template-columns: 1fr 1fr 1fr;
 			width: 70%;
+			
+			.blog__publication{
+				.publication__img{
+					.publication__date{
+						font-size: calc(#{$XLfontSize3} / 1.8);
+					}
+				}
+				.publication__info{
+					
+					.publication__info__title{
+						font-size: calc(#{$XLfontSize2}/ 1.5);
+						
+					}
+					.publication__text{
+						
+						.publication__info__text{
+							font-size: calc(#{$XLfontSize3}*0.9);
+
+						}
+						.publication__comments{
+							
+						}
+					}
+				}
+			}
 			.blog__button{
 				grid-column: 2 / span 1;
 				background-color: transparent;
+				width: auto;
+    			height: auto;
+				margin: 0 auto 7rem;
 				&:hover{
 					background-color: var(--color2);
 				}
