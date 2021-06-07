@@ -590,7 +590,6 @@ header {
 }
 
 .section__hero .hero__backImg {
-  background-image: url(../img/index/13index.webp);
   position: absolute;
   height: 100%;
   width: 80%;
@@ -606,6 +605,18 @@ header {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   z-index: 1;
+}
+
+.section__hero .hero__backImg1 {
+  background-image: url(../img/index/13index.webp);
+}
+
+.section__hero .hero__backImg2 {
+  background-image: url(../img/index/17index.webp);
+}
+
+.section__hero .hero__backImg3 {
+  background-image: url(../img/index/2index.webp);
 }
 
 .section__hero .hero__slide {

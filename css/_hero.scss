@@ -18,7 +18,6 @@
 		z-index: 1;
 	}
 	.hero__backImg{
-		background-image: url(../img/index/13index.webp);
 		position: absolute;
 		height: 100%;
 		width: 80%;
@@ -32,6 +31,15 @@
 		filter: grayscale(100%);
 		z-index: 1;
 		
+	}
+	.hero__backImg1{
+		background-image: url(../img/index/13index.webp);
+	}
+	.hero__backImg2{
+		background-image: url(../img/index/17index.webp);
+	}
+	.hero__backImg3{
+		background-image: url(../img/index/2index.webp);
 	}
 	.hero__slide{
 		@include flexJustify(center); //(justify-content)
