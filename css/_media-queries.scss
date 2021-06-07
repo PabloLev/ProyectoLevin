@@ -1,5 +1,100 @@
 /* 768px and up */
 @media (min-width: 768px) {
+	/*---HERO---*/
+	.section__hero{
+		.hero__slide{
+			.slide__info{
+				.info__header{
+					.header__title{
+						.title__text{
+							font-size: calc(calc(3.5rem + 1vw));
+						}
+						.title__text--shadow {
+							font-size: calc(calc(3.5rem + 1vw) * 2.1);
+						}
+					}
+				}
+			}
+			.slide__text--vertical{
+				margin: 40% 1.5% 0 0;
+			}
+		}
+	}
+	/*---ABOUT---*/
+	.section__about{
+		&::before {
+			width: 50%;
+		}
+		.container__title{
+			background-color: transparent;
+		}
+		.content{
+			.about{
+				$line-height: calc(6rem + 1vw);
+				width: 70%;
+				grid-template-columns: calc(45% - (#{$line-height}/2)) auto calc(55% - (#{$line-height}/2));//Se calcula con el line height de .about__to-works
+				margin: 4rem 0;
+				.about__intro{
+					@include flex(flex-end, flex-start, flex-start); //(justify-content, align-content, align-items)
+					margin-bottom: $line-height/2;
+					padding: 0 5% 0 0;
+					.intro__text{
+						font-size: $XLfontSize1;
+						text-align: right;
+						margin-bottom: 4rem;
+						padding: 0;
+						background-color: transparent;
+					}
+					.button{
+						transform: translateY(0)
+					}
+				}
+				.about__to-works{
+					position: relative;
+					font-size: calc(#{$XLfontSize3} / 1.5);
+					line-height: $line-height;
+					left: 10%;
+					opacity: 0.5;
+				}
+				.about__team{
+					.team__member{
+						@include flex(flex-start, flex-start, flex-start); //(justify-content, align-content, align-items)
+						flex-direction: row;
+						margin-bottom: 5rem;
+						.member__img{
+							min-height: calc(10rem + 4vw);
+							min-width: calc(10rem + 4vw);
+						}
+						.member_info{
+							margin-left: calc(1.5rem + 1vw);
+							text-align: left;
+							margin-top: 0;
+	
+							.info__name{
+								text-align: left;
+								font-size: $XLfontSize2;
+							}
+							.info__resume{
+								padding: 0;
+								text-align: left;
+								font-size: $XLfontSize3;
+							}
+							.info__social{
+								justify-content: flex-start;
+								transform: translateX(-16rem);
+								opacity: 0;
+								margin-bottom: 0;
+								.social__icon{
+									margin: 0 1.5rem 0 0;		
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		
+	}
 	/*---PORTFOLIO---*/
 	.section__portfolio{
 		.portfolio{
@@ -32,7 +127,63 @@
 		}
 		
 	}
-	
+	/*---BLOG---*/
+	.section__blog{
+		&:before{
+			width: 100%;
+			height: 60%;
+		}
+		.blog{
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: auto auto;
+			margin: 4rem auto;
+			grid-gap: 5%;
+			width: 70%;
+			.blog__publication{
+				&:hover .publication__info{
+					transform: translate(10%, -50%);
+				}
+				.publication__img{
+					width: 70%;
+					.publication__date{
+						font-size: calc(#{$XLfontSize3} / 2);
+						padding-left: 1rem;
+					}
+					.blog__btn{
+						i{	
+							font-size: calc(0.3rem + 0.3vw);			
+						}
+					}
+				}
+				.publication__info{
+					justify-content: flex-start;
+					.publication__info__title{
+						font-size: calc(#{$XLfontSize2} / 1.5);
+						margin: 0 0 0 1rem;
+						padding: 1rem 1rem;
+					}
+					.publication__text{
+						width: 90%;
+						.publication__info__text{
+							font-size: calc(#{$XLfontSize3} * 0.9);
+							text-align: left;
+						}
+						.publication__comments{
+							left: 100%;
+						}
+					}
+				}
+			}
+			.blog__button{
+				grid-column: span 1;
+				margin: 0 0 7rem auto;
+				&:hover{
+					// background-color: var(--color2);
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
 	
 }
 /* 1200px and up */
@@ -206,81 +357,7 @@
 			background-color: $black025;
 		}
 	}
-	/*---ABOUT---*/
-	.section__about{
-		&::before {
-			width: 50%;
-		}
-		.container__title{
-			background-color: transparent;
-		}
-		.content{
-			.about{
-				$line-height: calc(6rem + 1vw);
-				width: 70%;
-				grid-template-columns: calc(45% - (#{$line-height}/2)) auto calc(55% - (#{$line-height}/2));//Se calcula con el line height de .about__to-works
-				margin: 4rem 0;
-				.about__intro{
-					@include flex(flex-end, flex-start, flex-start); //(justify-content, align-content, align-items)
-					margin-bottom: $line-height/2;
-					padding: 0 5% 0 0;
-					.intro__text{
-						font-size: $XLfontSize1;
-						text-align: right;
-						margin-bottom: 4rem;
-						padding: 0;
-						background-color: transparent;
-					}
-					.button{
-						transform: translateY(0)
-					}
-				}
-				.about__to-works{
-					position: relative;
-					font-size: calc(#{$XLfontSize3} / 1.5);
-					line-height: $line-height;
-					left: 10%;
-					opacity: 0.5;
-				}
-				.about__team{
-					.team__member{
-						@include flex(flex-start, flex-start, flex-start); //(justify-content, align-content, align-items)
-						flex-direction: row;
-						margin-bottom: 5rem;
-						.member__img{
-							min-height: calc(10rem + 4vw);
-							min-width: calc(10rem + 4vw);
-						}
-						.member_info{
-							margin-left: calc(1.5rem + 1vw);
-							text-align: left;
-							margin-top: 0;
 	
-							.info__name{
-								text-align: left;
-								font-size: $XLfontSize2;
-							}
-							.info__resume{
-								padding: 0;
-								text-align: left;
-								font-size: $XLfontSize3;
-							}
-							.info__social{
-								justify-content: flex-start;
-								transform: translateX(-16rem);
-								opacity: 0;
-								margin-bottom: 0;
-								.social__icon{
-									margin: 0 1.5rem 0 0;		
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-		
-	}
 	/*---PORTFOLIO---*/
 	.section__portfolio{
 		.portfolio {
