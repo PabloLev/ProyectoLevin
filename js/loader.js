@@ -4,7 +4,7 @@ window.addEventListener("load", function () {
 });
 
 //Sacar logo 000webhost
-window.addEventListener("load", function() {
-    var bannerNode = document.querySelector('[alt="www.000webhost.com"]').parentNode.parentNode;
-    bannerNode.parentNode.removeChild(bannerNode);
-});
+// window.addEventListener("load", function() {
+//     var bannerNode = document.querySelector('[alt="www.000webhost.com"]').parentNode.parentNode;
+//     bannerNode.parentNode.removeChild(bannerNode);
+// });
